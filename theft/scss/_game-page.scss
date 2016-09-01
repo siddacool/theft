@@ -1,0 +1,252 @@
+main {
+    .headerImage {
+        width: 100%;
+        height: px(120);
+        background-size: cover;
+        background-position: center;
+        background-color: $baseColor;
+        @include tabletPortrait {
+            height: px(350);
+        }
+        @include desktopMix {
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        @include tabletLandscape {
+            height: px(200);
+        }
+        @include desktop {
+            height: px(150);
+        }
+    }
+}
+#mainContainer {
+    &.hide {
+        display: none;
+    }
+}
+#gameContainer {
+    display: none;
+    margin-top: 1rem;
+    padding: 0;
+    @include desktopMix {
+        margin-top: 2rem;
+    }
+    @include tabletLandscape {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+    @include desktop {
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+    }
+    &.show {
+        display: flex;
+    }
+    &.cheats {
+        .cheatGroupHolder {
+            flex-direction: column;
+        }
+        .cheatGroupSubHolder {
+            width: 100% !important;
+        }
+        a[data-cheatgroup] {}
+    }
+    article {
+        .gameHeader {
+            @include desktopMix {}
+        }
+        .gameBanner {
+            display: flex;
+            align-items: center;
+            padding-bottom: 1rem;
+            padding-left: 1rem;
+            @include desktopMix {
+                justify-content: center;
+                padding-left: 0;
+                padding-bottom: 2rem;
+            }
+        }
+        .gameImage {
+            $dimentions: 3.5rem;
+            height: $dimentions;
+            width: $dimentions;
+            background-color: #000000;
+            display: inline-flex;
+            border-radius: 100%;
+            border: px(3) solid #000000;
+            @include desktopMix {
+                $dimentions: 4rem;
+                height: $dimentions;
+                width: $dimentions;
+                border: px(2) solid #000000;
+            }
+            img {
+                width: 100%;
+                height: auto;
+                border-radius: 100%;
+            }
+        }
+        .gameTitle {
+            margin-left: 1rem;
+            font-size: 1.25rem;
+            @include desktopMixEx {
+                font-weight: 500;
+                font-size: 1.9rem;
+                line-height: 2.6rem;
+            }
+        }
+    }
+    .cheatGroupHolder {}
+    .cheatGroupSubHolder {
+        &.hide {
+            display: none;
+        }
+        &.expand {
+            @include desktopMixEx {
+                @include cardLayout;
+                padding-left: 0;
+                padding-right: 0;
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+            @include desktop {
+                margin-bottom: 2rem;
+            }
+            a[data-cheatgroup] {
+                cursor: default;
+                padding: 0.5rem 1rem;
+                transition: all 400ms;
+                @include desktop {
+                    padding: 0.3rem 1rem;
+                }
+                h5 {
+                    font-size: 1.1rem;
+                    @include desktop {
+                        font-size: 0.9rem;
+                    }
+                }
+                .icon {
+                    $dimentions: 1rem;
+                    height: $dimentions;
+                    width: $dimentions;
+                }
+            }
+            a[data-cheatall] {
+                display: none;
+            }
+            .cheatTable {
+                display: block;
+                @include desktop {
+                    display: table;
+                    margin-bottom: 0.5rem;
+                }
+            }
+        }
+    }
+    a[data-cheatgroup],
+    a[data-cheatall] {
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+        background-color: $baseColor;
+        cursor: pointer;
+    }
+    a[data-cheatgroup="essentials"] {
+        background-color: $cheatEssentials;
+        .cheatGroupTitle {
+            color: #6a6a6a;
+        }
+        .cheatGroupImage {
+            .icon {
+                fill: $uiYellow;
+            }
+        }
+    }
+    a[data-cheatgroup="health"] {
+        background-color: $cheatHealth;
+    }
+    a[data-cheatgroup="wanted"] {
+        background-color: $cheatWanted;
+    }
+    a[data-cheatgroup="weapons"] {
+        background-color: $cheatWeapons;
+    }
+    a[data-cheatgroup="gameplay"] {
+        background-color: $cheatGameplay;
+    }
+    a[data-cheatgroup="vehicles"] {
+        background-color: $cheatVehicles;
+    }
+    a[data-cheatgroup="weather"] {
+        background-color: $cheatWeather;
+    }
+    a[data-cheatgroup="misccheats"] {
+        background-color: $cheatMisc;
+    }
+    .cheatGroupImage {
+        display: inline-block;
+        .icon {
+            fill: #fff;
+        }
+    }
+    .cheatGroupTitle {
+        color: #fff;
+        margin-left: 1rem;
+        @include desktopMix {
+            margin-left: 0.5rem;
+        }
+    }
+    .cheatTable {
+        display: none;
+        width: 100%;
+        ul {
+            display: block;
+            padding: 0.5rem 1rem;
+            transition: all 400ms;
+            &:first-child {
+                padding-top: 1rem;
+            }
+            &:last-child {
+                padding-bottom: 1rem;
+            }
+            &:nth-of-type(odd) {
+                background-color: $dullColor;
+                @include desktop {
+                    background-color: transparent;
+                }
+            }
+            @include desktop {
+                display: table-row;
+                &:first-child {
+                    li {
+                        padding-top: 0.5rem;
+                    }
+                }
+            }
+            @include desktop {
+                &:hover {
+                    background-color: $dullColor !important;
+                }
+            }
+        }
+        li {
+            display: block;
+            font-size: 1.1rem;
+            @include desktop {
+                display: table-cell;
+                padding: 0.3rem 1rem;
+                font-size: 1rem;
+                font-size: 0.95rem;
+            }
+            &:nth-of-type(1) {
+                @include desktopMixEx {
+                    width: 50%;
+                }
+            }
+            &:nth-of-type(2) {
+                font-weight: 500;
+            }
+        }
+    }
+}

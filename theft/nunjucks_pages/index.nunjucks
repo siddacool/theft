@@ -1,0 +1,55 @@
+{% extends "layout.nunjucks" %}
+
+{% block head %}
+
+<title>{{ title }}</title>
+<!-- SEO ------------------------------------------------>
+<meta name="description" content="{{ moto }} Homepage">
+<meta name='pagename' content='{{ title }} - Index'>
+
+{% endblock %}
+
+{% block content %} 
+
+{% include "partials/icons.nunjucks" %}
+{% import 'macros/icons-macro.nunjucks' as svg %}
+ <div id="wrapper">
+
+        <!--  Add components inside body tag after this line only -------------------------->
+        {% import 'macros/header-macro.nunjucks' as header %}
+        
+        {{header.headerFor('home')}}
+        {% include "partials/nav.nunjucks" %}
+
+        <main>
+            <div box="large" id="mainContainer">
+                 <section>
+                     <div>
+                         <h2>Cheat codes for 'Grand Theft Auto(GTA)' titles</h2>
+                     </div>
+                 </section>
+                 <section>
+                     <div>
+                         <h3>pick a game:</h3>
+                     </div>
+                 </section>
+                  <section class="gameList">
+                      <div itm-sDesk="25" itm-sTabPort="50" itm-sTabLand="33">
+                          <a href="#sa" id="card-sa" class="game">
+                              <span class="gameImage">
+                                  <img src="img/sa-1x1.jpg" alt="Gta San Andreas">
+                              </span>
+                              <h5 class="gameTitle">San Andreas</h5>
+                          </a>
+                      </div>
+                  </section>  
+            </div>
+            <div box="large" id="gameContainer">
+               
+            </div>
+        </main>
+
+        <!--  stop adding components at this line only ------------------------------------->
+</div>
+
+{% endblock %}

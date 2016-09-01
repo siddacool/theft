@@ -1,0 +1,21 @@
+<!-- nav.nunjucks -->   
+
+<nav>
+    <div>
+        <section>
+           <div itm-d="hide" itm-dMob="show">
+               <p para>Select a game:</p>
+           </div>
+            <div>
+                <ul>
+                    <li>
+                        <a href="/">
+                            <span><img src="img/sa-1x1.jpg"></span>
+                            <h4>San Andreas</h4>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</nav>

@@ -1,0 +1,114 @@
+{
+    "games": [
+        {
+            "title": "San Andreas",
+            "gameid": "sa"
+        },
+        {
+            "title": "Vice City",
+            "gameid": "vc"
+        }
+    ],
+    "typeslog": [
+        {
+            "type": "health",
+            "description": "Health &amp; Wealth"
+        },
+        {
+            "type": "wanted",
+            "description": "Wanted Level"
+        },
+        {
+            "type": "weapons",
+            "description": "Weapons"
+        },
+        {
+            "type": "vehicles",
+            "description": "Spwan &amp; Vehicles"
+        },
+        {
+            "type": "gameplay",
+            "description": "Appeal &amp; Gameplay"
+        },
+        {
+            "type": "weather",
+            "description": "Weather &amp; time"
+        },
+        {
+            "type": "misc",
+            "description": "Miscellaneous"
+        }
+    ],
+    "cheats": [
+        {
+            "cheat": "HESOYAM",
+            "result": "Health, Armor, $250k",
+            "type": "health",
+            "gameid": "sa",
+            "essential": true
+        },
+        {
+            "cheat": "BAGUVIX ",
+            "result": "Semi-Infinite Health",
+            "type": "health",
+            "gameid": "sa",
+            "essential": true
+        },
+        {
+            "cheat": "CVWKXAM",
+            "result": "Infinite Oxygen",
+            "type": "health",
+            "gameid": "sa"
+        },
+        {
+            "cheat": "ANOSEONGLASS",
+            "result": "Adrenaline Mode",
+            "type": "health",
+            "gameid": "sa"
+        },
+        {
+            "cheat": "LXGIWYL",
+            "result": "Weapon Set 1, Thug's Tools",
+            "type": "weapons",
+            "gameid": "sa"
+        },
+        {
+            "cheat": "PROFESSIONALSKIT",
+            "result": "Weapon Set 2, Professional Tools",
+            "type": "weapons",
+            "gameid": "sa"
+        },
+        {
+            "cheat": "UZUMYMW",
+            "result": "Weapon Set 3, Nutter Tools",
+            "type": "weapons",
+            "gameid": "sa"
+        },
+        {
+            "cheat": "FULLCLIP",
+            "result": "Infinite Ammo, No Reload",
+            "type": "weapons",
+            "gameid": "sa"
+        },
+        {
+            "cheat": "TURNUPTHEHEAT",
+            "result": "Increase Wanted Level Two Stars",
+            "type": "wanted",
+            "gameid": "sa"
+        },
+        {
+            "cheat": "TURNDOWNTHEHEAT",
+            "result": "Clear Wanted Level",
+            "type": "wanted",
+            "gameid": "sa",
+            "essential": true
+        },
+        {
+            "cheat": "AEZAKMI",
+            "result": "Never Wanted",
+            "type": "wanted",
+            "gameid": "sa",
+            "essential": true
+        }
+    ]
+}

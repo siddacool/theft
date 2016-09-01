@@ -1,0 +1,16 @@
+/*-------------------- Contol*/
+
+@import "_control";
+@include resetAll;
+
+/*-------------------- plugins*/
+
+//sysBreeks
+@import "_sysBreeks";
+@include headings;
+@include boxBase;
+
+/*-------------------- Stylesheets*/
+
+@import "main-page";
+@import "game-page";

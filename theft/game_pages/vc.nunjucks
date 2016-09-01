@@ -1,0 +1,181 @@
+{% import 'macros/gameBanner-macro.nunjucks' as banner %}
+{% import 'macros/icons-macro.nunjucks' as svg %}
+<!-- Vice City ------------------------------------------------>
+<article id="vc">
+    <section class="gameHeader">
+        <div class="gameBanner">
+            {{banner.name('vc')}}
+            <h6 class="gameTitle">Vice City</h6>
+        </div>
+    </section>
+      <section class="cheatGroupHolder" gd-baseUnit="3">
+           <div class="cheatGroupSubHolder">
+                <a data-cheatgroup="essentials">
+                    <span class="cheatGroupImage">
+                    {{ svg.icon('essentials-solid') }}
+                </span>
+                    <h5 class="cheatGroupTitle">Essentials</h5>
+                </a>
+                <div class="cheatTable">
+                    {% for item in data %} 
+                       {% if item.gameid == 'sa' %}
+                           {% if item.type == 'essentials' %}
+                           <ul>
+                               <li>{{ item.result }}</li>
+                               <li>{{ item.cheat }}</li> 
+                           </ul>
+                          {% endif %} 
+                       {% endif %} 
+                    {% endfor %}
+                </div>
+            </div>
+           <div class="cheatGroupSubHolder">
+                <a data-cheatgroup="health">
+                    <span class="cheatGroupImage">
+                    {{ svg.icon('health-solid') }}
+                </span>
+                    <h5 class="cheatGroupTitle">Health &amp; Wealth</h5>
+                </a>
+                <div class="cheatTable">
+                    {% for item in data %} 
+                       {% if item.gameid == 'sa' %}
+                           {% if item.type == 'health' %}
+                           <ul>
+                               <li>{{ item.result }}</li>
+                               <li>{{ item.cheat }}</li> 
+                           </ul>
+                          {% endif %} 
+                       {% endif %} 
+                    {% endfor %}
+                </div>
+            </div>
+           <div class="cheatGroupSubHolder">
+                <a data-cheatgroup="wanted">
+                    <span class="cheatGroupImage">
+                    {{ svg.icon('wanted-solid') }}
+                </span>
+                    <h5 class="cheatGroupTitle">Wanted Level</h5>
+                </a>
+                <div class="cheatTable">
+                    {% for item in data %} 
+                       {% if item.gameid == 'sa' %}
+                           {% if item.type == 'wanted' %}
+                           <ul>
+                               <li>{{ item.result }}</li>
+                               <li>{{ item.cheat }}</li> 
+                           </ul>
+                          {% endif %} 
+                       {% endif %} 
+                    {% endfor %}
+                </div>
+            </div>
+           <div class="cheatGroupSubHolder">
+                <a data-cheatgroup="weapons">
+                    <span class="cheatGroupImage">
+                    {{ svg.icon('weapons-solid') }}
+                </span>
+                    <h5 class="cheatGroupTitle">Weapons</h5>
+                </a>
+                <div class="cheatTable">
+                    {% for item in data %} 
+                       {% if item.gameid == 'sa' %}
+                           {% if item.type == 'weapons' %}
+                           <ul>
+                               <li>{{ item.result }}</li>
+                               <li>{{ item.cheat }}</li> 
+                           </ul>
+                          {% endif %} 
+                       {% endif %} 
+                    {% endfor %}
+                </div>
+            </div>
+           <div class="cheatGroupSubHolder">
+                <a data-cheatgroup="vehicles">
+                    <span class="cheatGroupImage">
+                    {{ svg.icon('vehicles-solid') }}
+                </span>
+                    <h5 class="cheatGroupTitle">Spwan &amp; Vehicles</h5>
+                </a>
+                <div class="cheatTable">
+                    {% for item in data %} 
+                       {% if item.gameid == 'sa' %}
+                           {% if item.type == 'vehicles' %}
+                           <ul>
+                               <li>{{ item.result }}</li>
+                               <li>{{ item.cheat }}</li> 
+                           </ul>
+                          {% endif %} 
+                       {% endif %} 
+                    {% endfor %}
+                </div>
+            </div>
+           <div class="cheatGroupSubHolder">
+                <a data-cheatgroup="gameplay">
+                    <span class="cheatGroupImage">
+                    {{ svg.icon('gameplay-solid') }}
+                </span>
+                    <h5 class="cheatGroupTitle">Appeal &amp; Gameplay</h5>
+                </a>
+                 <div class="cheatTable">
+                    {% for item in data %} 
+                       {% if item.gameid == 'sa' %}
+                           {% if item.type == 'gameplay' %}
+                           <ul>
+                               <li>{{ item.result }}</li>
+                               <li>{{ item.cheat }}</li> 
+                           </ul>
+                          {% endif %} 
+                       {% endif %} 
+                    {% endfor %}
+                </div>
+            </div>
+           <div class="cheatGroupSubHolder">
+                <a data-cheatgroup="weather">
+                    <span class="cheatGroupImage">
+                    {{ svg.icon('weather-solid') }}
+                </span>
+                    <h5 class="cheatGroupTitle">Weather &amp; time</h5>
+                </a>
+                 <div class="cheatTable">
+                    {% for item in data %} 
+                       {% if item.gameid == 'sa' %}
+                           {% if item.type == 'weather' %}
+                           <ul>
+                               <li>{{ item.result }}</li>
+                               <li>{{ item.cheat }}</li> 
+                           </ul>
+                          {% endif %} 
+                       {% endif %} 
+                    {% endfor %}
+                </div>
+            </div>
+           <div class="cheatGroupSubHolder">
+                <a data-cheatgroup="misccheats">
+                    <span class="cheatGroupImage">
+                    {{ svg.icon('misccheats-solid') }}
+                </span>
+                    <h5 class="cheatGroupTitle">Miscellaneous</h5>
+                </a>
+                 <div class="cheatTable">
+                    {% for item in data %} 
+                       {% if item.gameid == 'sa' %}
+                           {% if item.type == 'misc' %}
+                           <ul>
+                               <li>{{ item.result }}</li>
+                               <li>{{ item.cheat }}</li> 
+                           </ul>
+                          {% endif %} 
+                       {% endif %} 
+                    {% endfor %}
+                </div>
+            </div>
+           <div class="cheatGroupSubHolder">
+                <a data-cheatall>
+                    <span class="cheatGroupImage">
+                    {{ svg.icon('allcheats-solid') }}
+                </span>
+                    <h5 class="cheatGroupTitle">All Cheats</h5>
+                </a>
+            </div>
+    </section>
+</article>
