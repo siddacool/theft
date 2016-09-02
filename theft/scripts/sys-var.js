@@ -3,7 +3,8 @@ var nav = document.querySelector('nav'),
     toggle = document.querySelector('#toggle'),
     back = document.querySelector('#back'),
     mainContainer = document.querySelector('#mainContainer'),
-    gameContainer = document.querySelector('#gameContainer');
+    gameContainer = document.querySelector('#gameContainer'),
+    gamesUrl = rootUrl + 'games/';
 
 /*System functions*/
 
@@ -23,7 +24,7 @@ function urlCleanup() {
 // load game partials
 function insertGame(value) {
     var request = new XMLHttpRequest();
-    request.open('GET', '../games/' + value + '.html', true);
+    request.open('GET', gamesUrl + value + '.html', true);
 
     // send response
     function responseToSend() {
