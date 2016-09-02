@@ -92,6 +92,7 @@
         else {
             mainContainer.classList.remove('hide');
             gameContainer.classList.remove('show');
+            gameContainer.classList.remove('cheats');
 
             urlCleanup();
             navOptCleanup();
