@@ -1044,7 +1044,7 @@ $smallWidth: px(900);
     }
     &[gd-baseUnit="3"] {
         >div {
-             @include tabletPortrait {
+             @include tabletPortrait{
                  width: 100%;
                  flex: initial;
             }

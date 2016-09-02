@@ -5,7 +5,7 @@
 //-------------------- global variables//
 $baseFont: 'Roboto', Courier New;
 $baseColor: #2d2d2d;
-$baseAltColor: #fff;
+$baseAltColor: $ios-blue;
 $dullColor: #f4f4f4;
 $fontColor: $ios-charcoal;
 $fontAltColor: lighten($ios-charcoal,30%);

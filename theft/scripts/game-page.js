@@ -12,6 +12,7 @@
             gameContainer.classList.add('show');
 
             // insert games based on id's
+            navOptActive(idString);
             insertGame(idString);
 
         });

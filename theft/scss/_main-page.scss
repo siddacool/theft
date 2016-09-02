@@ -82,9 +82,13 @@ header {
     width: initial;
     display: inline-flex;
     align-items: center;
+    height: 100%;
     a {
         display: inline-flex;
         align-items: center;
+        height: 100%;
+        cursor: pointer;
+        padding: 0 1.5rem;
     }
     svg {
         width: px(60);
@@ -187,18 +191,25 @@ nav {
             color: #fff;
             display: flex;
             align-items: center;
+            &.active{
+                >span{
+                  border-color: $baseAltColor;   
+                }
+            }
             @include desktop {
                 padding: 1rem 2rem;
             }
             >span {
-                $dimentions: 3.5rem;
+                $dimentions: 3.7rem;
                 $dimentionsTab: 4.5rem;
-                $dimentionsDesk: 2.5rem;
+                $dimentionsDesk: 3.5rem;
                 display: inline-block;
                 height: $dimentions;
                 width: $dimentions;
                 border-radius: 100%;
                 margin-right: 0.8rem;
+                border: px(5) solid transparent;
+                transition: border-color 400ms;
                 @include tablet {
                     height: $dimentionsTab;
                     width: $dimentionsTab;
@@ -206,6 +217,7 @@ nav {
                 @include desktop {
                     height: $dimentionsDesk;
                     width: $dimentionsDesk;
+                    border-width: px(4);
                 }
                 img {
                     display: block;
@@ -252,7 +264,12 @@ main {
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 2rem;
-        max-width: px(180);
+        @include tablet{
+            max-width: 240px;
+        }
+        @include desktop{
+            max-width: px(180);
+        }
         .gameImage {
             $dimentions: 9rem;
             height: $dimentions;
