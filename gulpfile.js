@@ -84,6 +84,21 @@ gulp.task('scssToCss', function () {
 // js compress
 gulp.task('jsCompress', function () {
     gulp.src([
+         scripts + '/mode-local.js',
+         scripts + '/sys-var.js', 
+         scripts + '/main.js', 
+         scripts + '/game-page.js',
+         scripts + '/greet.js'
+        ])
+        .pipe(concat('script.js'))
+        .pipe(uglify())
+        .pipe(plumber())
+        .pipe(gulp.dest(dist + '/js/'));
+});
+// js compress distribution version
+gulp.task('jsCompressWeb', function () {
+    gulp.src([
+         scripts + '/mode-web.js',
          scripts + '/sys-var.js', 
          scripts + '/main.js', 
          scripts + '/game-page.js',
@@ -177,7 +192,11 @@ gulp.task('watch',function(){
 
 /* Default Gulp task */
 /* type Gulp in console */
+
+/* Local Testing */
 gulp.task('default', ['scssToCss','jsCompress','browser-sync','nunjucks','gameMake','watch']);
 gulp.task('openbrowser', ['scssToCss','jsCompress','svgstore','public','browser-sync-open-browser','nunjucks','gameMake','watch']);
-gulp.task('dist', ['scssToCss','jsCompress','svgstore','public','browser-sync','nunjucks','gameMake','watch']);
+
+/* distribution version */
+gulp.task('web', ['scssToCss','jsCompressWeb','browser-sync','nunjucks','gameMake','watch']);
 
