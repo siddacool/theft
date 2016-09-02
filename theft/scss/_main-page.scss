@@ -65,6 +65,9 @@ header {
     @include desktop {
         height: $barHeight;
     }
+    @include print{
+        position: static;
+    }
     >div {
         padding: 0 !important;
     }
@@ -82,9 +85,13 @@ header {
     width: initial;
     display: inline-flex;
     align-items: center;
+    height: 100%;
     a {
         display: inline-flex;
         align-items: center;
+        height: 100%;
+        cursor: pointer;
+        padding: 0 1.5rem;
     }
     svg {
         width: px(60);
@@ -103,6 +110,9 @@ header {
         height: 100%;
         display: flex;
         align-items: center;
+    }
+    @include print{
+        display: none;
     }
 }
 #back {
@@ -157,6 +167,9 @@ nav {
     @include desktop {
         padding-top: $barHeight;
     }
+    @include print{
+        display: none !important;
+    }
     .constrainBox {
         position: relative;
         display: flex;
@@ -187,18 +200,25 @@ nav {
             color: #fff;
             display: flex;
             align-items: center;
+            &.active{
+                >span{
+                  border-color: $baseAltColor;   
+                }
+            }
             @include desktop {
                 padding: 1rem 2rem;
             }
             >span {
-                $dimentions: 3.5rem;
+                $dimentions: 3.7rem;
                 $dimentionsTab: 4.5rem;
-                $dimentionsDesk: 2.5rem;
+                $dimentionsDesk: 3.5rem;
                 display: inline-block;
                 height: $dimentions;
                 width: $dimentions;
                 border-radius: 100%;
                 margin-right: 0.8rem;
+                border: px(5) solid transparent;
+                transition: border-color 400ms;
                 @include tablet {
                     height: $dimentionsTab;
                     width: $dimentionsTab;
@@ -206,6 +226,7 @@ nav {
                 @include desktop {
                     height: $dimentionsDesk;
                     width: $dimentionsDesk;
+                    border-width: px(4);
                 }
                 img {
                     display: block;
@@ -234,6 +255,9 @@ main {
         padding-top: $barHeight;
         padding-bottom: $barHeight;
     }
+    @include print{
+        padding-top: 0;
+    }
     div[box] {
         margin-top: 1rem;
         @include desktopMixEx {
@@ -252,7 +276,12 @@ main {
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 2rem;
-        max-width: px(180);
+        @include tablet{
+            max-width: 240px;
+        }
+        @include desktop{
+            max-width: px(180);
+        }
         .gameImage {
             $dimentions: 9rem;
             height: $dimentions;

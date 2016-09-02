@@ -1,7 +1,8 @@
 /*System Variables*/ ;
 var nav = document.querySelector('nav'),
-    toggle = document.querySelector('#toggle'),
-    back = document.querySelector('#back'),
+    toggle = document.querySelector('#toggle').querySelector('a'),
+    back = document.querySelector('#back').querySelector('a'),
+    logo = document.querySelector('#logo').querySelector('a'),
     mainContainer = document.querySelector('#mainContainer'),
     gameContainer = document.querySelector('#gameContainer'),
     gamesUrl = rootUrl + 'games/';
@@ -21,6 +22,21 @@ function urlCleanup() {
     }
 }
 
+// Nav option select
+function navOptCleanup(){
+    var navOptions = nav.querySelectorAll('a');
+    
+    for (i = 0; i < navOptions.length; i++){
+        navOptions[i].classList.remove('active');
+    }
+}
+function navOptActive(value){
+    var navOptActive = document.querySelector('#nav-' + value);
+    
+    navOptCleanup();
+    navOptActive.classList.add('active');
+}
+
 // load game partials
 function insertGame(value) {
     var request = new XMLHttpRequest();
@@ -29,7 +45,7 @@ function insertGame(value) {
     // send response
     function responseToSend() {
         var getGameContainer = gameContainer;
-        getGameContainer.innerHTML = request.responseText;
+            getGameContainer.innerHTML = request.responseText;
     }
 
     request.onreadystatechange = function (anEvent) {
@@ -41,4 +57,9 @@ function insertGame(value) {
         }
     };
     request.send(null);
+}
+
+// Clear game partials
+function clearGames(){
+    gameContainer.innerHTML = '';
 }

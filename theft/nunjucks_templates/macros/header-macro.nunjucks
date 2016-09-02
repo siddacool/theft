@@ -9,7 +9,7 @@
                      <a {%if pageName == 'home' %} {% else %} href="/" {% endif %} >{{ svg.icon('arrow-back-condensed') }}</a>
                  </div>
                  <div id="logo" itm-s>
-                    <a href="/">{% include "partials/logo.svg" %}</a>
+                    <a {%if pageName == 'home' %} {% else %} href="/" {% endif %}>{% include "partials/logo.svg" %}</a>
                  </div>
                  <div id="toggle" itm-s>
                      <a>{{ svg.icon('toggle') }}</a>

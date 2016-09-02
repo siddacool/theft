@@ -12,6 +12,7 @@ var gulp = require('gulp'),
     
     //Html related
     nunjucksRender = require('gulp-nunjucks-render'),
+    htmlmin = require('gulp-htmlmin'),
     
     //sever related
     browserSync = require('browser-sync'),
@@ -143,6 +144,7 @@ gulp.task('gameMake', function() {
       moto:'GTA Cheats'
   }))
   .pipe(plumber())
+  .pipe(htmlmin({collapseWhitespace: true}))
   // output files in app folder
   .pipe(gulp.dest(dist + '/games/'));
   
