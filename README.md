@@ -2,4 +2,4 @@
 
 Cheat codes for 'Grand Theft Auto(GTA)' titles.
 
-[Visit Theft](http://gulpjs.com/)
+[Visit Theft](https://siddacool.github.io/theft/)
