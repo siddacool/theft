@@ -65,6 +65,9 @@ header {
     @include desktop {
         height: $barHeight;
     }
+    @include print{
+        position: static;
+    }
     >div {
         padding: 0 !important;
     }
@@ -107,6 +110,9 @@ header {
         height: 100%;
         display: flex;
         align-items: center;
+    }
+    @include print{
+        display: none;
     }
 }
 #back {
@@ -160,6 +166,9 @@ nav {
     }
     @include desktop {
         padding-top: $barHeight;
+    }
+    @include print{
+        display: none !important;
     }
     .constrainBox {
         position: relative;
@@ -245,6 +254,9 @@ main {
     @include desktop {
         padding-top: $barHeight;
         padding-bottom: $barHeight;
+    }
+    @include print{
+        padding-top: 0;
     }
     div[box] {
         margin-top: 1rem;
