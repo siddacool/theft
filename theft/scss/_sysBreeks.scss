@@ -30,19 +30,23 @@ $smallWidth: px(900);
     [box=""],
     [box="constrain"],
     [box="normal"] {
-        max-width: $constrainWidth;
         width: 100%;
         margin-left: auto;
         margin-right: auto;
         @include padding;
+        @include desktop{
+            max-width: $constrainWidth;
+        }
     }
     // large box
     [box="large"] {
-        max-width: $largeWidth;
         width: 100%;
         margin-left: auto;
         margin-right: auto;
         @include padding;
+        @include desktop{
+           max-width: $largeWidth; 
+        }
     }
     // small Box
     [box="small"] {
