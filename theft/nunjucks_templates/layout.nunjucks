@@ -1,6 +1,6 @@
 {# main layout #}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" prefix="og: http://ogp.me/ns#">
 <head>
     <meta charset="utf-8">
     {% block head %} {% endblock %}
@@ -24,6 +24,11 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <!-- Open Graph ------------------------------------------------>
+    <meta property="og:title" content="Theft" />
+    <meta property="og:image" content="img/og-img.png" />
+    <meta property="og:description" content="Cheat codes for 'Grand Theft Auto(GTA)' titles." />
+    <meta property="og:url" content="https://siddacool.github.io/theft/" />
     <!--Main css------------------------------------------------------>
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <!--google Font/s-->
