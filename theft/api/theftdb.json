@@ -39,529 +39,443 @@
             "description": "Miscellaneous"
         }
     ],
-    "cheats": [
+    "sa": [
         {
             "cheat": "HESOYAM",
             "result": "Health, Armor, $250k",
             "type": "health",
-            "gameid": "sa",
             "essential": true
         },
         {
             "cheat": "BAGUVIX ",
             "result": "Semi-Infinite Health",
             "type": "health",
-            "gameid": "sa",
             "essential": true
         },
         {
             "cheat": "CVWKXAM",
             "result": "Infinite Oxygen",
-            "type": "health",
-            "gameid": "sa"
+            "type": "health"
         },
         {
             "cheat": "ANOSEONGLASS",
             "result": "Adrenaline Mode",
-            "type": "health",
-            "gameid": "sa"
+            "type": "health"
         },
         {
             "cheat": "LXGIWYL",
             "result": "Weapon Set 1, Thug's Tools",
-            "type": "weapons",
-            "gameid": "sa"
+            "type": "weapons"
         },
         {
             "cheat": "PROFESSIONALSKIT",
             "result": "Weapon Set 2, Professional Tools",
-            "type": "weapons",
-            "gameid": "sa"
+            "type": "weapons"
         },
         {
             "cheat": "UZUMYMW",
             "result": "Weapon Set 3, Nutter Tools",
-            "type": "weapons",
-            "gameid": "sa"
+            "type": "weapons"
         },
         {
             "cheat": "FULLCLIP",
             "result": "Infinite Ammo, No Reload",
-            "type": "weapons",
-            "gameid": "sa"
+            "type": "weapons"
         },
         {
             "cheat": "PROFESSIONALKILLER",
             "result": "Hitman In All Weapon Stats",
-            "type": "weapons",
-            "gameid": "sa"
+            "type": "weapons"
         },
         {
             "cheat": "AEZAKMI",
             "result": "Never Wanted",
             "type": "wanted",
-            "gameid": "sa",
             "essential": true
         },
         {
             "cheat": "TURNUPTHEHEAT",
             "result": "Increase Wanted Level Two Stars",
-            "type": "wanted",
-            "gameid": "sa"
+            "type": "wanted"
         },
         {
             "cheat": "TURNDOWNTHEHEAT",
             "result": "Clear Wanted Level",
-            "type": "wanted",
-            "gameid": "sa"
+            "type": "wanted"
         },
         {
             "cheat": "BRINGITON",
             "result": " Six Star Wanted Level",
-            "type": "wanted",
-            "gameid": "sa"
+            "type": "wanted"
         },
         {
             "cheat": "AIWPRTON",
             "result": "Spawn Rhino",
-            "type": "vehicles",
-            "gameid": "sa"
+            "type": "vehicles"
         },
         {
             "cheat": "OLDSPEEDDEMON",
             "result": "Spawn Bloodring Banger",
-            "type": "vehicles",
-            "gameid": "sa"
+            "type": "vehicles"
         },
         {
             "cheat": "JQNTDMH",
             "result": "Spawn Rancher",
-            "type": "vehicles",
-            "gameid": "sa"
+            "type": "vehicles"
         },
         {
             "cheat": "VROCKPOKEY",
             "result": "Spawn Racecar",
-            "type": "vehicles",
-            "gameid": "sa"
+            "type": "vehicles"
         },
         {
             "cheat": "VPJTQWV",
             "result": "Spawn Racecar",
-            "type": "vehicles",
-            "gameid": "sa"
+            "type": "vehicles"
         },
         {
             "cheat": "WHERESTHEFUNERAL",
             "result": "Spawn Romero",
-            "type": "vehicles",
-            "gameid": "sa"
+            "type": "vehicles"
         },
         {
             "cheat": "CELEBRITYSTATUS",
             "result": "Spawn Stretch",
-            "type": "vehicles",
-            "gameid": "sa"
+            "type": "vehicles"
         },
         {
             "cheat": "TRUEGRIME",
             "result": "Spawn Trashmaster",
-            "type": "vehicles",
-            "gameid": "sa"
+            "type": "vehicles"
         },
         {
             "cheat": "RZHSUEW",
             "result": "Spawn Caddy",
-            "type": "vehicles",
-            "gameid": "sa"
+            "type": "vehicles"
         },
         {
             "cheat": "JUMPJET",
             "result": "Spawn Hydra",
-            "type": "vehicles",
-            "gameid": "sa"
+            "type": "vehicles"
         },
         {
             "cheat": "KGGGDKP",
             "result": "Spawn Vortex Hovercraft",
-            "type": "vehicles",
-            "gameid": "sa"
+            "type": "vehicles"
         },
         {
             "cheat": "AIYPWZQP",
             "result": "Have Parachute",
             "type": "vehicles",
-            "gameid": "sa",
             "essential": true
         },
         {
             "cheat": "ROCKETMAN",
             "result": "Have Jetpack",
-            "type": "vehicles",
-            "gameid": "sa"
+            "type": "vehicles"
         },
         {
             "cheat": "OHDUDE",
             "result": "Spawn Hunter",
-            "type": "vehicles",
-            "gameid": "sa"
+            "type": "vehicles"
         },
         {
             "cheat": "FOURWHEELFUN",
             "result": "Spawn Quad",
-            "type": "vehicles",
-            "gameid": "sa"
+            "type": "vehicles"
         },
         {
             "cheat": "AMOMHRER",
             "result": "Spawn Tanker Truck",
-            "type": "vehicles",
-            "gameid": "sa"
+            "type": "vehicles"
         },
         {
             "cheat": "ITSALLBULL",
             "result": "Spawn Dozer",
-            "type": "vehicles",
-            "gameid": "sa"
+            "type": "vehicles"
         },
         {
             "cheat": "FLYINGTOSTUNT",
             "result": "Spawn Stunt Plane",
-            "type": "vehicles",
-            "gameid": "sa"
+            "type": "vehicles"
         },
         {
             "cheat": "MONSTERMASH",
             "result": "Spawn Monster",
-            "type": "vehicles",
-            "gameid": "sa"
+            "type": "vehicles"
         },
         {
             "cheat": "NATURALTALENT",
             "result": "Max All Vehicle Skill Stats",
-            "type": "vehicles",
-            "gameid": "sa"
+            "type": "vehicles"
         },
         {
             "cheat": "CPKTNWT",
             "result": "Blow Up All Cars",
-            "type": "vehicles",
-            "gameid": "sa"
+            "type": "vehicles"
         },
         {
             "cheat": "WHEELSONLYPLEASE",
             "result": "Invisible car",
-            "type": "vehicles",
-            "gameid": "sa"
+            "type": "vehicles"
         },
         {
             "cheat": "STICKLIKEGLUE",
             "result": "Perfect Handling",
-            "type": "vehicles",
-            "gameid": "sa"
+            "type": "vehicles"
         },
         {
             "cheat": "ZEIIVG",
             "result": "All green lights",
-            "type": "vehicles",
-            "gameid": "sa"
+            "type": "vehicles"
         },
         {
             "cheat": "YLTEICZ",
             "result": "Aggressive Drivers",
-            "type": "vehicles",
-            "gameid": "sa"
+            "type": "vehicles"
         },
         {
             "cheat": "LLQPFBN",
             "result": "Pink traffic",
-            "type": "vehicles",
-            "gameid": "sa"
+            "type": "vehicles"
         },
         {
             "cheat": "IOWDLAC",
             "result": "Black traffic",
-            "type": "vehicles",
-            "gameid": "sa"
+            "type": "vehicles"
         },
         {
             "cheat": "FLYINGFISH",
             "result": "Boats fly",
-            "type": "vehicles",
-            "gameid": "sa"
+            "type": "vehicles"
         },
         {
             "cheat": "EVERYONEISPOOR",
             "result": "Traffic is Cheap Cars",
-            "type": "vehicles",
-            "gameid": "sa"
+            "type": "vehicles"
         },
         {
             "cheat": "EVERYONEISRICH",
             "result": "Traffic is Fast Cars",
-            "type": "vehicles",
-            "gameid": "sa"
+            "type": "vehicles"
         },
         {
             "cheat": "CHITTYCHITTYBANGBANG",
             "result": "Cars Fly",
-            "type": "vehicles",
-            "gameid": "sa"
+            "type": "vehicles"
         },
         {
             "cheat": "JCNRUAD",
             "result": "Smash n' Boom",
-            "type": "vehicles",
-            "gameid": "sa"
+            "type": "vehicles"
         },
         {
             "cheat": "SPEEDFREAK",
             "result": "All Cars Have Nitro",
-            "type": "vehicles",
-            "gameid": "sa"
+            "type": "vehicles"
         },
         {
             "cheat": "BUBBLECARS",
             "result": "Cars Float Away When Hit",
-            "type": "vehicles",
-            "gameid": "sa"
+            "type": "vehicles"
         },
         {
             "cheat": "OUIQDMW",
             "result": "Free Aim While Driving",
-            "type": "vehicles",
-            "gameid": "sa"
+            "type": "vehicles"
         },
         {
             "cheat": "GHOSTTOWN",
             "result": "Reduced Traffic",
-            "type": "vehicles",
-            "gameid": "sa"
+            "type": "vehicles"
         },
         {
             "cheat": "FVTMNBZ",
             "result": "Traffic is Country Vehicles",
-            "type": "vehicles",
-            "gameid": "sa"
+            "type": "vehicles"
         },
         {
             "cheat": "BMTPWHR",
             "result": "Country Vehicles and Peds, Get Born 2 Truck Outfit",
-            "type": "vehicles",
-            "gameid": "sa"
+            "type": "vehicles"
         },
         {
             "cheat": "BTCDBCB",
             "result": "Fat",
-            "type": "gameplay",
-            "gameid": "sa"
+            "type": "gameplay"
         },
         {
             "cheat": "BUFFMEUP",
             "result": "Max Muscle",
-            "type": "gameplay",
-            "gameid": "sa"
+            "type": "gameplay"
         },
         {
             "cheat": "KVGYZQK",
             "result": "Skinny",
-            "type": "gameplay",
-            "gameid": "sa"
+            "type": "gameplay"
         },
         {
             "cheat": "WORSHIPME",
             "result": "Max Respect",
-            "type": "gameplay",
-            "gameid": "sa"
+            "type": "gameplay"
         },
         {
             "cheat": "HELLOLADIES",
             "result": "Max Sex Appeal",
-            "type": "gameplay",
-            "gameid": "sa"
+            "type": "gameplay"
         },
         {
             "cheat": "VKYPQCF",
             "result": "Max Stamina",
-            "type": "gameplay",
-            "gameid": "sa"
+            "type": "gameplay"
         },
         {
             "cheat": "SPEEDITUP",
             "result": "Faster Gameplay",
-            "type": "gameplay",
-            "gameid": "sa"
+            "type": "gameplay"
         },
         {
             "cheat": "SLOWITDOWN",
             "result": "Slower Gameplay",
-            "type": "gameplay",
-            "gameid": "sa"
+            "type": "gameplay"
         },
         {
             "cheat": "BEKKNQV",
             "result": "Slut Magnet",
-            "type": "gameplay",
-            "gameid": "sa"
+            "type": "gameplay"
         },
         {
             "cheat": "CJPHONEHOME",
             "result": "Huge Bunny Hop",
-            "type": "gameplay",
-            "gameid": "sa"
+            "type": "gameplay"
         },
         {
             "cheat": "KANGAROO",
             "result": "Mega Jump",
-            "type": "gameplay",
-            "gameid": "sa"
+            "type": "gameplay"
         },
         {
             "cheat": "GOODBYECRUELWORLD",
             "result": "Suicide",
-            "type": "gameplay",
-            "gameid": "sa"
+            "type": "gameplay"
         },
         {
             "cheat": "PLEASANTLYWARM",
             "result": "Sunny Weather",
             "type": "weather",
-            "gameid": "sa",
             "essential": true
         },
         {
             "cheat": "TOODAMNHOT",
             "result": "Very Sunny Weather",
-            "type": "weather",
-            "gameid": "sa"
+            "type": "weather"
         },
         {
             "cheat": "ALNSFMZO",
             "result": "Overcast Weather",
-            "type": "weather",
-            "gameid": "sa"
+            "type": "weather"
         },
         {
             "cheat": "AUIFRVQS",
             "result": "Rainy Weather",
-            "type": "weather",
-            "gameid": "sa"
+            "type": "weather"
         },
         {
             "cheat": "CFVFGMJ",
             "result": "Foggy Weather",
-            "type": "weather",
-            "gameid": "sa"
+            "type": "weather"
         },
         {
             "cheat": "YSOHNUL",
             "result": "Faster Clock",
             "type": "weather",
-            "gameid": "sa",
             "essential": true
         },
         {
             "cheat": "NIGHTPROWLER",
             "result": "Always Midnight",
-            "type": "weather",
-            "gameid": "sa"
+            "type": "weather"
         },
         {
             "cheat": "OFVIAC",
             "result": "Orange Sky 21:00",
             "type": "weather",
-            "gameid": "sa",
             "essential": true
         },
         {
             "cheat": "SCOTTISHSUMMER",
             "result": "Thunderstorm",
-            "type": "weather",
-            "gameid": "sa"
+            "type": "weather"
         },
         {
             "cheat": "CWJXUOC",
             "result": "Sandstorm",
-            "type": "weather",
-            "gameid": "sa"
+            "type": "weather"
         },
         {
             "cheat": "AJLOJYQY",
             "result": "Peds Attack Each Other, Get Golf Club",
-            "type": "misc",
-            "gameid": "sa"
+            "type": "misc"
         },
         {
             "cheat": "BAGOWPG",
             "result": "Have a bounty on your head",
-            "type": "misc",
-            "gameid": "sa"
+            "type": "misc"
         },
         {
             "cheat": "FOOOXFT",
             "result": "Everyone is armed",
-            "type": "misc",
-            "gameid": "sa"
+            "type": "misc"
         },
         {
             "cheat": "BLUESUEDESHOES",
             "result": "Elvis is Everywhere",
-            "type": "misc",
-            "gameid": "sa"
+            "type": "misc"
         },
         {
             "cheat": "BGLUAWML",
             "result": "Peds Attack You With Weapons, Rocket Launcher",
-            "type": "misc",
-            "gameid": "sa"
+            "type": "misc"
         },
         {
             "cheat": "LIFESABEACH",
             "result": "Beach Party",
-            "type": "misc",
-            "gameid": "sa"
+            "type": "misc"
         },
         {
             "cheat": "ONLYHOMIESALLOWED",
             "result": "Gang Members Everywhere",
-            "type": "misc",
-            "gameid": "sa"
+            "type": "misc"
         },
         {
             "cheat": "BIFBUZZ",
             "result": "Gangs Control the Streets",
-            "type": "misc",
-            "gameid": "sa"
+            "type": "misc"
         },
         {
             "cheat": "NINJATOWN",
             "result": "Ninja Theme",
-            "type": "misc",
-            "gameid": "sa"
+            "type": "misc"
         },
         {
             "cheat": "STATEOFEMERGENCY",
             "result": "Riot Mode",
-            "type": "misc",
-            "gameid": "sa"
+            "type": "misc"
         },
         {
             "cheat": "CRAZYTOWN",
             "result": "Funhouse Theme",
-            "type": "misc",
-            "gameid": "sa"
+            "type": "misc"
         },
         {
             "cheat": "SJMAHPE",
             "result": "Recruit Anyone (9mm)",
-            "type": "misc",
-            "gameid": "sa"
+            "type": "misc"
         },
         {
             "cheat": "ROCKETMAYHEM",
             "result": "Recruit Anyone (Rockets)",
-            "type": "misc",
-            "gameid": "sa"
+            "type": "misc"
         }
     ]
 }
