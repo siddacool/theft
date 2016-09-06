@@ -36,7 +36,7 @@
                 </a>
                 <div class="cheatTable">
                     {% for item in sa %} 
-                        {% if item.type == 'wanted' %}
+                        {% if item.type == 'health' %}
                            <ul>
                                <li>{{ item.result }}</li>
                                <li>{{ item.cheat }}</li> 
