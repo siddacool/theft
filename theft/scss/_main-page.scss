@@ -94,8 +94,32 @@ header {
         padding: 0 1.5rem;
     }
     svg {
-        width: px(60);
+        width: px(90);
         fill: #ffffff;
+        @include desktop{
+            width: px(80);
+        }
+    }
+    .logoMain{
+      @include desktopMixEx{
+          display: inline-block;
+          transform: translateX(-109px);
+      }
+      @include print{
+          display: inline-block;
+          transform: translateX(-109px); 
+      }
+    }
+    .logoSecondary{
+      display: none;
+      @include desktopMixEx{
+          display: inline-block;
+          transform: translateX(-109px);
+      }
+      @include print{
+          display: inline-block;
+          transform: translateX(-109px); 
+      }
     }
 }
 #back,
