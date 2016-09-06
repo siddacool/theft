@@ -34,7 +34,13 @@ function navOptActive(value){
     var navOptActive = document.querySelector('#nav-' + value);
     
     navOptCleanup();
-    navOptActive.classList.add('active');
+    // redirect to root on wrong url
+    if(!navOptActive){
+        window.location= rootUrl;
+    }
+    else{
+        navOptActive.classList.add('active');   
+    } 
 }
 
 // load game partials
@@ -45,7 +51,7 @@ function insertGame(value) {
     // send response
     function responseToSend() {
         var getGameContainer = gameContainer;
-            getGameContainer.innerHTML = request.responseText;
+        getGameContainer.innerHTML = request.responseText;
     }
 
     request.onreadystatechange = function (anEvent) {
