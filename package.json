@@ -1,14 +1,14 @@
 {
   "name": "theft",
   "version": "0.0.1",
-  "description": "GTA Cheats",
+  "description": "online cheatbook for GTA(Grand Theft Auto) titles",
   "main": "gulpfile.js",
   "scripts": {
     "test": "test"
   },
   "repository": {
     "type": "git",
-    "url": "none"
+    "url": "https://github.com/siddacool/theft"
   },
   "keywords": [
     "gta",
