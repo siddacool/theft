@@ -17,6 +17,7 @@
     <meta name="theme-color" content="#ffffff">
     <!-- Open Graph ------------------------------------------------>
     <meta property="og:title" content="Theft" />
+    <meta property="og:type" content="gaming" />
     <meta property="og:image" content="img/og-img.png" />
     <meta property="og:description" content="Cheat codes for 'Grand Theft Auto(GTA)' titles." />
     <meta property="og:url" content="https://siddacool.github.io/theft/" />
