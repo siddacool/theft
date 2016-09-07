@@ -3,7 +3,10 @@
 <html lang="en" prefix="og: http://ogp.me/ns#">
 <head>
     <meta charset="utf-8">
-    {% block head %} {% endblock %}
+    <title>Theft</title>
+    <!-- SEO ------------------------------------------------>
+    <meta name="description" content="online cheatbook for GTA(Grand Theft Auto) titles in a single-page web interface">
+    <meta name='pagename' content='Theft - Index'>
     <!-- responsive ------------------------------------------------>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- favicon ------------------------------------------------>
@@ -17,8 +20,9 @@
     <meta name="theme-color" content="#ffffff">
     <!-- Open Graph ------------------------------------------------>
     <meta property="og:title" content="Theft" />
+    <meta property="og:type" content="gaming" />
     <meta property="og:image" content="img/og-img.png" />
-    <meta property="og:description" content="Cheat codes for 'Grand Theft Auto(GTA)' titles." />
+    <meta property="og:description" content="online cheatbook for GTA(Grand Theft Auto) title" />
     <meta property="og:url" content="https://siddacool.github.io/theft/" />
     <!--Main css------------------------------------------------------>
     <link rel="stylesheet" href="css/styles.css" type="text/css">

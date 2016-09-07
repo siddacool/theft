@@ -156,6 +156,11 @@ gulp.task('public', function() {
         .pipe(plumber())
         .pipe(gulp.dest(dist + '/'));
 });
+gulp.task('publicBase', function() {
+  gulp.src(projectName + '/public/*.**')
+        .pipe(plumber())
+        .pipe(gulp.dest(dist + '/'));
+});
 
 
 /* svg sprites */
@@ -197,7 +202,7 @@ gulp.task('watch',function(){
 
 /* Local Testing */
 gulp.task('default', ['scssToCss','jsCompress','browser-sync','nunjucks','gameMake','watch']);
-gulp.task('openbrowser', ['scssToCss','jsCompress','svgstore','public','browser-sync-open-browser','nunjucks','gameMake','watch']);
+gulp.task('openbrowser', ['scssToCss','jsCompress','svgstore','public','publicBase','browser-sync-open-browser','nunjucks','gameMake','watch']);
 
 /* distribution version */
 gulp.task('web', ['scssToCss','jsCompressWeb','browser-sync','nunjucks','gameMake','watch']);
