@@ -22,7 +22,8 @@
             this.classList.add('active');
             mainContainer.classList.add('hide');
             gameContainer.classList.add('show');
-    
+            gameContainer.classList.remove('cheats');
+            
             insertGame(gameString);
             
             setTimeout(function(){ 
