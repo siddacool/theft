@@ -14,6 +14,12 @@
                             <h4>San Andreas</h4>
                         </a>
                     </li>
+                    <li>
+                        <a href="#vc" id="nav-vc">
+                            <span><img src="img/vc-1x1.jpg"></span>
+                            <h4>Vice City</h4>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </section>
