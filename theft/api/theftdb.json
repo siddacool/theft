@@ -1,8 +1,8 @@
 {
     "dbinfo": [
         {
-            "version": "0.0.1",
-            "date": "2016-09-02"
+            "version": "0.0.2",
+            "date": "2016-09-08"
         }
     ],
     "games": [
@@ -481,6 +481,292 @@
         {
             "cheat": "ROCKETMAYHEM",
             "result": "Recruit Anyone (Rockets)",
+            "type": "misc"
+        }
+    ],
+    "vc": [
+        {
+            "cheat": "ASPIRINE",
+            "result": "Full Health",
+            "type": "health",
+            "essential": true
+        },
+        {
+            "cheat": "PRECIOUSPROTECTION",
+            "result": "Full Armor",
+            "type": "health"
+        },
+        {
+            "cheat": "THUGSTOOLS",
+            "result": "All 'light' weapons",
+            "type": "weapons"
+        },
+        {
+            "cheat": "PROFESSIONALTOOLS",
+            "result": "All 'medium' weapons",
+            "type": "weapons"
+        },
+        {
+            "cheat": "NUTTERTOOLS",
+            "result": "All 'heavy' weapons",
+            "type": "weapons"
+        },
+        {
+            "cheat": "YOUWONTTAKEMEALIVE",
+            "result": "Raise Wanted Level",
+            "type": "wanted"
+        },
+        {
+            "cheat": "LEAVEMEALONE",
+            "result": "Decrease Wanted Level",
+            "type": "wanted",
+            "essential": true
+        },
+        {
+            "cheat": "PANZER",
+            "result": "Spawn a Rhino",
+            "type": "vehicles"
+        },
+        {
+            "cheat": "TRAVELINSTYLE",
+            "result": "Spawn a Bloodring Banger",
+            "type": "vehicles"
+        },
+        {
+            "cheat": "GETTHEREQUICKLY",
+            "result": "Spawn a Bloodring Banger #2",
+            "type": "vehicles"
+        },
+        {
+            "cheat": "GETTHEREFAST",
+            "result": "Spawn a Sabre Turbo",
+            "type": "vehicles"
+        },
+        {
+            "cheat": "GETTHEREVERYFASTINDEED",
+            "result": "Spawn a Hotring Racer",
+            "type": "vehicles"
+        },
+        {
+            "cheat": "GETTHEREAMAZINGLYFAST",
+            "result": "Spawn a Hotring Racer #2",
+            "type": "vehicles"
+        },
+        {
+            "cheat": "THELASTRIDE",
+            "result": "Spawn a Romero's Hearse",
+            "type": "vehicles"
+        },
+        {
+            "cheat": "ROCKANDROLLCAR",
+            "result": "Spawn Love Fist's Limo",
+            "type": "vehicles"
+        },
+        {
+            "cheat": "RUBBISHCAR",
+            "result": "Spawn a Trashmaster",
+            "type": "vehicles"
+        },
+        {
+            "cheat": "BETTERTHANWALKING",
+            "result": "Spawn a Caddie",
+            "type": "vehicles"
+        },
+        {
+            "cheat": "BIGBANG",
+            "result": "Blow up nearby cars",
+            "type": "vehicles"
+        },
+        {
+            "cheat": "MIAMITRAFFIC",
+            "result": "Aggressive Drivers",
+            "type": "vehicles"
+        },
+        {
+            "cheat": "AHAIRDRESSERSCAR",
+            "result": "All cars are pink",
+            "type": "vehicles"
+        },
+        {
+            "cheat": "IWANTITPAINTEDBLACK",
+            "result": "All cars are black",
+            "type": "vehicles"
+        },
+        {
+            "cheat": "COMEFLYWITHME",
+            "result": "Cars can fly",
+            "type": "vehicles"
+        },
+        {
+            "cheat": "GRIPISEVERYTHING",
+            "result": "Perfect Handling",
+            "type": "vehicles"
+        },
+        {
+            "cheat": "GREENLIGHT",
+            "result": "All traffic lights are green",
+            "type": "vehicles"
+        },
+        {
+            "cheat": "SEAWAYS",
+            "result": "Cars can drive/hover over water",
+            "type": "vehicles"
+        },
+        {
+            "cheat": "WHEELSAREALLINEED",
+            "result": "Only the wheels of a car are visible",
+            "type": "vehicles"
+        },
+        {
+            "cheat": "LOADSOFLITTLETHINGS",
+            "result": "Sportscars have big wheels",
+            "type": "vehicles"
+        },
+        {
+            "cheat": "ICANTTAKEITANYMORE",
+            "result": "Commit Suicide",
+            "type": "gameplay"
+        },
+        {
+            "cheat": "FANNYMAGNET",
+            "result": "Ladies Man, Women Follow You",
+            "type": "gameplay"
+        },
+        {
+            "cheat": "CERTAINDEATH",
+            "result": "Makes you smoke a cigarette",
+            "type": "gameplay"
+        },
+        {
+            "cheat": "DEEPFRIEDMARSBARS",
+            "result": "Makes Tommy fatter",
+            "type": "gameplay"
+        },
+        {
+            "cheat": "PROGRAMMER",
+            "result": "Gives Tommy girly arms/legs",
+            "type": "gameplay"
+        },
+        {
+            "cheat": "STILLLIKEDRESSINGUP",
+            "result": "Change Skin/Clothes",
+            "type": "gameplay"
+        },
+        {
+            "cheat": "CHEATSHAVEBEENCRACKED",
+            "result": "Play as Ricardo Diaz",
+            "type": "gameplay"
+        },
+        {
+            "cheat": "LOOKLIKELANCE",
+            "result": "Play as Lance Vance",
+            "type": "gameplay"
+        },
+        {
+            "cheat": "MYSONISALAWYER",
+            "result": "Play as Ken Rosenberg",
+            "type": "gameplay"
+        },
+        {
+            "cheat": "LOOKLIKEHILARY",
+            "result": "Play as Hilary King",
+            "type": "gameplay"
+        },
+        {
+            "cheat": "ROCKANDROLLMAN",
+            "result": "Play as Love Fist character (Jezz Torent)",
+            "type": "gameplay"
+        },
+        {
+            "cheat": "WELOVEOURDICK",
+            "result": "Play as Love Fist character (Dick)",
+            "type": "gameplay"
+        },
+        {
+            "cheat": "ONEARMEDBANDIT",
+            "result": "Play as Phil Cassidy",
+            "type": "gameplay"
+        },
+        {
+            "cheat": "FOXYLITTLETHING",
+            "result": "Play as Mercedes",
+            "type": "gameplay"
+        },
+        {
+            "cheat": "IDONTHAVETHEMONEYSONNY",
+            "result": "Play as Sonny Forelli",
+            "type": "gameplay"
+        },
+        {
+            "cheat": "ALOVELYDAY",
+            "result": "Sunny/Clear Weather",
+            "type": "weather",
+            "essential": true
+        },
+        {
+            "cheat": "APLEASANTDAY",
+            "result": "Light Clouds",
+            "type": "weather"
+        },
+        {
+            "cheat": "ABITDRIEG",
+            "result": "Dense Clouds",
+            "type": "weather"
+        },
+        {
+            "cheat": "CANTSEEATHING",
+            "result": "Foggy Weather",
+            "type": "weather"
+        },
+        {
+            "cheat": "CATSANDDOGS",
+            "result": "Stormy Weather",
+            "type": "weather"
+        },
+        {
+            "cheat": "LIFEISPASSINGMEBY",
+            "result": "Speed up game clock",
+            "type": "weather"
+        },
+        {
+            "cheat": "ONSPEED",
+            "result": "Makes everything faster",
+            "type": "weather",
+            "essential": true
+        },
+        {
+            "cheat": "BOOOOOORING",
+            "result": "Makes everything slower",
+            "type": "weather"
+        },
+        {
+            "cheat": "HOPINGIRL",
+            "result": "Peds get in your car",
+            "type": "misc"
+        },
+        {
+            "cheat": "FIGHTFIGHTFIGHT",
+            "result": "Peds Riot",
+            "type": "misc"
+        },
+        {
+            "cheat": "NOBODYLIKESME",
+            "result": "Peds Hate You",
+            "type": "misc"
+        },
+        {
+            "cheat": "OURGODGIVENRIGHTTOBEARARMS",
+            "result": "Peds Carry Guns",
+            "type": "misc"
+        },
+        {
+            "cheat": "CHICKSWITHGUNS",
+            "result": "Girls Carry Guns",
+            "type": "misc"
+        },
+        {
+            "cheat": "CHASESTAT",
+            "result": "Shows Media Level (when 2+ stars)",
             "type": "misc"
         }
     ]
