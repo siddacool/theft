@@ -1,4 +1,10 @@
 {
+    "dbinfo": [
+        {
+            "version": "0.0.1",
+            "date": "2016-09-02"
+        }
+    ],
     "games": [
         {
             "title": "San Andreas",
@@ -9,7 +15,7 @@
             "gameid": "vc"
         }
     ],
-    "typeslog": [
+    "typesinfo": [
         {
             "type": "health",
             "description": "Health &amp; Wealth"
