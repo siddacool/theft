@@ -17,14 +17,12 @@
                     <h5 class="cheatGroupTitle">Essentials</h5>
                 </a>
                 <div class="cheatTable">
-                    {% for item in data %} 
-                       {% if item.gameid == 'sa' %}
-                           {% if item.type == 'essentials' %}
+                    {% for item in vc %} 
+                        {% if item.essential == true %}
                            <ul>
                                <li>{{ item.result }}</li>
                                <li>{{ item.cheat }}</li> 
                            </ul>
-                          {% endif %} 
                        {% endif %} 
                     {% endfor %}
                 </div>
@@ -37,14 +35,12 @@
                     <h5 class="cheatGroupTitle">Health &amp; Wealth</h5>
                 </a>
                 <div class="cheatTable">
-                    {% for item in data %} 
-                       {% if item.gameid == 'sa' %}
-                           {% if item.type == 'health' %}
+                    {% for item in vc %} 
+                        {% if item.type == 'health' %}
                            <ul>
                                <li>{{ item.result }}</li>
                                <li>{{ item.cheat }}</li> 
                            </ul>
-                          {% endif %} 
                        {% endif %} 
                     {% endfor %}
                 </div>
@@ -57,14 +53,12 @@
                     <h5 class="cheatGroupTitle">Wanted Level</h5>
                 </a>
                 <div class="cheatTable">
-                    {% for item in data %} 
-                       {% if item.gameid == 'sa' %}
-                           {% if item.type == 'wanted' %}
+                    {% for item in vc %} 
+                        {% if item.type == 'wanted' %}
                            <ul>
                                <li>{{ item.result }}</li>
                                <li>{{ item.cheat }}</li> 
                            </ul>
-                          {% endif %} 
                        {% endif %} 
                     {% endfor %}
                 </div>
@@ -77,14 +71,12 @@
                     <h5 class="cheatGroupTitle">Weapons</h5>
                 </a>
                 <div class="cheatTable">
-                    {% for item in data %} 
-                       {% if item.gameid == 'sa' %}
-                           {% if item.type == 'weapons' %}
+                    {% for item in vc %} 
+                       {% if item.type == 'weapons' %}
                            <ul>
                                <li>{{ item.result }}</li>
                                <li>{{ item.cheat }}</li> 
                            </ul>
-                          {% endif %} 
                        {% endif %} 
                     {% endfor %}
                 </div>
@@ -97,14 +89,12 @@
                     <h5 class="cheatGroupTitle">Spwan &amp; Vehicles</h5>
                 </a>
                 <div class="cheatTable">
-                    {% for item in data %} 
-                       {% if item.gameid == 'sa' %}
-                           {% if item.type == 'vehicles' %}
+                    {% for item in vc %} 
+                       {% if item.type == 'vehicles' %}
                            <ul>
                                <li>{{ item.result }}</li>
                                <li>{{ item.cheat }}</li> 
                            </ul>
-                          {% endif %} 
                        {% endif %} 
                     {% endfor %}
                 </div>
@@ -117,14 +107,12 @@
                     <h5 class="cheatGroupTitle">Appeal &amp; Gameplay</h5>
                 </a>
                  <div class="cheatTable">
-                    {% for item in data %} 
-                       {% if item.gameid == 'sa' %}
-                           {% if item.type == 'gameplay' %}
+                    {% for item in vc %} 
+                       {% if item.type == 'gameplay' %}
                            <ul>
                                <li>{{ item.result }}</li>
                                <li>{{ item.cheat }}</li> 
                            </ul>
-                          {% endif %} 
                        {% endif %} 
                     {% endfor %}
                 </div>
@@ -137,14 +125,12 @@
                     <h5 class="cheatGroupTitle">Weather &amp; time</h5>
                 </a>
                  <div class="cheatTable">
-                    {% for item in data %} 
-                       {% if item.gameid == 'sa' %}
-                           {% if item.type == 'weather' %}
+                    {% for item in vc %} 
+                       {% if item.type == 'weather' %}
                            <ul>
                                <li>{{ item.result }}</li>
                                <li>{{ item.cheat }}</li> 
                            </ul>
-                          {% endif %} 
                        {% endif %} 
                     {% endfor %}
                 </div>
@@ -157,14 +143,12 @@
                     <h5 class="cheatGroupTitle">Miscellaneous</h5>
                 </a>
                  <div class="cheatTable">
-                    {% for item in data %} 
-                       {% if item.gameid == 'sa' %}
-                           {% if item.type == 'misc' %}
+                    {% for item in vc %} 
+                       {% if item.type == 'misc' %}
                            <ul>
                                <li>{{ item.result }}</li>
                                <li>{{ item.cheat }}</li> 
                            </ul>
-                          {% endif %} 
                        {% endif %} 
                     {% endfor %}
                 </div>
