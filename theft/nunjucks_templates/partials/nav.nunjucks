@@ -20,6 +20,12 @@
                             <h4>Vice City</h4>
                         </a>
                     </li>
+                    <li>
+                        <a href="#gta4" id="nav-gta4">
+                            <span>{{img.name('gta4')}}</span>
+                            <h4>GTA IV</h4>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </section>

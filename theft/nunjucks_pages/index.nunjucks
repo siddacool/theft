@@ -37,6 +37,14 @@
                               <h5 class="gameTitle">Vice City</h5>
                           </a>
                       </div>
+                      <div itm-sDesk="25" itm-sTabPort="50" itm-sTabLand="33">
+                          <a href="#gta4" id="card-gta4" class="game">
+                              <span class="gameImage">
+                                  {{img.name('gta4')}}
+                              </span>
+                              <h5 class="gameTitle">GTA IV</h5>
+                          </a>
+                      </div>
                   </section>  
             </div>
             <div box="large" id="gameContainer">

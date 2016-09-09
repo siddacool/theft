@@ -1,8 +1,8 @@
 {
     "dbinfo": [
         {
-            "version": "0.0.2",
-            "date": "2016-09-08"
+            "version": "0.0.3",
+            "date": "2016-09-09"
         }
     ],
     "games": [
@@ -13,6 +13,10 @@
         {
             "title": "Vice City",
             "gameid": "vc"
+        },
+        {
+            "title": "GTA IV",
+            "gameid": "gta4"
         }
     ],
     "typesinfo": [
@@ -768,6 +772,92 @@
             "cheat": "CHASESTAT",
             "result": "Shows Media Level (when 2+ stars)",
             "type": "misc"
+        }
+    ],
+    "gta4": [
+        {
+            "cheat": "482-555-0100",
+            "result": "Health & Weapons",
+            "type": "health",
+            "essential": true
+        },
+        {
+            "cheat": "362-555-0100",
+            "result": "Health & Armour",
+            "type": "health",
+            "essential": true
+        },
+        {
+            "cheat": "486-555-0100",
+            "result": "Weapons (Advanced)",
+            "type": "weapons"
+        },
+        {
+            "cheat": "486-555-0150",
+            "result": "Weapons (Poor)",
+            "type": "weapons"
+        },
+        {
+            "cheat": "267-555-0100",
+            "result": "Remove Wanted Level",
+            "type": "wanted",
+            "essential": true
+        },
+        {
+            "cheat": "267-555-0150",
+            "result": "Raise Wanted Level",
+            "type": "wanted"
+        },
+        {
+            "cheat": "359-555-0100",
+            "result": "Spawn Annihilator",
+            "type": "vehicles"
+        },
+        {
+            "cheat": "938-555-0100",
+            "result": "Spawn Jetmax",
+            "type": "vehicles"
+        },
+        {
+            "cheat": "625-555-0100",
+            "result": "Spawn NRG-900",
+            "type": "vehicles"
+        },
+        {
+            "cheat": "625-555-0150",
+            "result": "Spawn Sanchez",
+            "type": "vehicles"
+        },
+        {
+            "cheat": "227-555-0100",
+            "result": "Spawn FIB Buffalo",
+            "type": "vehicles"
+        },
+        {
+            "cheat": "227-555-0175",
+            "result": "Spawn Comet",
+            "type": "vehicles"
+        },
+        {
+            "cheat": "227-555-0147",
+            "result": "Spawn Turismo",
+            "type": "vehicles"
+        },
+        {
+            "cheat": "227-555-0142",
+            "result": "Spawn Cognoscenti",
+            "type": "vehicles"
+        },
+        {
+            "cheat": "227-555-0168",
+            "result": "Spawn Super GT",
+            "type": "vehicles"
+        },
+        {
+            "cheat": "468-555-0100",
+            "result": "Change Weather",
+            "type": "weather",
+            "essential": true
         }
     ]
 }
