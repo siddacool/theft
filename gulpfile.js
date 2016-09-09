@@ -82,6 +82,20 @@ gulp.task('scssToCss', function () {
         .pipe(gulp.dest(dist + '/css/'));
 });
 
+// scssToCss
+gulp.task('scssToCssWeb', function () {
+    gulp.src(projectName + '/scss/**/*.scss')
+        .pipe(sass({
+            outputStyle: 'compressed'
+        }))
+        .pipe(plumber())
+        .pipe(combineMq({
+            beautify: false
+        }))
+        .pipe(prefix('last 4 versions'))
+        .pipe(gulp.dest(dist + '/css/'));
+});
+
 // js compress
 gulp.task('jsCompress', function () {
     gulp.src([
@@ -205,5 +219,5 @@ gulp.task('default', ['scssToCss','jsCompress','browser-sync','nunjucks','gameMa
 gulp.task('openbrowser', ['scssToCss','jsCompress','svgstore','public','publicBase','browser-sync-open-browser','nunjucks','gameMake','watch']);
 
 /* distribution version */
-gulp.task('web', ['scssToCss','jsCompressWeb','browser-sync','nunjucks','gameMake','watch']);
+gulp.task('web', ['scssToCssWeb','jsCompressWeb','browser-sync','nunjucks','gameMake','watch']);
 
