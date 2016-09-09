@@ -5,11 +5,11 @@ Theft is an online cheatbook for GTA(Grand Theft Auto) titles. Serving cheats fo
 #### [Theft App](https://siddacool.github.io/theft/)
 
 ### Cheatbook
+* [GTA V](https://siddacool.github.io/theft/#gta5)
+* [GTA IV](https://siddacool.github.io/theft/#gta4)
 * [GTA: San Andreas](https://siddacool.github.io/theft/#sa)
 * [GTA: Vice City](https://siddacool.github.io/theft/#vc)
-* [GTA IV](https://siddacool.github.io/theft/#gta4)
 * [GTA III](https://siddacool.github.io/theft/#gta3)
-* [GTA V](https://siddacool.github.io/theft/#gta5)
 
 ### Keyboard navigation
 * **Backspace** - Go back
