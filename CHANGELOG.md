@@ -5,15 +5,11 @@ Theft is online cheatbook for GTA(Grand Theft Auto) titles.Changelog contains ma
 
 - Games placed in chronological(release date) order
 
-## Version 0.0.5 (2016-09-09)
+## Version 0.0.3 (2016-09-09)
 
 - Game Added: **GTA V**
 
-## Version 0.0.4 (2016-09-09)
-
 - Game Added: **GTA III**
-
-## Version 0.0.3 (2016-09-09)
 
 - Game Added: **GTA IV**
 
