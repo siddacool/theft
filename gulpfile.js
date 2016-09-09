@@ -219,5 +219,5 @@ gulp.task('default', ['scssToCss','jsCompress','browser-sync','nunjucks','gameMa
 gulp.task('openbrowser', ['scssToCss','jsCompress','svgstore','public','publicBase','browser-sync-open-browser','nunjucks','gameMake','watch']);
 
 /* distribution version */
-gulp.task('web', ['scssToCssWeb','jsCompressWeb','browser-sync','nunjucks','gameMake','watch']);
+gulp.task('web', ['scssToCssWeb','jsCompressWeb','browser-sync','public','publicBase','nunjucks','gameMake','watch']);
 
