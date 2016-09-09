@@ -8,6 +8,7 @@ Theft is an online cheatbook for GTA(Grand Theft Auto) titles. Serving cheats fo
 * [GTA: San Andreas](https://siddacool.github.io/theft/#sa)
 * [GTA: Vice City](https://siddacool.github.io/theft/#vc)
 * [GTA IV](https://siddacool.github.io/theft/#gta4)
+* [GTA III](https://siddacool.github.io/theft/#gta3)
 
 ### Keyboard navigation
 * **Backspace** - Go back
@@ -25,4 +26,5 @@ Theft is an online cheatbook for GTA(Grand Theft Auto) titles. Serving cheats fo
 * http://www.gtasanandreas.net/cheats/pc.php
 * http://www.gtavice.com/cheats/#pc
 * http://www.gta4.net/cheats/
+* https://www.thegtaplace.com/gta3/pc-cheats/
 * http://iconmonstr.com/

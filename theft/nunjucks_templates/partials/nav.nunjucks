@@ -26,6 +26,12 @@
                             <h4>GTA IV</h4>
                         </a>
                     </li>
+                    <li>
+                        <a href="#gta3" id="nav-gta3">
+                            <span>{{img.name('gta3')}}</span>
+                            <h4>GTA III</h4>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </section>

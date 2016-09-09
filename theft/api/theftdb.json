@@ -1,7 +1,7 @@
 {
     "dbinfo": [
         {
-            "version": "0.0.3",
+            "version": "0.0.4",
             "date": "2016-09-09"
         }
     ],
@@ -17,6 +17,10 @@
         {
             "title": "GTA IV",
             "gameid": "gta4"
+        },
+        {
+            "title": "GTA III",
+            "gameid": "gta3"
         }
     ],
     "typesinfo": [
@@ -858,6 +862,127 @@
             "result": "Change Weather",
             "type": "weather",
             "essential": true
+        }
+    ],
+    "gta3": [
+        {
+            "cheat": "GESUNDHEIT",
+            "result": "Full Health",
+            "type": "health",
+            "essential": true
+        },
+        {
+            "cheat": "TURTOISE",
+            "result": "Full Armor",
+            "type": "health"
+        },
+        {
+            "cheat": "IFIWEREARICHMAN",
+            "result": "More Money ($250,000)",
+            "type": "health"
+        },
+        {
+            "cheat": "MOREPOLICEPLEASE",
+            "result": "Raise Wanted Level",
+            "type": "wanted"
+        },
+        {
+            "cheat": "NOPOLICEPLEASE",
+            "result": "No Wanted Level",
+            "type": "wanted",
+            "essential": true
+        },
+        {
+            "cheat": "GUNSGUNSGUNS",
+            "result": "All Weapons",
+            "type": "weapons"
+        },
+        {
+            "cheat": "GIVEUSATANK",
+            "result": "Spawn A Tank",
+            "type": "vehicles"
+        },
+        {
+            "cheat": "ANICESETOFWHEELS",
+            "result": "Invisible Cars",
+            "type": "vehicles"
+        },
+        {
+            "cheat": "CORNERSLIKEMAD",
+            "result": "Improved Car Skills",
+            "type": "vehicles"
+        },
+        {
+            "cheat": "BANGBANGBANG",
+            "result": "Blow Up All Cars",
+            "type": "vehicles"
+        },
+        {
+            "cheat": "CHITTYCHITTYBB",
+            "result": "Fly Cars Like The Dodo",
+            "type": "vehicles"
+        },
+        {
+            "cheat": "ILIKEDRESSINGUP",
+            "result": "Change into a random outfit",
+            "type": "gameplay"
+        },
+        {
+            "cheat": "NASTYLIMBSCHEAT",
+            "result": "Increased Gore",
+            "type": "gameplay"
+        },
+        {
+            "cheat": "NOBODYLIKESME",
+            "result": "People Start To Hate You",
+            "type": "gameplay"
+        },
+        {
+            "cheat": "SKINCANCERFORME",
+            "result": "Clear Weather",
+            "type": "weather",
+            "essential": true
+        },
+        {
+            "cheat": "ILIKESCOTLAND",
+            "result": "Cloudy Weather",
+            "type": "weather"
+        },
+        {
+            "cheat": "ILOVESCOTLAND",
+            "result": "Rainy Weather",
+            "type": "weather"
+        },
+        {
+            "cheat": "PEASOUP",
+            "result": "Foggy Weather",
+            "type": "weather"
+        },
+        {
+            "cheat": "MADWEATHER",
+            "result": "Speed Up Time",
+            "type": "weather",
+            "essential": true
+        },
+        {
+            "cheat": "BOOOOORING",
+            "result": "Slow Motion",
+            "type": "weather"
+        },
+        {
+            "cheat": "TIMEFLIESWHENYOU",
+            "result": "Fast Motion",
+            "type": "weather"
+        },
+        {
+            "cheat": "ITSALLGOINGMAAAD",
+            "result": "People Start To Fist-fight Each Other",
+            "type": "misc"
+        },
+        {
+            "cheat": "WEAPONSFORALL",
+            "result": "Crazy People With Weapons",
+            "type": "misc"
         }
     ]
 }
