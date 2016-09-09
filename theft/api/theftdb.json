@@ -1,7 +1,7 @@
 {
     "dbinfo": [
         {
-            "version": "0.0.4",
+            "version": "0.5.0",
             "date": "2016-09-09"
         }
     ],
@@ -21,6 +21,10 @@
         {
             "title": "GTA III",
             "gameid": "gta3"
+        },
+        {
+            "title": "GTA V",
+            "gameid": "gta5"
         }
     ],
     "typesinfo": [
@@ -982,6 +986,186 @@
         {
             "cheat": "WEAPONSFORALL",
             "result": "Crazy People With Weapons",
+            "type": "misc"
+        }
+    ],
+    "gta5": [
+        {
+            "cheat": "TURTLE",
+            "result": "Max Health and Armor",
+            "type": "health",
+            "essential": true
+        },
+        {
+            "cheat": "PAINKILLER",
+            "result": "Invincibility",
+            "type": "health"
+        },
+        {
+            "cheat": "FUGITIVE",
+            "result": "Wanted Level Up",
+            "type": "wanted"
+        },
+        {
+            "cheat": "LAWYERUP",
+            "result": "Wanted Level Down",
+            "type": "wanted",
+            "essential": true
+        },
+        {
+            "cheat": "TOOLUP",
+            "result": "Give Weapons",
+            "type": "weapons"
+        },
+        {
+            "cheat": "HIGHEX",
+            "result": "Explosive Bullets",
+            "type": "weapons"
+        },
+        {
+            "cheat": "INCENDIARY",
+            "result": "Flaming Bullets",
+            "type": "weapons"
+        },
+        {
+            "cheat": "DEADEYE",
+            "result": "Slow Motion Aim",
+            "type": "weapons"
+        },
+        {
+            "cheat": "BUZZOFF",
+            "result": "Spawn Buzzard",
+            "type": "vehicles"
+        },
+        {
+            "cheat": "BANDIT",
+            "result": "Spawn BMX",
+            "type": "vehicles"
+        },
+        {
+            "cheat": "HOLEIN1",
+            "result": "Spawn Caddy",
+            "type": "vehicles"
+        },
+        {
+            "cheat": "COMET",
+            "result": "Spawn Comet",
+            "type": "vehicles"
+        },
+        {
+            "cheat": "FLYSPRAY",
+            "result": "Spawn Duster",
+            "type": "vehicles"
+        },
+        {
+            "cheat": "ROCKET",
+            "result": "Spawn PCJ",
+            "type": "vehicles"
+        },
+        {
+            "cheat": "RAPIDGT",
+            "result": "Spawn Rapid GT",
+            "type": "vehicles"
+        },
+        {
+            "cheat": "OFFROAD",
+            "result": "Spawn Sanchez",
+            "type": "vehicles"
+        },
+        {
+            "cheat": "VINEWOOD",
+            "result": "Spawn Stretch Limo",
+            "type": "vehicles"
+        },
+        {
+            "cheat": "BARNSTORM",
+            "result": "Spawn Stunt Plane",
+            "type": "vehicles"
+        },
+        {
+            "cheat": "TRASHED",
+            "result": "Spawn Trashmaster",
+            "type": "vehicles"
+        },
+        {
+            "cheat": "BUBBLES",
+            "result": "Spawn Kraken",
+            "type": "vehicles"
+        },
+        {
+            "cheat": "DEATHCAR",
+            "result": "Spawn Duke O’Death",
+            "type": "vehicles"
+        },
+        {
+            "cheat": "EXTINCT",
+            "result": "Spawn Dodo",
+            "type": "vehicles"
+        },
+        {
+            "cheat": "SKYDIVE",
+            "result": "Give Parachute",
+            "type": "vehicles",
+            "essential": true
+        },
+        {
+            "cheat": "SNOWDAY",
+            "result": "Slippery Cars",
+            "type": "vehicles"
+        },
+        {
+            "cheat": "POWERUP",
+            "result": "Special Ability Recharge",
+            "type": "gameplay"
+        },
+        {
+            "cheat": "HOTHANDS",
+            "result": "Explosive Melee Attacks",
+            "type": "gameplay"
+        },
+        {
+            "cheat": "LIQUOR",
+            "result": "Drunk Mode",
+            "type": "gameplay"
+        },
+        {
+            "cheat": "CATCHME",
+            "result": "Fast Run",
+            "type": "gameplay"
+        },
+        {
+            "cheat": "GOTGILLS",
+            "result": "Fast Swim",
+            "type": "gameplay"
+        },
+        {
+            "cheat": "SKYFALL",
+            "result": "Skyfall (skydiving free fall)",
+            "type": "gameplay"
+        },
+        {
+            "cheat": "HOPTOIT",
+            "result": "Super Jump",
+            "type": "gameplay"
+        },
+        {
+            "cheat": "FLOATER",
+            "result": "Moon Gravity",
+            "type": "gameplay"
+        },
+        {
+            "cheat": "SLOWMO",
+            "result": "Slow Motion",
+            "type": "weather"
+        },
+        {
+            "cheat": "MAKEITRAIN",
+            "result": "Change Weather",
+            "type": "weather"
+        },
+        {
+            "cheat": "JRTALENT",
+            "result": "Director Mode",
             "type": "misc"
         }
     ]
