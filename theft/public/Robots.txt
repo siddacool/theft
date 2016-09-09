@@ -1,6 +1,5 @@
 User-Agent: *
 Disallow: 
 Allow: /
-Allow: /#sa
 
 Sitemap: https://siddacool.github.io/theft/sitemap.xml
