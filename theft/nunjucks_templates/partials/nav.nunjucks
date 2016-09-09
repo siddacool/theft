@@ -32,6 +32,12 @@
                             <h4>GTA III</h4>
                         </a>
                     </li>
+                    <li>
+                        <a href="#gta5" id="nav-gta5">
+                            <span>{{img.name('gta5')}}</span>
+                            <h4>GTA V</h4>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </section>
