@@ -1,13 +1,13 @@
 {% import 'macros/gameBanner-macro.nunjucks' as img %}
 {% import 'macros/icons-macro.nunjucks' as svg %}
-<!-- San Andreas ------------------------------------------------>
-<article id="sa">
+<!-- GTA III ------------------------------------------------>
+<article id="gta3">
     <section class="gameHeader">
         <div class="gameBanner">
             <span class="gameImage">
-                {{img.name('sa')}}
+                {{img.name('gta3')}}
             </span>
-            <h6 class="gameTitle">San Andreas</h6>
+            <h6 class="gameTitle">GTA III</h6>
         </div>
     </section>
     <section class="cheatGroupHolder" gd-baseUnit="3">
@@ -19,7 +19,7 @@
                     <h5 class="cheatGroupTitle">Essentials</h5>
                 </a>
                 <div class="cheatTable">
-                    {% for item in sa %} 
+                    {% for item in gta3 %} 
                         {% if item.essential == true %}
                            <ul>
                                <li>{{ item.result }}</li>
@@ -37,7 +37,7 @@
                     <h5 class="cheatGroupTitle">Health &amp; Wealth</h5>
                 </a>
                 <div class="cheatTable">
-                    {% for item in sa %} 
+                    {% for item in gta3 %} 
                         {% if item.type == 'health' %}
                            <ul>
                                <li>{{ item.result }}</li>
@@ -55,7 +55,7 @@
                     <h5 class="cheatGroupTitle">Wanted Level</h5>
                 </a>
                 <div class="cheatTable">
-                    {% for item in sa %} 
+                    {% for item in gta3 %} 
                         {% if item.type == 'wanted' %}
                            <ul>
                                <li>{{ item.result }}</li>
@@ -73,7 +73,7 @@
                     <h5 class="cheatGroupTitle">Weapons</h5>
                 </a>
                 <div class="cheatTable">
-                    {% for item in sa %} 
+                    {% for item in gta3 %} 
                        {% if item.type == 'weapons' %}
                            <ul>
                                <li>{{ item.result }}</li>
@@ -91,7 +91,7 @@
                     <h5 class="cheatGroupTitle">Spwan &amp; Vehicles</h5>
                 </a>
                 <div class="cheatTable">
-                    {% for item in sa %} 
+                    {% for item in gta3 %} 
                        {% if item.type == 'vehicles' %}
                            <ul>
                                <li>{{ item.result }}</li>
@@ -109,7 +109,7 @@
                     <h5 class="cheatGroupTitle">Appeal &amp; Gameplay</h5>
                 </a>
                  <div class="cheatTable">
-                    {% for item in sa %} 
+                    {% for item in gta3 %} 
                        {% if item.type == 'gameplay' %}
                            <ul>
                                <li>{{ item.result }}</li>
@@ -127,7 +127,7 @@
                     <h5 class="cheatGroupTitle">Weather &amp; time</h5>
                 </a>
                  <div class="cheatTable">
-                    {% for item in sa %} 
+                    {% for item in gta3 %} 
                        {% if item.type == 'weather' %}
                            <ul>
                                <li>{{ item.result }}</li>
@@ -145,7 +145,7 @@
                     <h5 class="cheatGroupTitle">Miscellaneous</h5>
                 </a>
                  <div class="cheatTable">
-                    {% for item in sa %} 
+                    {% for item in gta3 %} 
                        {% if item.type == 'misc' %}
                            <ul>
                                <li>{{ item.result }}</li>

@@ -4,6 +4,7 @@
 
 {% include "partials/icons.nunjucks" %}
 {% import 'macros/icons-macro.nunjucks' as svg %}
+{% import 'macros/gameBanner-macro.nunjucks' as img %}
  <div id="wrapper">
 
         <!--  Add components inside body tag after this line only -------------------------->
@@ -23,7 +24,7 @@
                       <div itm-sDesk="25" itm-sTabPort="50" itm-sTabLand="33">
                           <a href="#sa" id="card-sa" class="game">
                               <span class="gameImage">
-                                  <img src="img/sa-1x1.jpg" alt="Gta San Andreas">
+                                  {{img.name('sa')}}
                               </span>
                               <h5 class="gameTitle">San Andreas</h5>
                           </a>
@@ -31,9 +32,25 @@
                       <div itm-sDesk="25" itm-sTabPort="50" itm-sTabLand="33">
                           <a href="#vc" id="card-sa" class="game">
                               <span class="gameImage">
-                                  <img src="img/vc-1x1.jpg" alt="Gta Vice City">
+                                  {{img.name('vc')}}
                               </span>
                               <h5 class="gameTitle">Vice City</h5>
+                          </a>
+                      </div>
+                      <div itm-sDesk="25" itm-sTabPort="50" itm-sTabLand="33">
+                          <a href="#gta4" id="card-gta4" class="game">
+                              <span class="gameImage">
+                                  {{img.name('gta4')}}
+                              </span>
+                              <h5 class="gameTitle">GTA IV</h5>
+                          </a>
+                      </div>
+                      <div itm-sDesk="25" itm-sTabPort="50" itm-sTabLand="33">
+                          <a href="#gta3" id="card-gta3" class="game">
+                              <span class="gameImage">
+                                  {{img.name('gta3')}}
+                              </span>
+                              <h5 class="gameTitle">GTA III</h5>
                           </a>
                       </div>
                   </section>  

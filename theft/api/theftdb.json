@@ -1,8 +1,8 @@
 {
     "dbinfo": [
         {
-            "version": "0.0.2",
-            "date": "2016-09-08"
+            "version": "0.0.4",
+            "date": "2016-09-09"
         }
     ],
     "games": [
@@ -13,6 +13,14 @@
         {
             "title": "Vice City",
             "gameid": "vc"
+        },
+        {
+            "title": "GTA IV",
+            "gameid": "gta4"
+        },
+        {
+            "title": "GTA III",
+            "gameid": "gta3"
         }
     ],
     "typesinfo": [
@@ -767,6 +775,213 @@
         {
             "cheat": "CHASESTAT",
             "result": "Shows Media Level (when 2+ stars)",
+            "type": "misc"
+        }
+    ],
+    "gta4": [
+        {
+            "cheat": "482-555-0100",
+            "result": "Health & Weapons",
+            "type": "health",
+            "essential": true
+        },
+        {
+            "cheat": "362-555-0100",
+            "result": "Health & Armour",
+            "type": "health",
+            "essential": true
+        },
+        {
+            "cheat": "486-555-0100",
+            "result": "Weapons (Advanced)",
+            "type": "weapons"
+        },
+        {
+            "cheat": "486-555-0150",
+            "result": "Weapons (Poor)",
+            "type": "weapons"
+        },
+        {
+            "cheat": "267-555-0100",
+            "result": "Remove Wanted Level",
+            "type": "wanted",
+            "essential": true
+        },
+        {
+            "cheat": "267-555-0150",
+            "result": "Raise Wanted Level",
+            "type": "wanted"
+        },
+        {
+            "cheat": "359-555-0100",
+            "result": "Spawn Annihilator",
+            "type": "vehicles"
+        },
+        {
+            "cheat": "938-555-0100",
+            "result": "Spawn Jetmax",
+            "type": "vehicles"
+        },
+        {
+            "cheat": "625-555-0100",
+            "result": "Spawn NRG-900",
+            "type": "vehicles"
+        },
+        {
+            "cheat": "625-555-0150",
+            "result": "Spawn Sanchez",
+            "type": "vehicles"
+        },
+        {
+            "cheat": "227-555-0100",
+            "result": "Spawn FIB Buffalo",
+            "type": "vehicles"
+        },
+        {
+            "cheat": "227-555-0175",
+            "result": "Spawn Comet",
+            "type": "vehicles"
+        },
+        {
+            "cheat": "227-555-0147",
+            "result": "Spawn Turismo",
+            "type": "vehicles"
+        },
+        {
+            "cheat": "227-555-0142",
+            "result": "Spawn Cognoscenti",
+            "type": "vehicles"
+        },
+        {
+            "cheat": "227-555-0168",
+            "result": "Spawn Super GT",
+            "type": "vehicles"
+        },
+        {
+            "cheat": "468-555-0100",
+            "result": "Change Weather",
+            "type": "weather",
+            "essential": true
+        }
+    ],
+    "gta3": [
+        {
+            "cheat": "GESUNDHEIT",
+            "result": "Full Health",
+            "type": "health",
+            "essential": true
+        },
+        {
+            "cheat": "TURTOISE",
+            "result": "Full Armor",
+            "type": "health"
+        },
+        {
+            "cheat": "IFIWEREARICHMAN",
+            "result": "More Money ($250,000)",
+            "type": "health"
+        },
+        {
+            "cheat": "MOREPOLICEPLEASE",
+            "result": "Raise Wanted Level",
+            "type": "wanted"
+        },
+        {
+            "cheat": "NOPOLICEPLEASE",
+            "result": "No Wanted Level",
+            "type": "wanted",
+            "essential": true
+        },
+        {
+            "cheat": "GUNSGUNSGUNS",
+            "result": "All Weapons",
+            "type": "weapons"
+        },
+        {
+            "cheat": "GIVEUSATANK",
+            "result": "Spawn A Tank",
+            "type": "vehicles"
+        },
+        {
+            "cheat": "ANICESETOFWHEELS",
+            "result": "Invisible Cars",
+            "type": "vehicles"
+        },
+        {
+            "cheat": "CORNERSLIKEMAD",
+            "result": "Improved Car Skills",
+            "type": "vehicles"
+        },
+        {
+            "cheat": "BANGBANGBANG",
+            "result": "Blow Up All Cars",
+            "type": "vehicles"
+        },
+        {
+            "cheat": "CHITTYCHITTYBB",
+            "result": "Fly Cars Like The Dodo",
+            "type": "vehicles"
+        },
+        {
+            "cheat": "ILIKEDRESSINGUP",
+            "result": "Change into a random outfit",
+            "type": "gameplay"
+        },
+        {
+            "cheat": "NASTYLIMBSCHEAT",
+            "result": "Increased Gore",
+            "type": "gameplay"
+        },
+        {
+            "cheat": "NOBODYLIKESME",
+            "result": "People Start To Hate You",
+            "type": "gameplay"
+        },
+        {
+            "cheat": "SKINCANCERFORME",
+            "result": "Clear Weather",
+            "type": "weather",
+            "essential": true
+        },
+        {
+            "cheat": "ILIKESCOTLAND",
+            "result": "Cloudy Weather",
+            "type": "weather"
+        },
+        {
+            "cheat": "ILOVESCOTLAND",
+            "result": "Rainy Weather",
+            "type": "weather"
+        },
+        {
+            "cheat": "PEASOUP",
+            "result": "Foggy Weather",
+            "type": "weather"
+        },
+        {
+            "cheat": "MADWEATHER",
+            "result": "Speed Up Time",
+            "type": "weather",
+            "essential": true
+        },
+        {
+            "cheat": "BOOOOORING",
+            "result": "Slow Motion",
+            "type": "weather"
+        },
+        {
+            "cheat": "TIMEFLIESWHENYOU",
+            "result": "Fast Motion",
+            "type": "weather"
+        },
+        {
+            "cheat": "ITSALLGOINGMAAAD",
+            "result": "People Start To Fist-fight Each Other",
+            "type": "misc"
+        },
+        {
+            "cheat": "WEAPONSFORALL",
+            "result": "Crazy People With Weapons",
             "type": "misc"
         }
     ]
