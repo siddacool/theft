@@ -1,5 +1,5 @@
 <!-- nav.nunjucks -->   
-
+{% import 'macros/gameBanner-macro.nunjucks' as img %}
 <nav>
     <div>
         <section>
@@ -10,13 +10,13 @@
                 <ul>
                     <li>
                         <a href="#sa" id="nav-sa">
-                            <span><img src="img/sa-1x1.jpg"></span>
+                            <span>{{img.name('sa')}}</span>
                             <h4>San Andreas</h4>
                         </a>
                     </li>
                     <li>
                         <a href="#vc" id="nav-vc">
-                            <span><img src="img/vc-1x1.jpg"></span>
+                            <span>{{img.name('vc')}}</span>
                             <h4>Vice City</h4>
                         </a>
                     </li>

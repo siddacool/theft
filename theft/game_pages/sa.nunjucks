@@ -1,10 +1,12 @@
-{% import 'macros/gameBanner-macro.nunjucks' as banner %} 
+{% import 'macros/gameBanner-macro.nunjucks' as img %}
 {% import 'macros/icons-macro.nunjucks' as svg %}
 <!-- San Andreas ------------------------------------------------>
 <article id="sa">
     <section class="gameHeader">
         <div class="gameBanner">
-            {{banner.name('sa')}}
+            <span class="gameImage">
+                {{img.name('sa')}}
+            </span>
             <h6 class="gameTitle">San Andreas</h6>
         </div>
     </section>

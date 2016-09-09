@@ -1,14 +1,16 @@
-{% import 'macros/gameBanner-macro.nunjucks' as banner %}
+{% import 'macros/gameBanner-macro.nunjucks' as img %}
 {% import 'macros/icons-macro.nunjucks' as svg %}
 <!-- Vice City ------------------------------------------------>
 <article id="vc">
     <section class="gameHeader">
         <div class="gameBanner">
-            {{banner.name('vc')}}
+            <span class="gameImage">
+                {{img.name('vc')}}
+            </span>
             <h6 class="gameTitle">Vice City</h6>
         </div>
     </section>
-      <section class="cheatGroupHolder" gd-baseUnit="3">
+    <section class="cheatGroupHolder" gd-baseUnit="3">
            <div class="cheatGroupSubHolder">
                 <a data-cheatgroup="essentials">
                     <span class="cheatGroupImage">
