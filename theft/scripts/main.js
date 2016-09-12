@@ -126,4 +126,23 @@ document.onkeydown = function(e) {
     }
 };
 
+// About
+(function aboutInfo() {
+    var about = document.querySelector('#about'),
+        close = document.querySelector('#aboutClose');
+
+    about.addEventListener('click', function () {
+       var parentDom = this.parentElement,
+           aboutPara = parentDom.querySelector('p');
         
+        aboutPara.classList.add('show');
+        this.classList.add('close');
+    });
+
+    close.addEventListener('click', function () {
+       var aboutPara = this.parentElement.parentElement;
+        
+        aboutPara.classList.remove('show');
+        about.classList.remove('close');
+    });
+})();
