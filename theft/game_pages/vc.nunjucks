@@ -3,11 +3,15 @@
 <!-- Vice City ------------------------------------------------>
 <article id="vc">
     <section class="gameHeader">
-        <div class="gameBanner">
+        <div class="gameBanner" itm-s="100">
             <span class="gameImage">
                 {{img.name('vc')}}
             </span>
             <h6 class="gameTitle">Vice City</h6>
+        </div>
+        <div class="gameDesc" itm-s="100" itm-y="middle" itm-x="center">
+            <p para>Grand Theft Auto: Vice City is an open world action-adventure video game developed by Rockstar North and published by Rockstar Games.<strong> Enter these cheats while playing. </strong><span><a id="gamesInfoClose" link>Close</a></span></p>
+            <a id="gamesInfo" title="More Info">{{svg.icon('info-solid')}}</a>
         </div>
     </section>
     <section class="cheatGroupHolder" gd-baseUnit="3">

@@ -68,7 +68,7 @@ main {
             @include desktopMix {
                 justify-content: center;
                 padding-left: 0;
-                padding-bottom: 2rem;
+                padding-bottom: 1.3rem;
             }
             @include print{              
                 position: absolute;
@@ -281,5 +281,64 @@ main {
                 }
             }
         }
+    }
+}
+.gameDesc{
+    display: flex;
+    padding: 0 1rem 1rem 1rem;
+    @include desktopMixEx{
+        padding-bottom: 2rem;
+        height: px(80);
+    }
+    @include desktopMix{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    @include desktop{
+        max-width: px(790);
+        margin-left: auto;
+        margin-right: auto;
+    }
+    p{
+        display: none;
+        @include desktop{
+            display: block;
+        }
+        &.show{
+            display: block;
+            width: 100%;
+        }
+        >span{
+            display: block;
+            text-align: center;
+            padding: 1rem;
+            @include desktopMixEx{
+                display: inline-block;
+                padding: 0;
+            }
+        }
+        strong{
+            font-weight: 500;
+        }
+    }
+    a{
+        cursor: pointer;
+    }
+}
+#gamesInfo{
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem;
+    @include desktop{
+        padding: 0;
+        display: none;
+    }
+    &.close{
+        display: none;
+    }
+}
+#gamesInfoClose{
+    @include desktop{
+        display: none;
     }
 }

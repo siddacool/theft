@@ -54,6 +54,26 @@ function afterAjaxLoaded() {
                 allSubHolders[j].classList.add('expand');
             }
         });
+        // Game Info
+        (function gameInfo() {
+            var gameInfo = document.querySelector('#gamesInfo'),
+                gameInfoClose = document.querySelector('#gamesInfoClose');
+
+            gameInfo.addEventListener('click', function () {
+                var parentDom = this.parentElement,
+                    aboutPara = parentDom.querySelector('p');
+        
+                    aboutPara.classList.add('show');
+                    this.classList.add('close');
+            });
+
+            gameInfoClose.addEventListener('click', function () {
+                var aboutPara = this.parentElement.parentElement;
+        
+                aboutPara.classList.remove('show');
+                gameInfo.classList.remove('close');
+            });
+        })();
 
     })();
 

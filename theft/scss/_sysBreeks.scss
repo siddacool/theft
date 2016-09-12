@@ -328,6 +328,7 @@ $smallWidth: px(900);
         &[itm-x="center"] {
             margin-right: auto;
             margin-left: auto;
+            justify-content: center;
         }
         &[itm-x="right"] {
             margin-left: auto;
@@ -1147,13 +1148,18 @@ $smallWidth: px(900);
         line-height: 2.6rem;
     }
     p[para] {
-        font-size: 1.2rem;
-        line-height: 1.75rem;
-        @include desktopMix {
+        font-size: 1.1rem;
+        line-height: 1.65rem;
+        text-align: justify;
+        color: lighten($fontColor,20%);
+        @include tablet {
+            font-size: 1.3rem;
             letter-spacing: px(0.1);
+            line-height: 1.75rem;
         }
         @include desktop {
-            font-size: 1.1rem;
+            font-size: 1rem;
+            line-height: 1.45rem;
         }
     }
     a[link] {

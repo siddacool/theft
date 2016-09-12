@@ -330,6 +330,54 @@ main {
 section {
     @include gridBase;
 }
+.aboutContainer{
+    display: flex;
+    @include desktopMix{
+        height: px(80);
+    }
+    @include desktop{
+        max-width: px(790);
+        margin-left: auto;
+        margin-right: auto;
+    }
+    p{
+        display: none;
+        @include desktop{
+            display: block;
+        }
+        &.show{
+            display: block;
+        }
+        >span{
+            display: block;
+            text-align: center;
+            padding: 1rem;
+            @include desktopMixEx{
+                display: inline-block;
+                padding: 0;
+            }
+        }
+    }
+    a{
+        cursor: pointer;
+    }
+}
+#about{
+    display: inline-flex;
+    align-items: center;
+    padding: 1rem;
+    @include desktop{
+        display: none;
+    }
+    &.close{
+        display: none;
+    }
+}
+#aboutClose{
+    @include desktop{
+        display: none;
+    }
+}
 
 /*footer*/
 
