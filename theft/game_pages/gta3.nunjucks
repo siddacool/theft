@@ -3,11 +3,15 @@
 <!-- GTA III ------------------------------------------------>
 <article id="gta3">
     <section class="gameHeader">
-        <div class="gameBanner">
+        <div class="gameBanner" itm-s="100">
             <span class="gameImage">
                 {{img.name('gta3')}}
             </span>
             <h6 class="gameTitle">GTA III</h6>
+        </div>
+        <div class="gameDesc" itm-s="100" itm-y="middle" itm-x="center">
+            <p para>Grand Theft Auto III is an open world action-adventure video game developed by DMA Design and published by Rockstar Games.<strong> Enter these cheats while playing. </strong><span><a id="gamesInfoClose" link>Close</a></span></p>
+            <a id="gamesInfo" title="More Info">{{svg.icon('info-solid')}}</a>
         </div>
     </section>
     <section class="cheatGroupHolder" gd-baseUnit="3">
