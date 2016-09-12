@@ -8,6 +8,7 @@
                 {{img.name('gta3')}}
             </span>
             <h6 class="gameTitle">GTA III</h6>
+            <a id="gamesInfoAlt" title="More Info">{{svg.icon('info-solid')}}</a>
         </div>
         <div class="gameDesc" itm-s="100" itm-y="middle" itm-x="center">
             <p para>Grand Theft Auto III is an open world action-adventure video game developed by DMA Design and published by Rockstar Games.<strong> Enter these cheats while playing. </strong><span><a id="gamesInfoClose" link>Close</a></span></p>

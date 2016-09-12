@@ -65,9 +65,11 @@ main {
             align-items: center;
             padding-bottom: 1rem;
             padding-left: 1rem;
+            padding-right: 1rem;
             @include desktopMix {
                 justify-content: center;
                 padding-left: 0;
+                padding-right: 0;
                 padding-bottom: 1.3rem;
             }
             @include print{              
@@ -299,10 +301,17 @@ main {
         margin-left: auto;
         margin-right: auto;
     }
+    @include print{
+        padding: 1rem 0;
+    }
     p{
         display: none;
         @include desktop{
             display: block;
+        }
+        @include print{
+            display: block;
+            font-size: 1.2rem;
         }
         &.show{
             display: block;
@@ -316,6 +325,9 @@ main {
                 display: inline-block;
                 padding: 0;
             }
+            @include print{
+                padding: 0;
+            }
         }
         strong{
             font-weight: 500;
@@ -326,10 +338,18 @@ main {
     }
 }
 #gamesInfo{
-    display: inline-flex;
+    display: none;
     align-items: center;
     padding: 0.5rem;
+    @include tablet{
+        display: inline-flex;
+    }
     @include desktop{
+        padding: 0;
+        display: none;
+    }
+    @include print{
+        display: inline-flex;
         padding: 0;
         display: none;
     }
@@ -339,6 +359,19 @@ main {
 }
 #gamesInfoClose{
     @include desktop{
+        display: none;
+    }
+    @include print{
+        display: none;
+    }
+}
+#gamesInfoAlt{
+    display: flex;
+    margin-left: auto;
+    @include desktopMixEx{
+        display: none;
+    }
+    @include print{
         display: none;
     }
 }

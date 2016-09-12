@@ -8,6 +8,7 @@
                 {{img.name('gta4')}}
             </span>
             <h6 class="gameTitle">GTA IV</h6>
+            <a id="gamesInfoAlt" title="More Info">{{svg.icon('info-solid')}}</a>
         </div>
         <div class="gameDesc" itm-s="100" itm-y="middle" itm-x="center">
             <p para>Grand Theft Auto IV is an open world action-adventure video game developed by Rockstar North and published by Rockstar Games.<strong> Pull out Niko's phone and dial these numerical cheats. </strong><span><a id="gamesInfoClose" link>Close</a></span></p>

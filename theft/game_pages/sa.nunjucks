@@ -8,6 +8,7 @@
                 {{img.name('sa')}}
             </span>
             <h6 class="gameTitle">San Andreas</h6>
+            <a id="gamesInfoAlt" title="More Info">{{svg.icon('info-solid')}}</a>
         </div>
         <div class="gameDesc" itm-s="100" itm-y="middle" itm-x="center">
             <p para>Grand Theft Auto: San Andreas is an open world action-adventure video game with role-playing elements developed by Rockstar North.<strong> Enter these cheats while playing. </strong><span><a id="gamesInfoClose" link>Close</a></span></p>
