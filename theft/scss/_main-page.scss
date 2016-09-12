@@ -342,7 +342,7 @@ section {
     }
     p{
         display: none;
-        @include desktop{
+        @include print{
             display: block;
         }
         &.show{
@@ -366,7 +366,7 @@ section {
     display: inline-flex;
     align-items: center;
     padding: 1rem;
-    @include desktop{
+    @include print{
         display: none;
     }
     &.close{
@@ -374,7 +374,7 @@ section {
     }
 }
 #aboutClose{
-    @include desktop{
+    @include print{
         display: none;
     }
 }
