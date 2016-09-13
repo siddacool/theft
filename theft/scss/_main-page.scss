@@ -224,17 +224,14 @@ nav {
             color: #fff;
             display: flex;
             align-items: center;
-            border: px(1) solid transparent;
+            transition: background-color 400ms;
             &.active{
                 >span{
                   border-color: $baseAltColor;   
                 }
             }
             &.focus{
-                @include desktop{
-                    border-style: dotted;
-                    border-color: #fff;
-                }
+                background-color: lighten($baseColor,5%);
             }
             @include desktop {
                 padding: 1rem 2rem;

@@ -54,6 +54,25 @@
         })
     }
 })();
+// Nav hover
+(function navHover(){
+    var navOptions = nav.querySelectorAll('a'),
+        ul = nav.querySelector('ul'),
+        anchorAll = ul.querySelectorAll('a');
+    
+    function loopAnchors() {
+            for (i = 0; i < anchorAll.length; i++) {
+                anchorAll[i].classList.remove('focus');
+            }
+    }
+    
+    for (i = 0; i < navOptions.length; i++){
+        navOptions[i].addEventListener('mouseover',function(){
+            loopAnchors();
+            this.classList.add('focus');
+        })
+    }
+})();
 
 // insert games based on Url
 (function insertGameOnUrl(){
@@ -216,6 +235,7 @@ function anchorActive() {
             anchorFocus = ul.querySelector('a.focus');
         
         anchorFocus.click();
+        anchorFocus.classList.add('active');
     }
 }
 
