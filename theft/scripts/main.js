@@ -2,12 +2,38 @@
 /*depending on system variables*/
 
 // Nav Toggle
-(function navToggle(){
-    toggle.addEventListener('click',function(){
-       nav.classList.toggle('active'); 
+(function navToggle() {
+    toggle.addEventListener('click', function () {
+        // nav focus
+        var ul = nav.querySelector('ul'),
+            li = ul.querySelectorAll('li')[0],
+            anchor = li.querySelector('a'),
+            anchorAll = ul.querySelectorAll('a');
+        //loop through anchors
+        function loopAnchors() {
+            for (i = 0; i < anchorAll.length; i++) {
+                anchorAll[i].classList.remove('focus');
+            }
+        }
+        // Toggle Nav
+        if (nav.classList.contains('active')) {
+            loopAnchors();
+            nav.classList.remove('active');
+        }
+        else {
+            nav.classList.add('active');
+            //check for active list item
+            if (!ul.querySelector('a.active')) {
+                loopAnchors();
+                anchor.classList.add('focus');
+            }
+            else {
+                anchor.classList.remove('focus');
+                ul.querySelector('a.active').classList.add('focus');
+            }
+        }
     });
 })();
-
 // insert games on Nav option click
 (function insertGameOnNavClick(){
     var navOptions = nav.querySelectorAll('a');
@@ -25,10 +51,6 @@
             gameContainer.classList.remove('cheats');
             
             insertGame(gameString);
-            
-            setTimeout(function(){ 
-                nav.classList.remove('active'); 
-            }, 200);
         })
     }
 })();
@@ -78,7 +100,7 @@
               
            }
            else{
-               nav.classList.add('active');    
+               toggle.click();    
            }
         }
     });
@@ -102,30 +124,131 @@
 
     });
 })();
-// key configuration 
+
+// keyboard Navigation 
 var key = {};
 
+// detect keys
+key.detect = (function () {
+    console.log('key detection active');
+    document.onkeydown = function (e) {
+        console.log('keyCode = ' + e.keyCode);
+    }
+});
+// keys config
 key.backspace = 8;
+key.enter = 13;
+key.tab = 9;
+key.home = 36;
 key.arrow = {};
 key.arrow.up = 38;
 key.arrow.down = 40;
 key.arrow.left = 37;
 key.arrow.right = 39;
-    
+key.alpha = {};
+key.alpha.w = 87;
+key.alpha.s = 83;
+key.alpha.a = 65;
+key.alpha.d = 68;
+key.alpha.t = 84;
+key.alpha.f = 70;
+key.alpha.i = 73;
+
+// nav focus prev
+function navFocusPrev() {
+    if (nav.classList.contains('active')) {
+        var totalGames = 6,
+            ul = nav.querySelector('ul'),
+            li = ul.querySelectorAll('li')[totalGames - 1],
+            anchor = li.querySelector('a'),
+            anchorAll = ul.querySelectorAll('a'),
+            anchorFocus = ul.querySelector('a.focus'),
+            target = anchorFocus.parentElement.previousElementSibling;
+        //loop through anchors
+        function loopAnchors() {
+            for (i = 0; i < anchorAll.length; i++) {
+                anchorAll[i].classList.remove('focus');
+            }
+        }
+
+        if (!target) {
+            anchor.classList.add('focus');
+            anchorFocus.classList.remove('focus');
+        }
+        else {
+            target.querySelector('a').classList.add('focus');
+            anchorFocus.classList.remove('focus');
+        }
+    }
+}
+
+// nav focus next
+function navFocusNext() {
+    if (nav.classList.contains('active')) {
+        var ul = nav.querySelector('ul'),
+            li = ul.querySelectorAll('li')[0],
+            anchor = li.querySelector('a'),
+            anchorAll = ul.querySelectorAll('a'),
+            anchorFocus = ul.querySelector('a.focus'),
+            target = anchorFocus.parentElement.nextElementSibling;
+        //loop through anchors
+        function loopAnchors() {
+            for (i = 0; i < anchorAll.length; i++) {
+                anchorAll[i].classList.remove('focus');
+            }
+        }
+
+        if (!target) {
+            anchor.classList.add('focus');
+            anchorFocus.classList.remove('focus');
+        }
+        else {
+            target.querySelector('a').classList.add('focus');
+            anchorFocus.classList.remove('focus');
+        }
+    }
+}
+
+// anchor Active
+function anchorActive() {
+    if (nav.classList.contains('active')) {
+        var ul = nav.querySelector('ul'),
+            anchorFocus = ul.querySelector('a.focus');
+        
+        anchorFocus.click();
+    }
+}
+
+// Key bindings
 document.onkeydown = function(e) {
-    switch (e.keyCode) {
+    switch (e.keyCode || e.which) {
         case key.backspace:
             back.click();
             break;
-        case key.arrow.left:
-            nav.classList.add('active');
+        case key.alpha.t:
+        case key.tab:
+            toggle.click();
             break;
-        case key.arrow.right:
-            nav.classList.remove('active');
+        case key.alpha.w:
+        case key.arrow.up:
+            navFocusPrev();
+            break;
+        case key.alpha.s:
+        case key.arrow.down:
+            navFocusNext();
+            break;
+        case key.enter:
+        case key.alpha.f:
+            anchorActive();
+            break;
+        case key.home:
+            logo.click();
+            break;
+        case key.alpha.i:
+            document.querySelector('#about').click();
             break;
     }
 };
-
 // About
 (function aboutInfo() {
     var about = document.querySelector('#about'),

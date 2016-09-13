@@ -3,11 +3,12 @@ Theft is online cheatbook for GTA(Grand Theft Auto) titles.Changelog contains ma
 
 ## Version 0.2.0 (2016-09-13)
 
+- Addition: Keybaord navigation for navbar
 - Game Added: **Gta II**
 
 ## Version 0.1.1 (2016-09-12)
 
-- Addition: About Paragraph
+- Addition: About paragraph
 
 - Addition: Extended information on all game pages
 
