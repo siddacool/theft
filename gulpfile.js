@@ -137,6 +137,10 @@ gulp.task('nunjucks', function() {
       moto:'GTA Cheats'
   }))
   .pipe(plumber())
+  .pipe(htmlmin({
+      collapseWhitespace: true,
+      removeComments: true
+  }))
   // output files in app folder
   .pipe(gulp.dest(dist))
   
@@ -158,7 +162,10 @@ gulp.task('gameMake', function() {
       moto:'GTA Cheats'
   }))
   .pipe(plumber())
-  .pipe(htmlmin({collapseWhitespace: true}))
+  .pipe(htmlmin({
+      collapseWhitespace: true,
+      removeComments: true
+  }))
   // output files in app folder
   .pipe(gulp.dest(dist + '/games/'));
   
