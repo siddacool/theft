@@ -22,7 +22,7 @@
     <meta property="og:title" content="Theft" />
     <meta property="og:type" content="gaming" />
     <meta property="og:image" content="img/og-img.png" />
-    <meta property="og:description" content="online cheatbook for GTA(Grand Theft Auto) title" />
+    <meta property="og:description" content="online cheatbook for GTA (Grand Theft Auto) titles." />
     <meta property="og:url" content="https://siddacool.github.io/theft/" />
     <!--Main css------------------------------------------------------>
     <link rel="stylesheet" href="css/styles.css" type="text/css">
