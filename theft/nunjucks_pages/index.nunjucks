@@ -25,7 +25,7 @@
                      </div>
                  </section>
                   <section class="gameList" game-order="chronology" game-direct="ascending">
-                      <div itm-sDesk="25" itm-sTabPort="50" itm-sTabLand="33" itm-game="gta5">
+                      <div itm-sDesk="25" itm-sTabPort="50" itm-sTabLand="33" itm-game="gta5" data-class="focus">
                           <a href="#gta5" id="card-gta5" class="game">
                               <span class="gameImage">
                                   {{img.name('gta5')}}
@@ -63,6 +63,14 @@
                                   {{img.name('gta3')}}
                               </span>
                               <h5 class="gameTitle">GTA III</h5>
+                          </a>
+                      </div>
+                      <div itm-sDesk="25" itm-sTabPort="50" itm-sTabLand="33" itm-game="gta3">
+                          <a href="#gta2" id="card-gta2" class="game">
+                              <span class="gameImage">
+                                  {{img.name('gta2')}}
+                              </span>
+                              <h5 class="gameTitle">GTA II</h5>
                           </a>
                       </div>
                   </section>  
