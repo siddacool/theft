@@ -65,6 +65,14 @@
                               <h5 class="gameTitle">GTA III</h5>
                           </a>
                       </div>
+                      <div itm-sDesk="25" itm-sTabPort="50" itm-sTabLand="33" itm-game="gta3">
+                          <a href="#gta2" id="card-gta2" class="game">
+                              <span class="gameImage">
+                                  {{img.name('gta2')}}
+                              </span>
+                              <h5 class="gameTitle">GTA II</h5>
+                          </a>
+                      </div>
                   </section>  
             </div>
             <div box="large" id="gameContainer">
