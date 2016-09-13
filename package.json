@@ -1,6 +1,6 @@
 {
   "name": "theft",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "online cheatbook for GTA(Grand Theft Auto) titles",
   "main": "gulpfile.js",
   "scripts": {

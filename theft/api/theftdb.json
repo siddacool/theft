@@ -1,8 +1,8 @@
 {
     "dbinfo": [
         {
-            "version": "0.5.0",
-            "date": "2016-09-09"
+            "version": "0.6.0",
+            "date": "2016-09-13"
         }
     ],
     "games": [
@@ -25,6 +25,10 @@
         {
             "title": "GTA V",
             "gameid": "gta5"
+        },
+        {
+            "title": "GTA II",
+            "gameid": "gta2"
         }
     ],
     "typesinfo": [
@@ -1166,6 +1170,185 @@
         {
             "cheat": "JRTALENT",
             "result": "Director Mode",
+            "type": "misc"
+        }
+    ],
+    "gta2": [
+        {
+            "cheat": "CUTIE1",
+            "result": "99 lives",
+            "type": "health"
+        },
+        {
+            "cheat": "LIVELONG",
+            "result": "Invincibility",
+            "type": "health",
+            "essential": true
+        },
+        {
+            "cheat": "SCHURULZ",
+            "result": "Double damage power-up",
+            "type": "health"
+        },
+        {
+            "cheat": "DANISGOD",
+            "result": "$200,000",
+            "type": "health"
+        },
+        {
+            "cheat": "MUCHCASH",
+            "result": "$500,000",
+            "type": "health"
+        },
+        {
+            "cheat": "IAMDAVEJ",
+            "result": "$9,999,999",
+            "type": "health"
+        },
+        {
+            "cheat": "IAMASUCKER",
+            "result": "All levels, weapons, invincibility",
+            "type": "health"
+        },
+        {
+            "cheat": "LOSEFEDS",
+            "result": "No police",
+            "type": "wanted",
+            "essential": true
+        },
+        {
+            "cheat": "DESIRES",
+            "result": "Maximum wanted level",
+            "type": "wanted"
+        },
+        {
+            "cheat": "JAILBAIT",
+            "result": "Get Out Of Jail Free card",
+            "type": "wanted"
+        },
+        {
+            "cheat": "BLASTBOY",
+            "result": "All weapons",
+            "type": "weapons"
+        },
+        {
+            "cheat": "GODOFGTA",
+            "result": "All weapons with full ammo",
+            "type": "weapons"
+        },
+        {
+            "cheat": "DAVEMOON",
+            "result": "Default weapons and ammo",
+            "type": "weapons"
+        },
+        {
+            "cheat": "VOLTFEST",
+            "result": "Electric ray gun",
+            "type": "weapons"
+        },
+        {
+            "cheat": "FLAMEON",
+            "result": "Flame-thrower",
+            "type": "weapons"
+        },
+        {
+            "cheat": "FISHFLAP",
+            "result": "Small cars",
+            "type": "vehicles"
+        },
+        {
+            "cheat": "MADEMAN",
+            "result": "Respect from three gangs",
+            "type": "gameplay"
+        },
+        {
+            "cheat": "ARSESTAR",
+            "result": "Keep weapons after arrest",
+            "type": "gameplay"
+        },
+        {
+            "cheat": "HIGHFIVE",
+            "result": "5x multiplier",
+            "type": "gameplay"
+        },
+        {
+            "cheat": "BIGSCORE",
+            "result": "10 million points",
+            "type": "gameplay"
+        },
+        {
+            "cheat": "EATSOUP",
+            "result": "Free shopping",
+            "type": "gameplay"
+        },
+        {
+            "cheat": "GOREFEST",
+            "result": "More gore",
+            "type": "gameplay"
+        },
+        {
+            "cheat": "BEEFCAKE",
+            "result": "Increased brutality",
+            "type": "gameplay"
+        },
+        {
+            "cheat": "HUNSRUS",
+            "result": "Invisibility",
+            "type": "gameplay"
+        },
+        {
+            "cheat": "NO FRILLS",
+            "result": "Debug basic scripts",
+            "type": "gameplay"
+        },
+        {
+            "cheat": "BEMEALL",
+            "result": "All cities",
+            "type": "misc"
+        },
+        {
+            "cheat": "TUMYFROG",
+            "result": "All bonus levels",
+            "type": "misc"
+        },
+        {
+            "cheat": "ITSALLUP",
+            "result": "Level select",
+            "type": "misc"
+        },
+        {
+            "cheat": "GINGERR",
+            "result": "First two cities",
+            "type": "misc"
+        },
+        {
+            "cheat": "COCKTART",
+            "result": "No exploding scores",
+            "type": "misc"
+        },
+        {
+            "cheat": "WUGGLES",
+            "result": "Display coordinates",
+            "type": "misc"
+        },
+        {
+            "cheat": "NEKKID",
+            "result": "Nude people",
+            "type": "misc"
+        },
+        {
+            "cheat": "LASVEGAS",
+            "result": "Elvis clan people",
+            "type": "misc"
+        },
+        {
+            "cheat": "BUCKFAST",
+            "result": "People more aggressive",
+            "type": "misc"
+        },
+        {
+            "cheat": "MEATMAN",
+            "result": "Hamster runs across screen",
             "type": "misc"
         }
     ]
