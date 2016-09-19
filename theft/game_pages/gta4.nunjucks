@@ -1,136 +1,93 @@
-{% import 'macros/gameBanner-macro.nunjucks' as img %}
-{% import 'macros/icons-macro.nunjucks' as svg %}
 <!-- GTA IV ------------------------------------------------>
-<article id="gta4">
-    <section class="gameHeader">
-        <div class="gameBanner" itm-s="100">
-            <span class="gameImage">
-                {{img.name('gta4')}}
-            </span>
-            <h6 class="gameTitle">GTA IV</h6>
-            <a id="gamesInfoAlt" title="More Info">{{svg.icon('info-solid')}}</a>
-        </div>
-        <div class="gameDesc" itm-s="100" itm-y="middle" itm-x="center">
-            <p para>Grand Theft Auto IV is an open world action-adventure video game developed by Rockstar North and published by Rockstar Games.<strong> Pull out Niko's phone and dial these numerical cheats. </strong><span><a id="gamesInfoClose" link>Close</a></span></p>
-            <a id="gamesInfo" title="More Info">{{svg.icon('info-solid')}}</a>
-        </div>
-    </section>
-    <section class="cheatGroupHolder" gd-baseUnit="3">
-           <div class="cheatGroupSubHolder">
-                <a data-cheatgroup="essentials">
-                    <span class="cheatGroupImage">
-                    {{ svg.icon('essentials-solid') }}
-                </span>
-                    <h5 class="cheatGroupTitle">Essentials</h5>
-                </a>
-                <div class="cheatTable">
-                    {% for item in gta4 %} 
-                        {% if item.essential == true %}
-                           <ul>
-                               <li>{{ item.result }}</li>
-                               <li>{{ item.cheat }}</li> 
-                           </ul>
-                       {% endif %} 
-                    {% endfor %}
-                </div>
-            </div>
-           <div class="cheatGroupSubHolder">
-                <a data-cheatgroup="health">
-                    <span class="cheatGroupImage">
-                    {{ svg.icon('health-solid') }}
-                </span>
-                    <h5 class="cheatGroupTitle">Health &amp; Wealth</h5>
-                </a>
-                <div class="cheatTable">
-                    {% for item in gta4 %} 
-                        {% if item.type == 'health' %}
-                           <ul>
-                               <li>{{ item.result }}</li>
-                               <li>{{ item.cheat }}</li> 
-                           </ul>
-                       {% endif %} 
-                    {% endfor %}
-                </div>
-            </div>
-           <div class="cheatGroupSubHolder">
-                <a data-cheatgroup="wanted">
-                    <span class="cheatGroupImage">
-                    {{ svg.icon('wanted-solid') }}
-                </span>
-                    <h5 class="cheatGroupTitle">Wanted Level</h5>
-                </a>
-                <div class="cheatTable">
-                    {% for item in gta4 %} 
-                        {% if item.type == 'wanted' %}
-                           <ul>
-                               <li>{{ item.result }}</li>
-                               <li>{{ item.cheat }}</li> 
-                           </ul>
-                       {% endif %} 
-                    {% endfor %}
-                </div>
-            </div>
-           <div class="cheatGroupSubHolder">
-                <a data-cheatgroup="weapons">
-                    <span class="cheatGroupImage">
-                    {{ svg.icon('weapons-solid') }}
-                </span>
-                    <h5 class="cheatGroupTitle">Weapons</h5>
-                </a>
-                <div class="cheatTable">
-                    {% for item in gta4 %} 
-                       {% if item.type == 'weapons' %}
-                           <ul>
-                               <li>{{ item.result }}</li>
-                               <li>{{ item.cheat }}</li> 
-                           </ul>
-                       {% endif %} 
-                    {% endfor %}
-                </div>
-            </div>
-           <div class="cheatGroupSubHolder">
-                <a data-cheatgroup="vehicles">
-                    <span class="cheatGroupImage">
-                    {{ svg.icon('vehicles-solid') }}
-                </span>
-                    <h5 class="cheatGroupTitle">Spwan &amp; Vehicles</h5>
-                </a>
-                <div class="cheatTable">
-                    {% for item in gta4 %} 
-                       {% if item.type == 'vehicles' %}
-                           <ul>
-                               <li>{{ item.result }}</li>
-                               <li>{{ item.cheat }}</li> 
-                           </ul>
-                       {% endif %} 
-                    {% endfor %}
-                </div>
-            </div>
-           <div class="cheatGroupSubHolder">
-                <a data-cheatgroup="weather">
-                    <span class="cheatGroupImage">
-                    {{ svg.icon('weather-solid') }}
-                </span>
-                    <h5 class="cheatGroupTitle">Weather &amp; time</h5>
-                </a>
-                 <div class="cheatTable">
-                    {% for item in gta4 %} 
-                       {% if item.type == 'weather' %}
-                           <ul>
-                               <li>{{ item.result }}</li>
-                               <li>{{ item.cheat }}</li> 
-                           </ul>
-                       {% endif %} 
-                    {% endfor %}
-                </div>
-            </div>
-           <div class="cheatGroupSubHolder">
-                <a data-cheatall>
-                    <span class="cheatGroupImage">
-                    {{ svg.icon('allcheats-solid') }}
-                </span>
-                    <h5 class="cheatGroupTitle">All Cheats</h5>
-                </a>
-            </div>
-    </section>
-</article>
+
+<!-- Game Header ------------------------------------------>
+<img id="game-img" src="img/gta4-1x1.jpg" alt="GTA IV">
+<h1 id="game-title">GTA IV</h1>
+<p para id="game-desc">Grand Theft Auto IV is an open world action-adventure video game developed by Rockstar North and published by Rockstar Games.<strong> Pull out Niko's phone and dial these numerical cheats. </strong></p>
+
+<!-- Cheatbook -------------------------------------------->
+<!--essentials-->
+<div id="game-cheat-essentials">
+    {% for item in gta4 %}
+        {% if item.essential == true %}
+            <ul>
+                <li>{{ item.result }}</li>
+                <li>{{ item.cheat }}</li>
+            </ul>
+        {% endif %}
+    {% endfor %}
+</div>
+
+<!--health-->
+<div id="game-cheat-health">
+    {% for item in gta4 %}
+        {% if item.type == 'health' %}
+            <ul>
+                <li>{{ item.result }}</li>
+                <li>{{ item.cheat }}</li>
+            </ul>
+        {% endif %}
+    {% endfor %}
+</div>
+
+<!--wanted-->
+<div id="game-cheat-wanted">
+    {% for item in gta4 %}
+        {% if item.type == 'wanted' %}
+            <ul>
+                <li>{{ item.result }}</li>
+                <li>{{ item.cheat }}</li>
+            </ul>
+        {% endif %}
+    {% endfor %}
+</div>
+
+<!--weapons-->
+<div id="game-cheat-weapons">
+    {% for item in gta4 %}
+        {% if item.type == 'weapons' %}
+            <ul>
+                <li>{{ item.result }}</li>
+                <li>{{ item.cheat }}</li>
+            </ul>
+        {% endif %}
+    {% endfor %}
+</div>
+
+<!--vehicles-->
+<div id="game-cheat-vehicles">
+    {% for item in gta4 %}
+        {% if item.type == 'vehicles' %}
+            <ul>
+                <li>{{ item.result }}</li>
+                <li>{{ item.cheat }}</li>
+            </ul>
+        {% endif %}
+    {% endfor %}
+</div>
+
+
+<!--weather-->
+<div id="game-cheat-weather">
+    {% for item in gta4 %}
+        {% if item.type == 'weather' %}
+            <ul>
+                <li>{{ item.result }}</li>
+                <li>{{ item.cheat }}</li>
+            </ul>
+        {% endif %}
+    {% endfor %}
+</div>
+
+
+<!--misc-->
+<div id="game-cheat-misc">
+    {% for item in gta4 %}
+        {% if item.type == 'misc' %}
+            <ul>
+                <li>{{ item.result }}</li>
+                <li>{{ item.cheat }}</li>
+            </ul>
+        {% endif %}
+    {% endfor %}
+</div>

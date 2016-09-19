@@ -76,7 +76,10 @@
                   </section>  
             </div>
             <div box="large" id="gameContainer">
-               
+                <article>
+                    {% include "partials/gameHeader.nunjucks" %}
+                    {% include "partials/cheatBook.nunjucks" %}
+                </article>
             </div>
         </main>
 

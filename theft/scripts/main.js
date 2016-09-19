@@ -50,6 +50,7 @@
             gameContainer.classList.add('show');
             gameContainer.classList.remove('cheats');
             
+            clearGames();
             insertGame(gameString);
         })
     }
@@ -74,19 +75,40 @@
     }
 })();
 
+// show gameContainer and insert games
+(function showGameContainer() {
+    var gameList = mainContainer.querySelector('.gameList'),
+        gameCard = gameList.querySelectorAll('a.game');
+
+    for (i = 0; i < gameCard.length; i++) {
+        gameCard[i].addEventListener('click', function () {
+            var gameId = this.getAttribute('href').slice(1),
+                idString = gameId.toString();
+
+            mainContainer.classList.add('hide');
+            gameContainer.classList.add('show');
+
+            // insert games based on id's
+            navOptActive(idString);
+            insertGame(idString);
+
+        });
+    }
+})();
+
 // insert games based on Url
 (function insertGameOnUrl(){
     
     if(window.location.href.indexOf('#') > -1 ){
         var getUrl = window.location.href,
             gameId = getUrl.split('#').pop(),
-            gameString = gameId.toString();
+            idString = gameId.toString();
         
         mainContainer.classList.add('hide');
         gameContainer.classList.add('show');
         
-        navOptActive(gameString);
-        insertGame(gameString);   
+        navOptActive(idString);
+        insertGame(idString);
     }
     
 })();

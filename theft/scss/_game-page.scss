@@ -226,6 +226,11 @@ main {
     .cheatTable {
         display: none;
         width: 100%;
+        >div{
+            @include desktop{
+                display: table-row-group;
+            }
+        }
         ul {
             display: block;
             padding: 0.5rem 1rem;
@@ -304,7 +309,7 @@ main {
     @include print{
         padding: 1rem 0;
     }
-    p{
+    >div{
         display: none;
         @include desktop{
             display: block;
@@ -317,7 +322,7 @@ main {
             display: block;
             width: 100%;
         }
-        >span{
+        span.gamesInfoCloseHolder{
             display: block;
             text-align: center;
             padding: 1rem;
