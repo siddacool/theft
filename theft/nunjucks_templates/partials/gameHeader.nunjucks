@@ -1,0 +1,18 @@
+<section class="gameHeader">
+    <div class="gameBanner" itm-s="100">
+        <span class="gameImage">
+            <img src="" alt="" id="page-img">
+        </span>
+        <h6 class="gameTitle" id="page-title">......</h6>
+        <a id="gamesInfoAlt" title="More Info">{{svg.icon('info-solid')}}</a>
+    </div>
+    <div class="gameDesc" itm-s="100" itm-y="middle" itm-x="center">
+       <div id="page-descHolder">
+            <div id="page-desc">
+                      ..............................
+            </div>
+           <span class="gamesInfoCloseHolder"><a id="gamesInfoClose" link>Close</a></span>
+       </div>
+        <a id="gamesInfo" title="More Info">{{svg.icon('info-solid')}}</a>
+    </div>
+</section>

@@ -125,7 +125,8 @@ main {
     }
     .cheatGroupHolder {}
     .cheatGroupSubHolder {
-        &.hide {
+        &.hide,
+        &[status="inapt"]{
             display: none;
         }
         &.expand {
@@ -226,6 +227,11 @@ main {
     .cheatTable {
         display: none;
         width: 100%;
+        >div{
+            @include desktop{
+                display: table-row-group;
+            }
+        }
         ul {
             display: block;
             padding: 0.5rem 1rem;
@@ -290,7 +296,6 @@ main {
     padding: 0 1rem 1rem 1rem;
     @include desktopMixEx{
         padding-bottom: 2rem;
-        height: px(80);
     }
     @include desktopMix{
         padding-left: 0;
@@ -298,13 +303,14 @@ main {
     }
     @include desktop{
         max-width: px(790);
+        height: px(80);
         margin-left: auto;
         margin-right: auto;
     }
     @include print{
         padding: 1rem 0;
     }
-    p{
+    >div{
         display: none;
         @include desktop{
             display: block;
@@ -317,12 +323,11 @@ main {
             display: block;
             width: 100%;
         }
-        >span{
+        .gamesInfoCloseHolder{
             display: block;
             text-align: center;
             padding: 1rem;
-            @include desktopMixEx{
-                display: inline-block;
+            @include desktop{
                 padding: 0;
             }
             @include print{
