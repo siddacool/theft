@@ -159,9 +159,9 @@ function clearGames(){
     // Revert to default values
     var cheatGroupSubHolder = gameContainer.querySelectorAll('.cheatGroupSubHolder');
     
-    pageImg.setAttribute('src','');
-    pageTitle.textContent = 'Title';
-    pageDesc.innerHTML = '.......';
+    pageImg.setAttribute('src',"data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%3E%3C/svg%3E");
+    pageTitle.innerHTML = '&#9608&#9608&#9608&#9608&#9608&#9608';
+    pageDesc.innerHTML = '&#9608&#9608&#9608 &#9608&#9608&#9608 &#9608&#9608 &#9608&#9608&#9608&#9608&#9608 &#9608&#9608&#9608 &#9608&#9608 &#9608&#9608 &#9608&#9608&#9608 &#9608&#9608&#9608 &#9608&#9608 &#9608&#9608&#9608&#9608&#9608 &#9608&#9608&#9608 &#9608&#9608 &#9608&#9608&#9608&#9608&#9608 &#9608&#9608&#9608 &#9608&#9608 &#9608&#9608 &#9608&#9608&#9608 &#9608&#9608&#9608 &#9608&#9608 &#9608&#9608';
     pageCheat_essen.innerHTML = '';
     pageCheat_health.innerHTML = '';
     pageCheat_wanted.innerHTML = '';
