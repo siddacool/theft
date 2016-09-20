@@ -34,6 +34,7 @@
         }
     });
 })();
+
 // insert games on Nav option click
 (function insertGameOnNavClick(){
     var navOptions = nav.querySelectorAll('a');
@@ -52,25 +53,10 @@
             
             clearGames();
             insertGame(gameString);
-        })
-    }
-})();
-// Nav hover
-(function navHover(){
-    var navOptions = nav.querySelectorAll('a'),
-        ul = nav.querySelector('ul'),
-        anchorAll = ul.querySelectorAll('a');
-    
-    function loopAnchors() {
-            for (i = 0; i < anchorAll.length; i++) {
-                anchorAll[i].classList.remove('focus');
-            }
-    }
-    
-    for (i = 0; i < navOptions.length; i++){
-        navOptions[i].addEventListener('mouseover',function(){
-            loopAnchors();
-            this.classList.add('focus');
+            
+            setTimeout(function(){
+                nav.classList.remove('active');
+            }, 100);
         })
     }
 })();
@@ -194,72 +180,6 @@ key.alpha.t = 84;
 key.alpha.f = 70;
 key.alpha.i = 73;
 
-// nav focus prev
-function navFocusPrev() {
-    if (nav.classList.contains('active')) {
-        var totalGames = 6,
-            ul = nav.querySelector('ul'),
-            li = ul.querySelectorAll('li')[totalGames - 1],
-            anchor = li.querySelector('a'),
-            anchorAll = ul.querySelectorAll('a'),
-            anchorFocus = ul.querySelector('a.focus'),
-            target = anchorFocus.parentElement.previousElementSibling;
-        //loop through anchors
-        function loopAnchors() {
-            for (i = 0; i < anchorAll.length; i++) {
-                anchorAll[i].classList.remove('focus');
-            }
-        }
-
-        if (!target) {
-            anchor.classList.add('focus');
-            anchorFocus.classList.remove('focus');
-        }
-        else {
-            target.querySelector('a').classList.add('focus');
-            anchorFocus.classList.remove('focus');
-        }
-    }
-}
-
-// nav focus next
-function navFocusNext() {
-    if (nav.classList.contains('active')) {
-        var ul = nav.querySelector('ul'),
-            li = ul.querySelectorAll('li')[0],
-            anchor = li.querySelector('a'),
-            anchorAll = ul.querySelectorAll('a'),
-            anchorFocus = ul.querySelector('a.focus'),
-            target = anchorFocus.parentElement.nextElementSibling;
-        //loop through anchors
-        function loopAnchors() {
-            for (i = 0; i < anchorAll.length; i++) {
-                anchorAll[i].classList.remove('focus');
-            }
-        }
-
-        if (!target) {
-            anchor.classList.add('focus');
-            anchorFocus.classList.remove('focus');
-        }
-        else {
-            target.querySelector('a').classList.add('focus');
-            anchorFocus.classList.remove('focus');
-        }
-    }
-}
-
-// anchor Active
-function anchorActive() {
-    if (nav.classList.contains('active')) {
-        var ul = nav.querySelector('ul'),
-            anchorFocus = ul.querySelector('a.focus');
-        
-        anchorFocus.click();
-        anchorFocus.classList.add('active');
-    }
-}
-
 // Key bindings
 document.onkeydown = function(e) {
     switch (e.keyCode || e.which) {
@@ -270,18 +190,6 @@ document.onkeydown = function(e) {
         case key.tab:
             toggle.click();
             break;
-        case key.alpha.w:
-        case key.arrow.up:
-            navFocusPrev();
-            break;
-        case key.alpha.s:
-        case key.arrow.down:
-            navFocusNext();
-            break;
-        case key.enter:
-        case key.alpha.f:
-            anchorActive();
-            break;
         case key.home:
             logo.click();
             break;
@@ -290,6 +198,7 @@ document.onkeydown = function(e) {
             break;
     }
 };
+
 // About
 (function aboutInfo() {
     var about = document.querySelector('#about'),

@@ -230,9 +230,6 @@ nav {
                   border-color: $baseAltColor;   
                 }
             }
-            &.focus{
-                background-color: lighten($baseColor,5%);
-            }
             @include desktop {
                 padding: 1rem 2rem;
             }
