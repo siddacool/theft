@@ -11,7 +11,7 @@
             <div id="page-desc">
                       ..............................
             </div>
-           <!--<span class="gamesInfoCloseHolder"><a id="gamesInfoClose" link>Close</a></span>-->
+           <span class="gamesInfoCloseHolder"><a id="gamesInfoClose" link>Close</a></span>
        </div>
         <a id="gamesInfo" title="More Info">{{svg.icon('info-solid')}}</a>
     </div>
