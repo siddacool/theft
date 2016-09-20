@@ -150,8 +150,8 @@
 // Logo Button
 (function logoClick() {
     logo.addEventListener('click', function () {
+        clearGames();
         if (back.hasAttribute('href')) {
-
         } 
         else {
             mainContainer.classList.remove('hide');
@@ -160,7 +160,6 @@
 
             urlCleanup();
             navOptCleanup();
-            clearGames();
         }
 
     });

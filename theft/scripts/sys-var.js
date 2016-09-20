@@ -78,7 +78,7 @@ function insertGame(value) {
         // Cheat lookup
         function cheatLookup(tagretId){
             if(!tempData.querySelector(tagretId)){
-                return 'NO';
+                return 'inapt';
             }
             else{
                 return tempData.querySelector(tagretId).outerHTML;
@@ -106,6 +106,29 @@ function insertGame(value) {
         pageCheat_gameplay.innerHTML = gameData.cheats.gameplay;
         pageCheat_weather.innerHTML = gameData.cheats.weather;
         pageCheat_misc.innerHTML = gameData.cheats.misc;
+        
+        // Cheat type availability
+        function typeLookup(tagretId){
+            if(!tempData.querySelector(tagretId)){
+                return 'inapt';
+            }
+            else{
+                return 'apt';
+            }
+        }
+        // hide inapt cheat types
+        pageCheat_essen.parentElement.setAttribute('status',typeLookup('#game-cheat-essentials'));
+        pageCheat_health.parentElement.setAttribute('status',typeLookup('#game-cheat-health'));
+        pageCheat_wanted.parentElement.setAttribute('status',typeLookup('#game-cheat-wanted'));
+        pageCheat_weapons.parentElement.setAttribute('status',typeLookup('#game-cheat-weapons'));
+        pageCheat_vehicles.parentElement.setAttribute('status',typeLookup('#game-cheat-vehicles'));
+        pageCheat_gameplay.parentElement.setAttribute('status',typeLookup('#game-cheat-gameplay'));
+        pageCheat_weather.parentElement.setAttribute('status',typeLookup('#game-cheat-weather'));
+        pageCheat_misc.parentElement.setAttribute('status',typeLookup('#game-cheat-misc'));
+        
+        // state ready for Game Container
+        gameContainer.setAttribute('state','ready');
+        
     }
 
     request.onreadystatechange = function (anEvent) {
@@ -133,7 +156,7 @@ function clearGames(){
     pageCheat_weather = document.querySelector('#page-cheat-weather'),
     pageCheat_misc = document.querySelector('#page-cheat-misc');
     
-    // cheatGroupSubHolder
+    // Revert to default values
     var cheatGroupSubHolder = gameContainer.querySelectorAll('.cheatGroupSubHolder');
     
     pageImg.setAttribute('src','');
@@ -150,5 +173,8 @@ function clearGames(){
     
     for(var i=0;i<cheatGroupSubHolder.length;i++){
         cheatGroupSubHolder[i].classList.remove('expand');
+        cheatGroupSubHolder[i].setAttribute('status','');
     }
+    
+    gameContainer.setAttribute('state','disable');
 }

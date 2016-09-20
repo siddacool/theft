@@ -78,16 +78,3 @@
         {% endif %}
     {% endfor %}
 </div>
-
-
-<!--misc-->
-<div id="game-cheat-misc">
-    {% for item in gta4 %}
-        {% if item.type == 'misc' %}
-            <ul>
-                <li>{{ item.result }}</li>
-                <li>{{ item.cheat }}</li>
-            </ul>
-        {% endif %}
-    {% endfor %}
-</div>

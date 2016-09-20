@@ -125,7 +125,8 @@ main {
     }
     .cheatGroupHolder {}
     .cheatGroupSubHolder {
-        &.hide {
+        &.hide,
+        &[status="inapt"]{
             display: none;
         }
         &.expand {
