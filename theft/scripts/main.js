@@ -219,3 +219,27 @@ document.onkeydown = function(e) {
         about.classList.remove('close');
     });
 })();
+
+// insert after loading page
+document.addEventListener('DOMContentLoaded', function () {
+    var gameList = document.querySelector(".gameList"),
+        game = gameList.querySelectorAll('.game'),
+        navUl = nav.querySelector('ul'),
+        navListAnchors = navUl.querySelectorAll('a');
+    
+    // loop and insert images
+    function loopItems(item) {
+        for (var i = 0; i < item.length; i++) {
+            var thisGame = item[i],
+                gameId = thisGame.getAttribute('id'),
+                gameToken = gameId.split("-")[1],
+                gameName = 'img/' + gameToken + '-1x1.jpg',
+                gameImg = thisGame.querySelector('img');
+
+            gameImg.setAttribute('src', gameName);
+        }
+    }
+
+    loopItems(game);
+    loopItems(navListAnchors);
+});
