@@ -71,6 +71,7 @@ function insertGame(value) {
         tempData.innerHTML = request.responseText;
         gameData.header = {};
         gameData.header.img = tempData.querySelector('#game-img').getAttribute('src');
+        gameData.header.imgAlt = tempData.querySelector('#game-img').getAttribute('alt');
         gameData.header.title = tempData.querySelector('#game-title').textContent;
         gameData.header.desc = tempData.querySelector('#game-desc').outerHTML;
         gameData.cheats = {};
@@ -95,9 +96,11 @@ function insertGame(value) {
         gameData.cheats.misc = cheatLookup('#game-cheat-misc');
         
         // game data Insert
+        pageImg.setAttribute('alt',gameData.header.imgAlt);
         pageImg.setAttribute('src',gameData.header.img);
         pageTitle.textContent = gameData.header.title;
         pageDesc.innerHTML = gameData.header.desc;
+        // cheatbook data Insert
         pageCheat_essen.innerHTML = gameData.cheats.essen;
         pageCheat_health.innerHTML = gameData.cheats.health;
         pageCheat_wanted.innerHTML = gameData.cheats.wanted;
