@@ -28,7 +28,7 @@
                       <div itm-sDesk="25" itm-sTabPort="50" itm-sTabLand="33" itm-game="gta5" data-class="focus">
                           <a href="#gta5" id="card-gta5" class="game">
                               <span class="gameImage">
-                                  {{img.name('gta5')}}
+                                  {{img.name('GTA V')}}
                               </span>
                               <h5 class="gameTitle">GTA V</h5>
                           </a>
@@ -36,7 +36,7 @@
                       <div itm-sDesk="25" itm-sTabPort="50" itm-sTabLand="33" itm-game="gta4">
                           <a href="#gta4" id="card-gta4" class="game">
                               <span class="gameImage">
-                                  {{img.name('gta4')}}
+                                  {{img.name('GTA IV')}}
                               </span>
                               <h5 class="gameTitle">GTA IV</h5>
                           </a>
@@ -44,7 +44,7 @@
                       <div itm-sDesk="25" itm-sTabPort="50" itm-sTabLand="33" itm-game="sa">
                           <a href="#sa" id="card-sa" class="game">
                               <span class="gameImage">
-                                  {{img.name('sa')}}
+                                  {{img.name('San Andreas')}}
                               </span>
                               <h5 class="gameTitle">San Andreas</h5>
                           </a>
@@ -52,7 +52,7 @@
                       <div itm-sDesk="25" itm-sTabPort="50" itm-sTabLand="33" itm-game="vc">
                           <a href="#vc" id="card-vc" class="game">
                               <span class="gameImage">
-                                  {{img.name('vc')}}
+                                  {{img.name('Vice City')}}
                               </span>
                               <h5 class="gameTitle">Vice City</h5>
                           </a>
@@ -60,7 +60,7 @@
                       <div itm-sDesk="25" itm-sTabPort="50" itm-sTabLand="33" itm-game="gta3">
                           <a href="#gta3" id="card-gta3" class="game">
                               <span class="gameImage">
-                                  {{img.name('gta3')}}
+                                  {{img.name('GTA III')}}
                               </span>
                               <h5 class="gameTitle">GTA III</h5>
                           </a>
@@ -68,7 +68,7 @@
                       <div itm-sDesk="25" itm-sTabPort="50" itm-sTabLand="33" itm-game="gta3">
                           <a href="#gta2" id="card-gta2" class="game">
                               <span class="gameImage">
-                                  {{img.name('gta2')}}
+                                  {{img.name('GTA II')}}
                               </span>
                               <h5 class="gameTitle">GTA II</h5>
                           </a>
