@@ -1,5 +1,5 @@
-<!-- nav.nunjucks -->   
 {% import 'macros/gameBanner-macro.nunjucks' as img %}
+<!-- nav.nunjucks -->
 <nav>
     <div>
         <section>
@@ -10,37 +10,37 @@
                 <ul game-order="chronology" game-direct="ascending">
                    <li>
                         <a href="#gta5" id="nav-gta5">
-                            <span>{{img.name('gta5')}}</span>
+                            <span>{{img.name('GTA V')}}</span>
                             <h4>GTA V</h4>
                         </a>
                     </li>
                     <li>
                         <a href="#gta4" id="nav-gta4">
-                            <span>{{img.name('gta4')}}</span>
+                            <span>{{img.name('GTA IV')}}</span>
                             <h4>GTA IV</h4>
                         </a>
                     </li>
                     <li>
                         <a href="#sa" id="nav-sa">
-                            <span>{{img.name('sa')}}</span>
+                            <span>{{img.name('San Andreas')}}</span>
                             <h4>San Andreas</h4>
                         </a>
                     </li>
                     <li>
                         <a href="#vc" id="nav-vc">
-                            <span>{{img.name('vc')}}</span>
+                            <span>{{img.name('Vice City')}}</span>
                             <h4>Vice City</h4>
                         </a>
                     </li>
                     <li>
                         <a href="#gta3" id="nav-gta3">
-                            <span>{{img.name('gta3')}}</span>
+                            <span>{{img.name('GTA III')}}</span>
                             <h4>GTA III</h4>
                         </a>
                     </li>
                     <li>
                         <a href="#gta2" id="nav-gta2">
-                            <span>{{img.name('gta2')}}</span>
+                            <span>{{img.name('GTA II')}}</span>
                             <h4>GTA II</h4>
                         </a>
                     </li>
