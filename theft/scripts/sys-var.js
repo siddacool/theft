@@ -176,6 +176,7 @@ function clearGames(){
     
     for(var i=0;i<cheatGroupSubHolder.length;i++){
         cheatGroupSubHolder[i].classList.remove('expand');
+        cheatGroupSubHolder[i].classList.remove('hide');
         cheatGroupSubHolder[i].setAttribute('status','');
     }
     
