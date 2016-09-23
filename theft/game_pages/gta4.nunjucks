@@ -1,9 +1,8 @@
 <!-- GTA IV ------------------------------------------------>
 
 <!-- Game Header ------------------------------------------>
-<img id="game-img" src="img/gta4-1x1.jpg" alt="GTA IV">
 <h1 id="game-title">GTA IV</h1>
-<p para id="game-desc">Grand Theft Auto IV is an open world action-adventure video game developed by Rockstar North and published by Rockstar Games.<strong> Pull out Niko's phone and dial these numerical cheats. </strong></p>
+<p id="game-desc">Grand Theft Auto IV is an open world action-adventure video game developed by Rockstar North and published by Rockstar Games.<strong> Pull out Niko's phone and dial these numerical cheats. </strong></p>
 
 <!-- Cheatbook -------------------------------------------->
 <!--essentials-->

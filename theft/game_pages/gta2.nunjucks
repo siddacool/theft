@@ -1,9 +1,8 @@
 <!-- GTA II ------------------------------------------------>
 
 <!-- Game Header ------------------------------------------>
-<img id="game-img" src="img/gta2-1x1.jpg" alt="GTA II">
 <h1 id="game-title">GTA II</h1>
-<p para id="game-desc">Grand Theft Auto 2 is an open-world action-adventure video game developed by DMA Design and published by Rockstar Games.<strong> Enter these cheats while playing. </strong></p>
+<p id="game-desc">Grand Theft Auto 2 is an open-world action-adventure video game developed by DMA Design and published by Rockstar Games.<strong> Enter these cheats while playing. </strong></p>
 
 <!-- Cheatbook -------------------------------------------->
 <!--essentials-->
