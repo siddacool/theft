@@ -1,9 +1,8 @@
 <!-- Vice City ------------------------------------------------>
 
 <!-- Game Header ------------------------------------------>
-<img id="game-img" src="img/vc-1x1.jpg" alt="Vice City">
 <h1 id="game-title">Vice City</h1>
-<p para id="game-desc">Grand Theft Auto: Vice City is an open world action-adventure video game developed by Rockstar North and published by Rockstar Games.<strong> Enter these cheats while playing. </strong></p>
+<p id="game-desc">Grand Theft Auto: Vice City is an open world action-adventure video game developed by Rockstar North and published by Rockstar Games.<strong> Enter these cheats while playing. </strong></p>
 
 <!-- Cheatbook -------------------------------------------->
 <!--essentials-->

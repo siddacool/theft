@@ -1,9 +1,8 @@
 <!-- GTA III ------------------------------------------------>
 
 <!-- Game Header ------------------------------------------>
-<img id="game-img" src="img/gta3-1x1.jpg" alt="GTA III">
 <h1 id="game-title">GTA III</h1>
-<p para id="game-desc">Grand Theft Auto III is an open world action-adventure video game developed by DMA Design and published by Rockstar Games.<strong> Enter these cheats while playing. </strong></p>
+<p id="game-desc">Grand Theft Auto III is an open world action-adventure video game developed by DMA Design and published by Rockstar Games.<strong> Enter these cheats while playing. </strong></p>
 
 <!-- Cheatbook -------------------------------------------->
 <!--essentials-->

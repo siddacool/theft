@@ -47,6 +47,10 @@ function navOptActive(value){
 function insertGame(value) {
     var request = new XMLHttpRequest();
     request.open('GET', gamesUrl + value + '.html', true);
+    // external resources (non html)
+    var extRes = {};
+    extRes.img = 'img/' + value + '-1x1.jpg';
+    extRes.imgAlt = value;
 
     // send response
     function responseToSend() {
@@ -70,8 +74,8 @@ function insertGame(value) {
         // game data storage
         tempData.innerHTML = request.responseText;
         gameData.header = {};
-        gameData.header.img = tempData.querySelector('#game-img').getAttribute('src');
-        gameData.header.imgAlt = tempData.querySelector('#game-img').getAttribute('alt');
+        gameData.header.img = extRes.img;
+        gameData.header.imgAlt = extRes.imgAlt;
         gameData.header.title = tempData.querySelector('#game-title').textContent;
         gameData.header.desc = tempData.querySelector('#game-desc').outerHTML;
         gameData.cheats = {};
