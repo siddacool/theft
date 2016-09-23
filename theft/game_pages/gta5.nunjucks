@@ -1,9 +1,8 @@
 <!-- GTA V ------------------------------------------------>
 
 <!-- Game Header ------------------------------------------>
-<img id="game-img" src="img/gta5-1x1.jpg" alt="GTA V">
 <h1 id="game-title">GTA V</h1>
-<p para id="game-desc">Grand Theft Auto V is an open world action-adventure video game developed by Rockstar North and published by Rockstar Games.<strong> Enter these cheats while playing. </strong></p>
+<p id="game-desc">Grand Theft Auto V is an open world action-adventure video game developed by Rockstar North and published by Rockstar Games.<strong> Enter these cheats while playing. </strong></p>
 
 <!-- Cheatbook -------------------------------------------->
 <!--essentials-->
