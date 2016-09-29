@@ -99,6 +99,7 @@ gulp.task('scssToCssWeb', function () {
 // js compress
 gulp.task('jsCompress', function () {
     gulp.src([
+         scripts + '/lib/keycodex-cust.js',
          scripts + '/mode-local.js',
          scripts + '/sys-var.js', 
          scripts + '/main.js', 
@@ -113,6 +114,7 @@ gulp.task('jsCompress', function () {
 // js compress distribution version
 gulp.task('jsCompressWeb', function () {
     gulp.src([
+         scripts + '/lib/keycodex-cust.js',
          scripts + '/mode-web.js',
          scripts + '/sys-var.js', 
          scripts + '/main.js', 
