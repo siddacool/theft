@@ -152,48 +152,19 @@
 })();
 
 // keyboard Navigation 
-var key = {};
-
-// detect keys
-key.detect = (function () {
-    console.log('key detection active');
-    document.onkeydown = function (e) {
-        console.log('keyCode = ' + e.keyCode);
-    }
-});
-// keys config
-key.backspace = 8;
-key.enter = 13;
-key.tab = 9;
-key.home = 36;
-key.arrow = {};
-key.arrow.up = 38;
-key.arrow.down = 40;
-key.arrow.left = 37;
-key.arrow.right = 39;
-key.alpha = {};
-key.alpha.w = 87;
-key.alpha.s = 83;
-key.alpha.a = 65;
-key.alpha.d = 68;
-key.alpha.t = 84;
-key.alpha.f = 70;
-key.alpha.i = 73;
-
-// Key bindings
 document.onkeydown = function(e) {
     switch (e.keyCode || e.which) {
         case key.backspace:
             back.click();
             break;
-        case key.alpha.t:
+        case key.char.t:
         case key.tab:
             toggle.click();
             break;
         case key.home:
             logo.click();
             break;
-        case key.alpha.i:
+        case key.char.i:
             document.querySelector('#about').click();
             break;
     }
