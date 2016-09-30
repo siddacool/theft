@@ -1,12 +1,13 @@
 /* KeyCodeX */
-/* v 1.0 : Jump Jet */
-/* 2016-09-29 */
+/* v 1.1 : Rock Band Tour Bus */
+/* 2016-09-30 */
 /* Edition : Customizable */
 /* Project Link : https://github.com/siddacool/keycodex */
 /* author : Siddhesh Mangela */
 
 /* >>> */
-var key = (function keyCodeX () {
+var key ;
+(function keyCodeX () {
     /* Key initialize */
     /* +++ */
 
@@ -40,8 +41,6 @@ var key = (function keyCodeX () {
     //## set placeholders
     var char = {},
         gaming = {},
-        bracket = {},
-        slash = {},
         arrow  = {},
         numpad  = {},
         misc  = {};
@@ -139,7 +138,7 @@ var key = (function keyCodeX () {
     //## E
     //char.e = 69;
     //## F
-    char.f = 70;
+    //char.f = 70;
     //## G
     //char.g = 71;
     //## H
@@ -217,21 +216,21 @@ var key = (function keyCodeX () {
     //## = (Equal, Plus)
     //k.equal = k.plus = 187;
     //## [ (Bracket open)
-    //k.bracketopen = bracket.open = 219;
+    //k.bracketopen = 219;
     //## ] (Bracket close)
-    //k.bracketclose = bracket.close = 221;
+    //k.bracketclose = 221;
     //## \ (Back Slash)
-    //k.backslash = slash.back = 191;
+    //k.backslash = 191;
     //## ; (Semi-colon)
     //k.semicolon = 186;
     //## ' (Quote, Double Quote)
     //k.quote = 222;
     //## , (Comma)
     //k.comma = 188;
-    //## . (Period, Stop, FullStop, dot)
-    //k.period = k.dot = k.stop = k.fullstop = 190;
-    //## / (Forward Slash, Question)
-    //k.forwardslash = slash.forward = k.question = 191;
+    //## . (Period, dot)
+    //k.period = k.dot = 190;
+    //## / (Forward Slash)
+    //k.forwardslash = 191;
 
     //---
     //### arrow
@@ -272,8 +271,8 @@ var key = (function keyCodeX () {
     //numpad.eight = 104;
     //## numpad 9 (Numpad Nine)
     //numpad.nine = 105;
-    //## . (decimal, Numpad Period, Numpad Stop, Numpad FullStop, Numpad dot)
-    //numpad.decimal = numpad.period = numpad.dot = numpad.stop = numpad.fullstop = 110;
+    //## . (decimal, Numpad Period, Numpad dot)
+    //numpad.decimal = numpad.period = numpad.dot = 110;
     //## + (add, Numpad Plus)
     //numpad.add = numpad.plus = 107;
     //## - (subtract, Numpad minus)
@@ -294,8 +293,6 @@ var key = (function keyCodeX () {
     //## push values
     k.char = char;
     k.gaming = gaming;
-    k.bracket = bracket;
-    k.slash = slash;
     k.arrow = arrow;
     k.numpad = numpad;
     k.misc = misc;
@@ -304,7 +301,7 @@ var key = (function keyCodeX () {
     /* Key Complete */
     /* +++ */
 
-    return k;
+    key = k;
 
     /* --- */
 })();
