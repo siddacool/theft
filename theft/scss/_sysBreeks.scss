@@ -105,23 +105,23 @@ $smallWidth: px(900);
 // grid Alignment: Horizontal
 @mixin gridAlignHorizontal{
     // grid Alignment Horizontal
-    &[gd-x="left"] {
+    /*&[gd-x="left"] {
         justify-content: flex-start;
-    }
-    &[gd-x="center"] {
+    }*/
+    /*&[gd-x="center"] {
         justify-content: center;
-    }
-    &[gd-x="right"] {
+    }*/
+    /*&[gd-x="right"] {
         justify-content: flex-end;
-    }
+    }*/
     &[gd-x="justify"] {
         justify-content: space-between;
     }
-    &[gd-x="surround"] {
+    /*&[gd-x="surround"] {
         justify-content: space-around;
-    }
+    }*/
     // grid Alignment Horizontal viewport Tablet
-    &[gd-xTab="left"] {
+    /*&[gd-xTab="left"] {
         @include tablet {
             justify-content: flex-start;
         }
@@ -145,9 +145,9 @@ $smallWidth: px(900);
         @include tablet {
             justify-content: space-around;
         }
-    }
+    }*/
     // grid Alignment Horizontal viewport Tablet Portrait
-    &[gd-xTabPort="left"] {
+    /*&[gd-xTabPort="left"] {
         @include tabletPortrait {
             justify-content: flex-start;
         }
@@ -171,9 +171,9 @@ $smallWidth: px(900);
         @include tabletPortrait {
             justify-content: space-around;
         }
-    }
+    }*/
     // grid Alignment Horizontal viewport Tablet Landscape
-    &[gd-xTabLand="left"] {
+    /*&[gd-xTabLand="left"] {
         @include tabletLandscape {
             justify-content: flex-start;
         }
@@ -197,9 +197,9 @@ $smallWidth: px(900);
         @include tabletLandscape {
             justify-content: space-around;
         }
-    }
+    }*/
     // grid Alignment Horizontal viewport Desktop
-    &[gd-xDesk="left"] {
+    /*&[gd-xDesk="left"] {
         @include desktop {
             justify-content: flex-start;
         }
@@ -223,7 +223,7 @@ $smallWidth: px(900);
         @include desktop {
             justify-content: space-around;
         }
-    }
+    }*/
 }
 
 // grid Alignment: Verticle
@@ -242,7 +242,7 @@ $smallWidth: px(900);
         align-items: flex-end;
     }
     // grid Alignment Vertical viewport Tablet
-    &[gd-yTab="top"] {
+    /*&[gd-yTab="top"] {
         @include tablet {
             align-content: flex-start;
             align-items: flex-start;
@@ -259,9 +259,9 @@ $smallWidth: px(900);
             align-content: flex-end;
             align-items: flex-end;
         }
-    }
+    }*/
     // grid Alignment Vertical viewport Tablet Portrait
-    &[gd-yTabPort="top"] {
+    /*&[gd-yTabPort="top"] {
         @include tabletPortrait {
             align-content: flex-start;
             align-items: flex-start;
@@ -278,9 +278,9 @@ $smallWidth: px(900);
             align-content: flex-end;
             align-items: flex-end;
         }
-    }
+    }*/
     // grid Alignment Vertical viewport Tablet Landscape
-    &[gd-yTabLand="top"] {
+    /*&[gd-yTabLand="top"] {
         @include tabletLandscape {
             align-content: flex-start;
             align-items: flex-start;
@@ -297,9 +297,9 @@ $smallWidth: px(900);
             align-content: flex-end;
             align-items: flex-end;
         }
-    }
+    }*/
     // grid Alignment Vertical viewport Desktop
-    &[gd-yDesk="top"] {
+    /*&[gd-yDesk="top"] {
         @include desktop {
             align-content: flex-start;
             align-items: flex-start;
@@ -316,7 +316,7 @@ $smallWidth: px(900);
             align-content: flex-end;
             align-items: flex-end;
         }
-    }
+    }*/
 }
 
 // Items Alignment: Horizontal
@@ -334,7 +334,7 @@ $smallWidth: px(900);
             margin-left: auto;
         }
         // item Self align Horizontal tablet
-        &[itm-xTab="left"] {
+        /*&[itm-xTab="left"] {
             @include tablet {
                 margin-right: auto;
             }
@@ -349,9 +349,9 @@ $smallWidth: px(900);
             @include tablet {
                 margin-left: auto;
             }
-        }
+        }*/
         // item Self align Horizontal tablet portrait
-        &[itm-xTabPort="left"] {
+        /*&[itm-xTabPort="left"] {
             @include tabletPortrait {
                 margin-right: auto;
             }
@@ -366,9 +366,9 @@ $smallWidth: px(900);
             @include tabletPortrait {
                 margin-left: auto;
             }
-        }
+        }*/
         // item Self align Horizontal tablet landscape
-        &[itm-xTabLand="left"] {
+        /*&[itm-xTabLand="left"] {
             @include tabletLandscape {
                 margin-right: auto;
             }
@@ -383,9 +383,9 @@ $smallWidth: px(900);
             @include tabletLandscape {
                 margin-left: auto;
             }
-        }
+        }*/
         // item Self align Horizontal Desktop
-        &[itm-xDesk="left"] {
+        /*&[itm-xDesk="left"] {
             @include desktop {
                 margin-right: auto;
             }
@@ -400,7 +400,7 @@ $smallWidth: px(900);
             @include desktop {
                 margin-left: auto;
             }
-        }
+        }*/
 }
 
 // Items Alignment: Verticle
@@ -416,7 +416,7 @@ $smallWidth: px(900);
             align-self: flex-end;
         }
         // item Self align Verticle Tablet
-        &[itm-yTab="top"] {
+        /*&[itm-yTab="top"] {
             @include tablet {
                 align-self: flex-start;
             }
@@ -430,10 +430,10 @@ $smallWidth: px(900);
             @include tablet {
                 align-self: flex-end;
             }
-        }
+        }*/
         
         // item Self align Verticle Tablet Portrait
-        &[itm-yTabPort="top"] {
+        /*&[itm-yTabPort="top"] {
             @include tabletPortrait {
                 align-self: flex-start;
             }
@@ -447,9 +447,9 @@ $smallWidth: px(900);
             @include tabletPortrait {
                 align-self: flex-end;
             }
-        }
+        }*/
         // item Self align Verticle Tablet Landscape
-        &[itm-yTabLand="top"] {
+        /*&[itm-yTabLand="top"] {
             @include tabletLandscape {
                 align-self: flex-start;
             }
@@ -463,9 +463,9 @@ $smallWidth: px(900);
             @include tabletLandscape {
                 align-self: flex-end;
             }
-        }
+        }*/
         // item Self align Verticle Desktop
-        &[itm-yDesk="top"] {
+        /*&[itm-yDesk="top"] {
             @include desktop {
                 align-self: flex-start;
             }
@@ -479,7 +479,7 @@ $smallWidth: px(900);
             @include desktop {
                 align-self: flex-end;
             }
-        }
+        }*/
 }
 
 // Item Size
@@ -565,7 +565,8 @@ $smallWidth: px(900);
             width: 100%;
         }
         // grid viewport mobile
-        &[itm-sMob="0"],
+    
+        /*&[itm-sMob="0"],
         &[itm-sMob="hide"] {
             @include mobile {
                 width: 0 !important;
@@ -602,8 +603,8 @@ $smallWidth: px(900);
             @include mobile {
                 width: 50% !important;
             }
-        }
-        &[itm-sMob="60"] {
+        }*/
+       /* &[itm-sMob="60"] {
             @include mobile {
                 width: 60% !important;
             }
@@ -628,7 +629,7 @@ $smallWidth: px(900);
             @include mobile {
                 width: 100% !important;
             }
-        }
+        }*/
         // grid viewport tablet
         &[itm-sTab="0"],
         &[itm-sTab="hide"] {
@@ -658,7 +659,7 @@ $smallWidth: px(900);
                 width: 30% !important;
             }
         }
-       &[itm-sTab="1-3"], 
+       &[itm-sTab="1-3"],
        &[itm-sTab="33"], {
             @include tablet {
                 width: 33.333% !important;
@@ -941,7 +942,7 @@ $smallWidth: px(900);
             }
         }
         // item Display viewport Tablet
-        &[itm-dTab=""],
+        /*&[itm-dTab=""],
         &[itm-dTab="show"] {
             @include tablet {
                 display: block;
@@ -951,9 +952,9 @@ $smallWidth: px(900);
             @include tablet {
                 display: none;
             }
-        }
+        }*/
         // item Display viewport Tablet Portrait
-        &[itm-dTabPort=""],
+        /*&[itm-dTabPort=""],
         &[itm-dTabPort="show"] {
             @include tabletPortrait {
                 display: block;
@@ -963,9 +964,9 @@ $smallWidth: px(900);
             @include tabletPortrait {
                 display: none;
             }
-        }
+        }*/
         // item Display viewport Tablet Landscape
-        &[itm-dTabLand=""],
+        /*&[itm-dTabLand=""],
         &[itm-dTabLand="show"] {
             @include tabletLandscape {
                 display: block;
@@ -975,9 +976,9 @@ $smallWidth: px(900);
             @include tabletLandscape {
                 display: none;
             }
-        }
-        // item Display viewport Tablet Landscape
-        &[itm-dDesk=""],
+        }*/
+        // item Display viewport Desktop
+        /*&[itm-dDesk=""],
         &[itm-dDesk="show"] {
             @include desktop {
                 display: block;
@@ -987,7 +988,7 @@ $smallWidth: px(900);
             @include desktop {
                 display: none;
             }
-        }
+        }*/
 }
 
 // grid mixin
@@ -1013,7 +1014,7 @@ $smallWidth: px(900);
     
     
     // grid Base Unit
-    &[gd-baseUnit="5"] {
+    /*&[gd-baseUnit="5"] {
         >div {
             @include tabletPortrait {
                 @include tabletPortDefault;
@@ -1026,8 +1027,8 @@ $smallWidth: px(900);
                 flex: initial;
             }
         }
-    }
-    &[gd-baseUnit="4"] {
+    }*/
+    /*&[gd-baseUnit="4"] {
         >div {
             @include tabletPortrait {
                 @include tabletPortDefault;
@@ -1040,7 +1041,7 @@ $smallWidth: px(900);
                 flex: initial;
             }
         }
-    }
+    }*/
     &[gd-baseUnit="3"] {
         >div {
              @include tabletPortrait{
@@ -1085,7 +1086,7 @@ $smallWidth: px(900);
         @include itemAlignVerticle;
         
         // Items Display
-        @include itemDisplay
+        @include itemDisplay;
     }
 }
 
