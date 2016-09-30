@@ -27,7 +27,7 @@
     <!--Main css------------------------------------------------------>
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <!--google Font/s-->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,900" rel="stylesheet">
     <!--google Font/s end-->
     <!--[if lt IE 9]>
 	  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
