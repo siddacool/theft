@@ -32,13 +32,17 @@ var projectName = 'theft',
 
 
 /* live reload */
+
+// sync list
+var syncList = [
+    dist + '/*.html',
+    dist + '/css/*.css',
+    dist + '/img/*.png',
+    dist + '/js/*.js'
+];
+
 gulp.task('browser-sync', function () {
-   var files = [
-      dist + '/*.html',
-      dist + '/css/*.css',
-      dist + '/img/*.png',
-      dist + '/js/*.js'
-   ];
+   var files = syncList;
 
    browserSync.init(files, {
       server: {
@@ -49,12 +53,7 @@ gulp.task('browser-sync', function () {
 });
 
 gulp.task('browser-sync-open-browser', function () {
-   var files = [
-      dist + '/*.html',
-      dist + '/css/*.css',
-      dist + '/img/*.png',
-      dist + '/js/*.js'
-   ];
+   var files = syncList;
 
    browserSync.init(files, {
       server: {
@@ -65,6 +64,15 @@ gulp.task('browser-sync-open-browser', function () {
 
 /* style related components */
 /* scss css */
+
+// Browser list
+var browserList = [
+    "chrome 40",
+    "edge 13",
+    "firefox 40",
+    "ios_saf 7",
+    "safari 8"
+];
 
 // scssToCss
 gulp.task('scssToCss', function () {
@@ -77,7 +85,7 @@ gulp.task('scssToCss', function () {
         .pipe(combineMq({
             beautify: false
         }))
-        .pipe(prefix('last 4 versions'))
+        .pipe(prefix(browserList))
         .pipe(sourcemaps.write('../sourceMaps_css'))
         .pipe(gulp.dest(dist + '/css/'));
 });
@@ -92,7 +100,7 @@ gulp.task('scssToCssWeb', function () {
         .pipe(combineMq({
             beautify: false
         }))
-        .pipe(prefix('last 4 versions'))
+        .pipe(prefix(browserList))
         .pipe(gulp.dest(dist + '/css/'));
 });
 
