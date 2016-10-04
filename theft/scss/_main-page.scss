@@ -336,9 +336,6 @@ main {
         }
     }
 }
-section {
-    @include gridBase;
-}
 .aboutContainer{
     display: flex;
     @include desktopMix{
