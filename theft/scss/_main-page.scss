@@ -305,12 +305,6 @@ main {
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 2rem;
-        @include tablet{
-            max-width: 240px;
-        }
-        @include desktop{
-            max-width: px(180);
-        }
         .gameImage {
             $dimentions: 9rem;
             height: $dimentions;
