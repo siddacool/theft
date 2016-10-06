@@ -1,14 +1,30 @@
-/*-------------------- Contol*/
+//### Base
+//+++
 
-@import "_control";
-@include resetAll;
+//## Control
+@import "./base/control";
 
-/*-------------------- plugins*/
+//---
+//### Modules
+//+++
 
-//sysBreeks grid
-@import "_sysBreeks";
+//## Reset All
+@import "./modules/resetAll";
 
-/*-------------------- Stylesheets*/
+//---
+//### Libraries
+//+++
 
-@import "main-page";
-@import "game-page";
+//## sysBreeks
+@import "./lib/sysBreeks";
+
+//---
+//### Partials
+//+++
+
+//## main page
+@import "./partials/main-page";
+//## game page
+@import "./partials/game-page";
+
+//---
