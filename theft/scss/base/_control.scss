@@ -1,80 +1,57 @@
-/*-------------------- dependencies*/
+//### Dependencies
+//+++
 
+//## Important functions, media queries
 @import "./dependencies/functions";
+//## A set of diffrent ui colors
 @import "./dependencies/colors";
 
-//-------------------- global variables//
+//---
+//### Default variables
+//+++
+
+//## Primary font,google font declaration
 $baseFont: 'Roboto', Courier New;
+//## Primary background color
 $baseColor: #2d2d2d;
+//## Alternate background color
 $baseAltColor: $ios-blue;
+//## Dull background color
 $dullColor: #f4f4f4;
+//## Primary font color
 $fontColor: $ios-charcoal;
+//## Alternate font color
 $fontAltColor: lighten($ios-charcoal,30%);
 
+//---
+//### User defined variables
+//+++
+
+//## disabled, color
 $disableColor: #dcdcdc;
-
+//## ui yellow color
 $uiYellow: $flat-sunFlower;
-
+//## cheat essentials color
 $cheatEssentials: #eaeaea;
+//## cheat health color
 $cheatHealth: $flat-alizarin;
+//## cheat wanted color
 $cheatWanted: #424c95;
+//## cheat weapons color
 $cheatWeapons: $flat-amethyst;
+//## cheat vehicles color
 $cheatVehicles: $flat-belizeHole;
+//## cheat gameplay color
 $cheatGameplay: $flat-emerald;
+//## cheat weather color
 $cheatWeather: $flat-sunFlower;
+//## cheat misc color
 $cheatMisc: $flat-turquoise;
-//user defined//
+//## Header height desktop
 $barHeight: px(60);
+//## Header height tablet
 $barHeightTab: px(80);
+//## Header height mobile
 $barHeightMob: $barHeight;
 
-/*-------------------- common stuff*/
-
-@mixin mainPadding {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    
-    @include tablet{
-        padding-left: 2.5rem;
-        padding-right: 2.5rem;
-    }
-    
-    @include desktop{
-        padding-left: 3.5rem;
-        padding-right: 3.5rem;
-    }
-}
-
-
-@mixin flexMiddle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-%flexMiddle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-%flex {
-    display: flex;
-}
-%flexInline {
-    display: inline-flex;
-}
-.dbi {
-    display: block !important;
-}
-@mixin dbi {
-    display: block !important;
-}
-
-/*-------------------- user defined stuff*/
-
-
-// cardLayout
-@mixin cardLayout{
-    box-shadow: px(1) px(1) px(6) #b9b9b9;
-    padding: 2rem 1rem;
-    background-color: #fdfdfd;
-}
+//---

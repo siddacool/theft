@@ -5,26 +5,32 @@
 @import "./base/control";
 
 //---
-//### Modules
+//### Toolkit : Hacks,fixes etc. it's got you covered
 //+++
 
-//## Reset All
-@import "./modules/resetAll";
+//## reset all
+@import "./toolkit/resetAll";
+//## set of global mixins
+@import "./toolkit/mixinMaster";
 
 //---
-//### Libraries
+//### Attachments : External libraries, grid systems etc.
 //+++
 
-//## sysBreeks
-@import "./lib/sysBreeks";
+//## sysBreeks, grid and typography system
+@import "./attachments/sysBreeks";
 
 //---
-//### Partials
+//### Parts : Page Partials like Nav,Header,footer etc.
 //+++
 
 //## main page
-@import "./partials/main-page";
+@import "./parts/main-page";
 //## game page
-@import "./partials/game-page";
+@import "./parts/game-page";
+
+//---
+//### Shells : Special components
+//+++
 
 //---
