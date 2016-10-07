@@ -1,0 +1,56 @@
+/* logo */
+
+//### Create
+//+++
+
+@mixin logo-shell {
+    #logo {
+        width: initial;
+        display: inline-flex;
+        align-items: center;
+        height: 100%;
+        a {
+            display: inline-flex;
+            align-items: center;
+            height: 100%;
+            cursor: pointer;
+            padding: 0 1.5rem;
+        }
+        svg {
+            width: px(90);
+            fill: #ffffff;
+            @include desktop {
+                width: px(80);
+            }
+        }
+        .logoMain {
+            @include desktopMixEx {
+                display: inline-block;
+                transform: translateX(-109px);
+            }
+            @include print {
+                display: inline-block;
+                transform: translateX(-109px);
+            }
+        }
+        .logoSecondary {
+            display: none;
+            @include desktopMixEx {
+                display: inline-block;
+                transform: translateX(-109px);
+            }
+            @include print {
+                display: inline-block;
+                transform: translateX(-109px);
+            }
+        }
+    }
+}
+
+//---
+//### Load
+//+++
+
+@include logo-shell;
+
+//---

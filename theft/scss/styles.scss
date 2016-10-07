@@ -1,14 +1,55 @@
-/*-------------------- Contol*/
+/* Styles */
 
-@import "_control";
-@include resetAll;
+//### Base
+//+++
 
-/*-------------------- plugins*/
+//## Control
+@import "./base/control";
 
-//sysBreeks grid
-@import "_sysBreeks";
+//---
+//### Toolkit : Hacks,fixes etc. it's got you covered
+//+++
 
-/*-------------------- Stylesheets*/
+//## reset all
+@import "./toolkit/resetAll";
+//## set of global mixins
+@import "./toolkit/mixinMaster";
+//## Initialise default dom element properties
+@import "./toolkit/initDefaults";
 
-@import "main-page";
-@import "game-page";
+//---
+//### Attachments : External libraries, grid systems etc.
+//+++
+
+//## sysBreeks, grid and typography system
+@import "./attachments/sysBreeks";
+
+//---
+//### Parts : Page Partials like Nav,Header,footer etc.
+//+++
+
+//## Header
+@import "./parts/header";
+//## Nav
+@import "./parts/nav";
+//## main-index
+@import "./parts/main-index";
+//## main container
+@import "./parts/mainContainer";
+//## game container
+@import "./parts/gameContainer";
+
+//---
+//### Shells : Special components
+//+++
+
+//## Logo
+@import "./shells/logo";
+//## game card
+@import "./shells/gameCard";
+//## game header on game page
+@import "./shells/gameHeader";
+//## cheat tables on game page
+@import "./shells/gameTables";
+
+//---

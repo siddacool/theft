@@ -1,0 +1,59 @@
+/* Control */
+
+//### Dependencies
+//+++
+
+//## Important functions, media queries
+@import "./dependencies/functions";
+//## A set of diffrent ui colors
+@import "./dependencies/colors";
+
+//---
+//### Default variables
+//+++
+
+//## Primary font,google font declaration
+$baseFont: 'Roboto', Courier New;
+//## Primary background color
+$baseColor: #2d2d2d;
+//## Alternate background color
+$baseAltColor: $ios-blue;
+//## Dull background color
+$dullColor: #f4f4f4;
+//## Primary font color
+$fontColor: $ios-charcoal;
+//## Alternate font color
+$fontAltColor: lighten($ios-charcoal,30%);
+
+//---
+//### User defined variables
+//+++
+
+//## disabled, color
+$disableColor: #dcdcdc;
+//## ui yellow color
+$uiYellow: $flat-sunFlower;
+//## cheat essentials color
+$cheatEssentials: #eaeaea;
+//## cheat health color
+$cheatHealth: $flat-alizarin;
+//## cheat wanted color
+$cheatWanted: #424c95;
+//## cheat weapons color
+$cheatWeapons: $flat-amethyst;
+//## cheat vehicles color
+$cheatVehicles: $flat-belizeHole;
+//## cheat gameplay color
+$cheatGameplay: $flat-emerald;
+//## cheat weather color
+$cheatWeather: $flat-sunFlower;
+//## cheat misc color
+$cheatMisc: $flat-turquoise;
+//## Header height desktop
+$barHeight: px(60);
+//## Header height tablet
+$barHeightTab: px(80);
+//## Header height mobile
+$barHeightMob: $barHeight;
+
+//---
