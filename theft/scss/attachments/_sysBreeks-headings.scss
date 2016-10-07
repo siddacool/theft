@@ -1,0 +1,177 @@
+/* Systematic Breeks Headings */
+/* Headings and typography base */
+/* Created for v 1.2 : Taj Mahal */
+
+/* >>> */
+
+/* --- */
+/* Headings */
+/* +++ */
+
+//### Set Properties
+//+++
+
+//## Font Color
+$sys-fontColor: $fontColor;
+//## Font alt Color
+$sys-fontAltColor: $fontAltColor;
+//## Font Highlight
+$sys-fontHighlight: $baseColor;
+
+//---
+//### Headings Base
+//+++
+
+//#! htmlFulid
+@mixin htmlFulid {
+    html {
+        font-size: calc(1.1rem - 1vmin);
+        @include tablet {
+            font-size: 1.5vmin;
+        }
+        @include desktop {
+            font-size: 1rem;
+        }
+    }
+}
+
+//---
+//### Headings and paragraphs
+//+++
+
+//## H1
+@mixin h1 {
+    h1 {
+        font-size: 3.3rem;
+        line-height: 4rem;
+        padding-bottom: 0.5rem;
+    }
+}
+//## H2
+@mixin h2 {
+    h2 {
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 3.8rem;
+        text-align: center;
+    }
+}
+//## H3
+@mixin h3 {
+    h3 {
+        font-weight: 500;
+        font-size: 1.25rem;
+        line-height: 3rem;
+        color: $sys-fontAltColor;
+        text-align: center;
+    }
+}
+//## H4
+@mixin h4 {
+    h4 {
+        font-weight: 500;
+        font-size: 1.2rem;
+        line-height: 2.2rem;
+        @include tablet{
+          font-size: 1.5rem;
+        }
+        @include desktop {
+            font-size: 1.1rem;
+        }
+    }
+}
+//## H5
+@mixin h5 {
+    h5 {
+        font-size: 1.1rem;
+        font-weight: 500;
+        line-height: 1.6rem;
+        text-transform: uppercase;
+        text-align: center;
+        @include desktop {
+            font-size: 1.02rem;
+            line-height: 1.5rem;
+        }
+    }
+}
+//## H6
+@mixin h6 {
+    h6 {
+        font-weight: 500;
+        font-size: 1.9rem;
+        line-height: 2.6rem;
+    }
+}
+//## Para
+@mixin para {
+    p[para] {
+        font-size: 1.1rem;
+        line-height: 1.65rem;
+        text-align: justify;
+        color: lighten($sys-fontColor,20%);
+        @include tablet {
+            font-size: 1.3rem;
+            letter-spacing: px(0.1);
+            line-height: 1.75rem;
+        }
+        @include desktop {
+            font-size: 1rem;
+            line-height: 1.45rem;
+        }
+    }
+}
+//## Link
+@mixin link {
+    a[link] {
+        position: relative;
+        display: inline-block;
+        transition: all 400ms;
+        margin-left: 0.1rem;
+        margin-right: 0.1rem;
+        color: lighten($sys-fontColor, 5%);
+        &:hover {
+            color: lighten($sys-fontHighlight, 10%);
+            &:after {
+                border-bottom-style: solid;
+                border-bottom-color: lighten($sys-fontHighlight, 10%);
+            }
+        }
+        &:active {
+            color: darken($sys-fontHighlight, 10%);
+            &:after {
+                border-bottom-style: dotted;
+            }
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 0.125rem;
+            bottom: 0;
+            left: 0;
+            border-bottom-width: px(1.5);
+            border-bottom-style: dashed;
+            border-bottom-color: $sys-fontHighlight;
+            transition: all 400ms;
+        }
+    }
+}
+
+//---
+
+/* --- */
+/* Initialize Required Components */
+/* +++ */
+
+//---
+//##! Headings Base
+//+++
+
+//#! htmlFulid
+@include htmlFulid;
+
+//---
+
+/* --- */
+
+/* <<< */

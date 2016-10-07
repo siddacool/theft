@@ -1,29 +1,18 @@
-/* Systematic Breeks */
-/* v 1.1 : Pyramid of the Sun */
-/* 2016-10-04 */
-/* Project Link : https://github.com/siddacool/sys-breeks */
-/* author : Siddhesh Mangela */
-/* Customized for Theft */
+/* Systematic Breeks Core */
+/* Grid base */
+/* Created for v 1.2 : Taj Mahal */
 
 /* >>> */
-/* Dependencies */
-/* +++ */
 
 /* --- */
 /* Constrain Boxes */
 /* +++ */
 
-//### Set Widths and Padding
+//### Set Properties
 //+++
 
-//## Normal Box Width
-$constrainWidth: px(1024);
-//## Large Box Width
-$largeWidth: px(1200);
-//## Small Box Width
-$smallWidth: px(900);
-//## Padding
-@mixin padding {
+//## box Padding
+%boxPadding {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     @include tablet {
@@ -36,12 +25,12 @@ $smallWidth: px(900);
     }
 }
 //## Margin center
-@mixin marginCenter {
+%boxMarginCenter {
     margin-left: auto;
     margin-right: auto;
 }
 //## Section tweak
-@mixin sectTweak {
+%sectTweak {
     display: flex;
     height: 100%;
     flex-direction: column;
@@ -60,21 +49,21 @@ $smallWidth: px(900);
     [box=""],
     [box="constrain"],
     [box="normal"] {
-        max-width: $constrainWidth;
+        @content;
         width: 100%;
-        @include marginCenter;
-        @include padding;
-        @include sectTweak;
+        @extend %boxMarginCenter;
+        @extend %boxPadding;
+        @extend %sectTweak;
     }
 }
 //## Large box
 @mixin box-large {
     [box="large"] {
-        max-width: $largeWidth;
+        @content;
         width: 100%;
-        @include marginCenter;
-        @include padding;
-        @include sectTweak;
+        @extend %boxMarginCenter;
+        @extend %boxPadding;
+        @extend %sectTweak;
     }
 }
 //## Fluid box ,full box
@@ -82,8 +71,8 @@ $smallWidth: px(900);
     [box="fluid"],
     [box="full"] {
         width: 100%;
-        @include padding;
-        @include sectTweak;
+        @extend %boxPadding;
+        @extend %sectTweak;
     }
 }
 //## Justify box, stretch box
@@ -93,18 +82,16 @@ $smallWidth: px(900);
         width: 100%;
         padding-left: 1.5rem;
         padding-right: 1.5rem;
-        @include sectTweak;
+        @extend %sectTweak;
     }
 }
 //## small box
 @mixin box-small {
     [box="small"] {
+        @content;
         width: 100%;
-        @include marginCenter;
-        @include sectTweak;
-		@include desktop{
-           max-width: $smallWidth; 
-        }
+        @extend %boxMarginCenter;
+        @extend %sectTweak;
     }
 }
 
@@ -123,29 +110,11 @@ $smallWidth: px(900);
     &[gd-sect]{
         display: flex;
         flex-wrap: wrap;
-        @include tablet {
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: row;
-        }
-        @include desktop {
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: row;
-        }
         // Items
         >div {
             align-items: center;
             width: 100%;
-            @include tabletPortrait {
-                width: initial;
-                flex: 1;
-            }
-            @include tabletLandscape {
-                width: initial;
-                flex: 1;
-            }
-            @include desktop {
+            @include desktopMixEx {
                 width: initial;
                 flex: 1;
             }
@@ -173,7 +142,7 @@ $smallWidth: px(900);
     flex: initial;
 }
 //## item size tweak
-@mixin itemSizeTweak {
+%itemSizeTweak {
     @include desktopMixEx {
         flex: initial;
     }
@@ -474,7 +443,7 @@ $smallWidth: px(900);
 //## Item size all
 @mixin itm-s {
     &[itm-s] {
-        @include itemSizeTweak;
+        @extend %itemSizeTweak;
     }
     &[itm-s="10"] {
         @include gridItemSize;
@@ -552,7 +521,7 @@ $smallWidth: px(900);
 //## Item size mobile
 @mixin itm-sMob {
     &[itm-sMob] {
-        @include itemSizeTweak;
+        @extend %itemSizeTweak;
     }
     &[itm-sMob="0"],
     &[itm-sMob="hide"] {
@@ -628,7 +597,7 @@ $smallWidth: px(900);
 //## Item size tablet
 @mixin itm-sTab {
     &[itm-sTab] {
-        @include itemSizeTweak;
+        @extend %itemSizeTweak;
     }
     &[itm-sTab="0"],
     &[itm-sTab="hide"] {
@@ -704,7 +673,7 @@ $smallWidth: px(900);
 //## Item size tablet portrait
 @mixin itm-sTabPort {
     &[itm-sTabPort] {
-        @include itemSizeTweak;
+        @extend %itemSizeTweak;
     }
     &[itm-sTabPort="0"],
     &[itm-sTabPort="hide"] {
@@ -780,7 +749,7 @@ $smallWidth: px(900);
 //## Item size tablet landscape
 @mixin itm-sTabLand {
     &[itm-sTabLand] {
-        @include itemSizeTweak;
+        @extend %itemSizeTweak;
     }
     &[itm-sTabLand="0"],
     &[itm-sTabLand="hide"] {
@@ -855,7 +824,7 @@ $smallWidth: px(900);
 //## Item size desktop
 @mixin itm-sDesk {
     &[itm-sDesk] {
-        @include itemSizeTweak;
+        @extend %itemSizeTweak;
     }
     &[itm-sDesk] {
         @include desktop {
@@ -1204,168 +1173,8 @@ $smallWidth: px(900);
 //---
 
 /* --- */
-/* Headings */
+/* Initialize Required Components */
 /* +++ */
-
-//---
-//### Headings Base
-//+++
-
-//#! htmlFulid
-@mixin htmlFulid {
-    html {
-        font-size: calc(1.1rem - 1vmin);
-        @include tablet {
-            font-size: 1.5vmin;
-        }
-        @include desktop {
-            font-size: 1rem;
-        }
-    }
-}
-
-//---
-//### Headings and paragraphs
-//+++
-
-//## H1
-@mixin h1 {
-    h1 {
-		font-size: 3.3rem;
-        line-height: 4rem;
-        padding-bottom: 0.5rem;
-    }
-}
-//## H2
-@mixin h2 {
-    h2 {
-        font-weight: 400;
-        font-size: 2rem;
-        line-height: 3.8rem;
-        text-align: center;
-    }
-}
-//## H3
-@mixin h3 {
-    h3 {
-        font-weight: 500;
-        font-size: 1.25rem;
-        line-height: 3rem;
-        color: $fontAltColor;
-        text-align: center;
-    }
-}
-//## H4
-@mixin h4 {
-    h4 {
-        font-weight: 500;
-        font-size: 1.2rem;
-        line-height: 2.2rem;
-        @include tablet{
-          font-size: 1.5rem;
-        }
-        @include desktop {
-            font-size: 1.1rem;
-        }
-    }
-}
-//## H5
-@mixin h5 {
-    h5 {
-        font-size: 1.1rem;
-        font-weight: 500;
-        line-height: 1.6rem;
-        text-transform: uppercase;
-        text-align: center;
-        @include desktop {
-            font-size: 1.02rem;
-            line-height: 1.5rem;
-        }
-    }
-}
-//## H6
-@mixin h6 {
-    h6 {
-        font-weight: 500;
-        font-size: 1.9rem;
-        line-height: 2.6rem;
-    }
-}
-//## Para
-@mixin para {
-    p[para] {
-        font-size: 1.1rem;
-        line-height: 1.65rem;
-        text-align: justify;
-        color: lighten($fontColor,20%);
-        @include tablet {
-            font-size: 1.3rem;
-            letter-spacing: px(0.1);
-            line-height: 1.75rem;
-        }
-        @include desktop {
-            font-size: 1rem;
-            line-height: 1.45rem;
-        }
-    }
-}
-//## Link
-@mixin link {
-    a[link] {
-        $linkColor: $baseColor;
-        position: relative;
-        display: inline-block;
-        transition: all 400ms;
-        margin-left: 0.1rem;
-        margin-right: 0.1rem;
-        color: lighten($fontColor, 5%);
-        &:hover {
-            color: lighten($linkColor, 10%);
-            &:after {
-                border-bottom-style: solid;
-                border-bottom-color: lighten($linkColor, 10%);
-            }
-        }
-        &:active {
-            color: darken($linkColor, 10%);
-            &:after {
-                border-bottom-style: dotted;
-            }
-        }
-        &:after {
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 0.125rem;
-            bottom: 0;
-            left: 0;
-            border-bottom-width: px(1.5);
-            border-bottom-style: dashed;
-            border-bottom-color: $linkColor;
-            transition: all 400ms;
-        }
-    }
-}
-
-//---
-
-/* --- */
-/* Initialize Mixins (enable/disable features) */
-/* +++ */
-
-//### Constrain Boxes
-//+++
-
-//## Normal box ,constrain box
-@include box-normal
-//## Large box
-@include box-large
-//## Fluid box ,full box
-@include box-fluid
-//## Justify box, stretch box
-//@include box-justify
-//## Small box
-@include box-small
 
 //---
 //##! Grid base
@@ -1373,129 +1182,6 @@ $smallWidth: px(900);
 
 //#! Grid base
 @include gd-base;
-
-//---
-//### Grid alignment
-//+++
-
-//## Grid horizontal all
-@include gd-x;
-//## Grid horizontal tablet
-//@include gd-xTab;
-//## Grid horizontal tablet portrait
-//@include gd-xTabPort;
-//## Grid horizontal tablet landscape
-//@include gd-xTabLand;
-//## Grid horizontal desktop
-//@include gd-xDesk;
-//## Grid verticle all
-@include gd-y;
-//## Grid verticle tablet
-//@include gd-yTab;
-//## Grid verticle tablet portrait
-//@include gd-yTabPort;
-//## Grid verticle tablet landscape
-//@include gd-yTabLand;
-//## Grid verticle desktop
-//@include gd-yDesk;
-
-//---
-//### Grid item base unit sizes
-//+++
-
-//## Grid base unit 5
-//@include gd-baseUnit-5;
-//## Grid base unit 4
-//@include gd-baseUnit-4;
-//## Grid base unit 3
-@include gd-baseUnit-3;
-
-//---
-//### Item size
-//+++
-
-//## Item size all
-@include itm-s;
-//## Item size mobile
-//@include itm-sMob;
-//## Item size tablet
-@include itm-sTab;
-//## Item size tablet portrait
-@include itm-sTabPort;
-//## Item size tablet landscape
-@include itm-sTabLand;
-//## Item size desktop
-@include itm-sDesk;
-
-//---
-//### Item alignment
-//+++
-
-//## Item horizontal all
-@include itm-x;
-//## Item horizontal tablet
-//@include itm-xTab;
-//## Item horizontal tablet portrait
-//@include itm-xTabPort;
-//## Item horizontal tablet landscape
-//@include itm-xTabLand;
-//## Item horizontal desktop
-//@include itm-xDesk;
-//## Item verticle all
-@include itm-y;
-//## Item verticle tablet
-//@include itm-yTab;
-//## Item verticle tablet portrait
-//@include itm-yTabPort;
-//## Item verticle tablet landscape
-//@include itm-yTabLand;
-//## Item verticle desktop
-//@include itm-yDesk;
-
-//---
-//### Item display
-//+++
-
-//## Item display all
-@include itm-d;
-//## Item display mob
-@include itm-dMob;
-//## Item display tablet
-//@include itm-dTab;
-//## Item display tablet portrait
-//@include itm-dTabPort;
-//## Item display tablet landscape
-//@include itm-dTabLand;
-//## Item display tablet desktop
-//@include itm-dDesk;
-
-//---
-//### Headings Base
-//+++
-
-//#! htmlFulid
-@include htmlFulid;
-
-//---
-//### Headings and paragraphs
-//+++
-
-//## H1
-@include h1;
-//## H2
-@include h2;
-//## H3
-@include h3;
-//## H4
-@include h4;
-//## H5
-@include h5;
-//## H6
-@include h6;
-//## Para
-@include para;
-//## Link
-@include link;
 
 //---
 
