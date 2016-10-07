@@ -1,0 +1,20 @@
+/* main Container */
+
+//### Create
+//+++
+
+@mixin mainContainer-part {
+    #mainContainer {
+        &.hide {
+            display: none;
+        }
+    }
+}
+
+//---
+//### Attach
+//+++
+
+@include mainContainer-part;
+
+//---

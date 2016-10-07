@@ -1,0 +1,90 @@
+/* main-index */
+
+//### Create
+//+++
+
+@mixin main-index-part {
+    main {
+        padding-top: $barHeightMob;
+        padding-bottom: $barHeightMob;
+        @include tablet {
+            padding-top: $barHeightTab;
+            padding-bottom: $barHeightTab;
+        }
+        @include desktop {
+            padding-top: $barHeight;
+            padding-bottom: $barHeight;
+        }
+        @include print {
+            padding-top: 0;
+        }
+        div[box] {
+            margin-top: 1rem;
+            @include desktopMixEx {
+                margin-top: 1.5rem;
+            }
+        }
+        section.gameList {
+            padding-top: 1rem;
+            >div {
+                padding: 0 1.5rem;
+            }
+        }
+    }
+    .aboutContainer {
+        display: flex;
+        @include desktopMix {
+            height: px(80);
+        }
+        @include desktop {
+            max-width: px(790);
+            margin-left: auto;
+            margin-right: auto;
+        }
+        p {
+            display: none;
+            @include print {
+                display: block;
+            }
+            &.show {
+                display: block;
+            }
+            >span {
+                display: block;
+                text-align: center;
+                padding: 1rem;
+                @include desktopMixEx {
+                    display: inline-block;
+                    padding: 0;
+                }
+            }
+        }
+        a {
+            cursor: pointer;
+        }
+    }
+    #about {
+        display: inline-flex;
+        align-items: center;
+        padding: 1rem;
+        @include print {
+            display: none;
+        }
+        &.close {
+            display: none;
+        }
+    }
+    #aboutClose {
+        @include print {
+            display: none;
+        }
+    }
+}
+
+//---
+//### Attach
+//+++
+
+@include main-index-part;
+
+//---

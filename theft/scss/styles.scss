@@ -1,3 +1,5 @@
+/* Styles */
+
 //### Base
 //+++
 
@@ -12,6 +14,8 @@
 @import "./toolkit/resetAll";
 //## set of global mixins
 @import "./toolkit/mixinMaster";
+//## Initialise default dom element properties
+@import "./toolkit/initDefaults";
 
 //---
 //### Attachments : External libraries, grid systems etc.
@@ -24,13 +28,28 @@
 //### Parts : Page Partials like Nav,Header,footer etc.
 //+++
 
-//## main page
-@import "./parts/main-page";
-//## game page
-@import "./parts/game-page";
+//## Header
+@import "./parts/header";
+//## Nav
+@import "./parts/nav";
+//## main-index
+@import "./parts/main-index";
+//## main container
+@import "./parts/mainContainer";
+//## game container
+@import "./parts/gameContainer";
 
 //---
 //### Shells : Special components
 //+++
+
+//## Logo
+@import "./shells/logo";
+//## game card
+@import "./shells/gameCard";
+//## game header on game page
+@import "./shells/gameHeader";
+//## cheat tables on game page
+@import "./shells/gameTables";
 
 //---

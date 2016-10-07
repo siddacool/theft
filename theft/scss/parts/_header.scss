@@ -1,0 +1,75 @@
+/* header */
+
+//### Create
+//+++
+
+@mixin header-part {
+    header {
+        color: #fff;
+        background-color: $baseColor;
+        position: fixed;
+        height: $barHeightMob;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+        padding: 0;
+        @include tablet {
+            height: $barHeightTab;
+        }
+        @include desktop {
+            height: $barHeight;
+        }
+        @include print {
+            position: static;
+        }
+        >div {
+            padding: 0 !important;
+        }
+        section {
+            flex: 1;
+        }
+        .icon {
+            fill: #fff;
+        }
+        a {
+            display: inline-block;
+        }
+    }
+    #back,
+    #toggle {
+        width: initial;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        a {
+            padding: 1rem 1.5rem;
+            cursor: pointer;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+        @include print {
+            display: none;
+        }
+    }
+    #back {
+        @include desktop {
+            padding-left: 2rem;
+        }
+    }
+    #toggle {
+        @include desktop {
+            padding-right: 2rem;
+        }
+    }
+}
+
+//---
+//### Attach
+//+++
+
+@include header-part;
+
+//---
+

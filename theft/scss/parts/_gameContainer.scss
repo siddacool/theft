@@ -1,0 +1,99 @@
+/* game container */
+
+//### Create
+//+++
+
+@mixin gameContainer-part {
+    #gameContainer {
+        display: none;
+        margin-top: 1rem;
+        padding: 0;
+        @include desktopMix {
+            margin-top: 2rem;
+        }
+        @include tabletLandscape {
+            padding-left: 2.5rem;
+            padding-right: 2.5rem;
+        }
+        @include desktop {
+            padding-left: 3.5rem;
+            padding-right: 3.5rem;
+        }
+        @include print {
+            margin-top: 0;
+            max-width: initial;
+        }
+        &.show {
+            display: flex;
+        }
+        &.cheats {
+            .cheatGroupHolder {
+                flex-direction: column;
+            }
+            .cheatGroupSubHolder {
+                width: 100% !important;
+            }
+            a[data-cheatgroup] {}
+        }
+    }
+    #gameContainer[state="disable"] {
+        color: $disableColor !important;
+        .gameImage {
+            border-color: darken($disableColor, 30%);
+            img {
+                opacity: 0;
+            }
+        }
+        .cheatGroupHolder {
+            flex-direction: initial;
+        }
+        .cheatGroupSubHolder {
+            display: block !important;
+            margin: 0 !important;
+            &.expand {
+                box-shadow: none;
+                padding: 0;
+                background-color: initial;
+                a[data-cheatgroup],
+                a[data-cheatall] {
+                    display: flex;
+                    padding: 1rem;
+                    h5 {
+                        font-size: 1.02rem;
+                    }
+                    .icon {
+                        width: 1.5rem;
+                        height: 1.5rem;
+                    }
+                }
+            }
+            @include desktop {
+                width: 33.333% !important;
+            }
+        }
+        a[data-cheatgroup],
+        a[data-cheatall] {
+            cursor: default;
+            background-color: $disableColor;
+            border: px(1) dashed #fff;
+            h5 {
+                color: darken($disableColor, 30%);
+            }
+            .icon {
+                fill: darken($disableColor, 30%);
+            }
+        }
+        .cheatTable {
+            display: none;
+            margin: 0 !important;
+        }
+    }
+}
+
+//---
+//### Attach
+//+++
+
+@include gameContainer-part;
+
+//---
