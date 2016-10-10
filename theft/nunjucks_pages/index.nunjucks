@@ -1,89 +1,39 @@
+{# /* Index page */ #}
+
+{# //### Dependencies #}
+{# //+++ #}
+
+{# //## Macro Master #}
+{% import 'toolkit/macro-master.nunjucks' as macro %}
+
+{# //--- #}
+{# //### Init #}
+{# //+++ #}
+
 {% extends "layout.nunjucks" %}
+{% block content %}
 
-{% block content %} 
+{# //## Svg Assets #}
+{% include "components/icons.nunjucks" %}
 
-{% include "partials/icons.nunjucks" %}
-{% import 'macros/icons-macro.nunjucks' as svg %}
-{% import 'macros/gameBanner-macro.nunjucks' as img %}
  <div id="wrapper">
 
-        <!--  Add components inside body tag after this line only -------------------------->
-        {% import 'macros/header-macro.nunjucks' as header %}
-        
-        {{header.headerFor('home')}}
+        {# //## header #}
+        {% include "partials/header.nunjucks" %}
+        {# //## nav #}
         {% include "partials/nav.nunjucks" %}
 
         <main>
-            <div box="large" id="mainContainer">
-                 <section>
-                     <div itm-s="100" itm-y="middle" itm-x="center" class="aboutContainer">
-                         <p para>Theft is an online cheatbook for GTA (Grand Theft Auto) titles. Serving PC cheats for games including but not limited to GTA: San andreas &amp; GTA: Vice City in a modern and easy to use single-page web interface. <span><a id="aboutClose" link>Close</a></span></p>
-                         <a id="about" title="About">{{svg.icon('about-solid')}}</a>
-                     </div>
-                     <div itm-s="100">
-                         <h3>pick a game:</h3>
-                     </div>
-                 </section>
-                  <section class="gameList" game-order="chronology" game-direct="ascending">
-                      <div itm-sDesk="25" itm-sTabPort="50" itm-sTabLand="33" itm-game="gta5" data-class="focus">
-                          <a href="#gta5" id="card-gta5" class="game">
-                              <span class="gameImage">
-                                  {{img.name('GTA V')}}
-                              </span>
-                              <h5 class="gameTitle">GTA V</h5>
-                          </a>
-                      </div>
-                      <div itm-sDesk="25" itm-sTabPort="50" itm-sTabLand="33" itm-game="gta4">
-                          <a href="#gta4" id="card-gta4" class="game">
-                              <span class="gameImage">
-                                  {{img.name('GTA IV')}}
-                              </span>
-                              <h5 class="gameTitle">GTA IV</h5>
-                          </a>
-                      </div>
-                      <div itm-sDesk="25" itm-sTabPort="50" itm-sTabLand="33" itm-game="sa">
-                          <a href="#sa" id="card-sa" class="game">
-                              <span class="gameImage">
-                                  {{img.name('San Andreas')}}
-                              </span>
-                              <h5 class="gameTitle">San Andreas</h5>
-                          </a>
-                      </div>
-                      <div itm-sDesk="25" itm-sTabPort="50" itm-sTabLand="33" itm-game="vc">
-                          <a href="#vc" id="card-vc" class="game">
-                              <span class="gameImage">
-                                  {{img.name('Vice City')}}
-                              </span>
-                              <h5 class="gameTitle">Vice City</h5>
-                          </a>
-                      </div>
-                      <div itm-sDesk="25" itm-sTabPort="50" itm-sTabLand="33" itm-game="gta3">
-                          <a href="#gta3" id="card-gta3" class="game">
-                              <span class="gameImage">
-                                  {{img.name('GTA III')}}
-                              </span>
-                              <h5 class="gameTitle">GTA III</h5>
-                          </a>
-                      </div>
-                      <div itm-sDesk="25" itm-sTabPort="50" itm-sTabLand="33" itm-game="gta3">
-                          <a href="#gta2" id="card-gta2" class="game">
-                              <span class="gameImage">
-                                  {{img.name('GTA II')}}
-                              </span>
-                              <h5 class="gameTitle">GTA II</h5>
-                          </a>
-                      </div>
-                  </section>  
-            </div>
-            <div box="large" id="gameContainer" state="disable">
-                <article>
-                    {% include "partials/gameHeader.nunjucks" %}
-                    {% include "partials/cheatBook.nunjucks" %}
-                </article>
-            </div>
+          {# //## Main Container #}
+          {% include "partials/mainContainer.nunjucks" %}
+          {# //## Game Container #}
+          {% include "partials/gameContainer.nunjucks" %}
         </main>
 
         <!--  stop adding components at this line only ------------------------------------->
 </div>
 
 {% endblock %}
+
+{# //--- #}
+

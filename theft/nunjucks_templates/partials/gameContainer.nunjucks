@@ -1,0 +1,14 @@
+{# /* Game Container */ #}
+
+{# //--- #}
+{# //### Create #}
+{# //+++ #}
+
+<div box="large" id="gameContainer" state="disable">
+    <article>
+        {% include "components/gameHeader.nunjucks" %} 
+        {% include "components/cheatBook.nunjucks" %}
+    </article>
+</div>
+
+{# //--- #}

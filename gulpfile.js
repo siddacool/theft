@@ -214,7 +214,7 @@ gulp.task('svgstore', function () {
         }))
         .pipe(rename({prefix: 'icon-'}))
         .pipe(svgstore())
-        .pipe(gulp.dest(projectName + '/nunjucks_templates/partials/'));
+        .pipe(gulp.dest(projectName + '/nunjucks_templates/components/'));
 });
 
 /* Watch for changes */

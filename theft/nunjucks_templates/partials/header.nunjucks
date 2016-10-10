@@ -1,0 +1,23 @@
+{# /* Header */ #}
+
+{# //--- #}
+{# //### Create #}
+{# //+++ #}
+
+<header>
+    <div box="fluid">
+        <section gd-x="justify" gd-y="middle">
+            <div id="back" itm-s>
+                <a>{{ macro.icon('arrow-back-condensed') }}</a>
+            </div>
+            <div id="logo" itm-s>
+                <a>{% include "components/logo.nunjucks" %}</a>
+            </div>
+            <div id="toggle" itm-s>
+                <a>{{ macro.icon('toggle') }}</a>
+            </div>
+        </section>
+    </div>
+</header>
+
+{# //--- #}
