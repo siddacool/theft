@@ -1,0 +1,20 @@
+{# /* Main Container */ #}
+
+{# //--- #}
+{# //### Create #}
+{# //+++ #}
+
+<div box="large" id="mainContainer">
+    <section>
+        <div itm-s="100" itm-y="middle" itm-x="center" class="aboutContainer">
+            <p para>Theft is an online cheatbook for GTA (Grand Theft Auto) titles. Serving PC cheats for games including but not limited to GTA: San andreas &amp; GTA: Vice City in a modern and easy to use single-page web interface. <span><a id="aboutClose" link>Close</a></span></p>
+            <a id="about" title="About">{{macro.icon('about-solid')}}</a>
+        </div>
+        <div itm-s="100">
+            <h3>pick a game:</h3>
+        </div>
+    </section>
+    {% include "components/gameList.nunjucks" %}
+</div>
+
+{# //--- #}

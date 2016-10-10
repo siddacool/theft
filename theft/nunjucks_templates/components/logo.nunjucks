@@ -1,0 +1,9 @@
+{# /* Logo */ #}
+
+{# //--- #}
+{# //### Create #}
+{# //+++ #}
+
+{% include "components/logo.svg" %}
+
+{# //--- #}

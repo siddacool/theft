@@ -1,3 +1,0 @@
-<div class="svgAssets" style="display:none;">
-    {% include "partials/svgAssets.svg" %}
-</div>

@@ -1,0 +1,11 @@
+{# /* icons */ #}
+
+{# //--- #}
+{# //### Create #}
+{# //+++ #}
+
+<div class="svgAssets" style="display:none;">
+    {% include "components/svgAssets.svg" %}
+</div>
+
+{# //--- #}
