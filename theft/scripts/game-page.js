@@ -33,27 +33,3 @@
     });
 })();
 
-// game info expand
-(function gameInfo() {
-    var gameInfo = document.querySelector('#gamesInfo'),
-        gameInfoAlt = document.querySelector('#gamesInfoAlt'),
-        aboutPara = document.querySelector('#page-descHolder'),
-        gameInfoClose = document.querySelector('#gamesInfoClose');
-
-    gameInfo.addEventListener('click', function () {
-            aboutPara.classList.add('show');
-            this.classList.add('close');
-    });
-
-    gameInfoClose.addEventListener('click', function () {
-        aboutPara.classList.remove('show');
-        gameInfo.classList.remove('close');
-        gameInfoAlt.classList.remove('close');
-    });
-    
-    gameInfoAlt.addEventListener('click', function () {
-        gameInfo.click();
-    });
-    
-})();
-

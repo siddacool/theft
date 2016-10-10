@@ -33,34 +33,9 @@
     }
     .aboutContainer {
         display: flex;
-        @include desktopMix {
-            height: px(80);
-        }
-        @include desktop {
-            max-width: px(790);
-            margin-left: auto;
-            margin-right: auto;
-        }
         p {
-            display: none;
-            @include print {
-                display: block;
-            }
-            &.show {
-                display: block;
-            }
-            >span {
-                display: block;
-                text-align: center;
-                padding: 1rem;
-                @include desktopMixEx {
-                    display: inline-block;
-                    padding: 0;
-                }
-            }
-        }
-        a {
-            cursor: pointer;
+            display: block;
+            padding: 1rem 0;
         }
     }
     #about {
