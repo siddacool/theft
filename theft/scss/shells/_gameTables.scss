@@ -4,53 +4,6 @@
 //+++
 
 @mixin gameTables-shell {
-    .cheatGroupSubHolder {
-        &.hide,
-        &[status="inapt"] {
-            display: none;
-        }
-        &.expand {
-            @include desktopMixEx {
-                @include cardLayout;
-                padding-left: 0;
-                padding-right: 0;
-                padding-top: 0;
-                padding-bottom: 0;
-            }
-            @include desktop {
-                margin-bottom: 2rem;
-            }
-            a[data-cheatgroup] {
-                cursor: default;
-                padding: 0.5rem 1rem;
-                transition: all 400ms;
-                @include desktop {
-                    padding: 0.3rem 1rem;
-                }
-                h5 {
-                    font-size: 1.1rem;
-                    @include desktop {
-                        font-size: 0.9rem;
-                    }
-                }
-                .icon {
-                    $dimentions: 1rem;
-                    height: $dimentions;
-                    width: $dimentions;
-                }
-            }
-            a[data-cheatall] {
-                display: none;
-            }
-            .cheatTable {
-                display: block;
-                @include desktop {
-                    display: table;
-                    margin-bottom: 0.5rem;
-                }
-            }
-        }
-    }
     a[data-cheatgroup],
     a[data-cheatall] {
         display: flex;
@@ -66,14 +19,6 @@
     }
     a[data-cheatgroup="essentials"] {
         background-color: $cheatEssentials;
-        .cheatGroupTitle {
-            color: #6a6a6a;
-        }
-        .cheatGroupImage {
-            .icon {
-                fill: $uiYellow;
-            }
-        }
     }
     a[data-cheatgroup="health"] {
         background-color: $cheatHealth;
@@ -178,6 +123,40 @@
     }
 }
 
+@mixin gameTables-expand-shell {
+    @include desktopMixEx {
+        @include cardLayout;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    @include desktop {
+        margin-bottom: 2rem;
+    }
+    a[data-cheatgroup] {
+        cursor: default;
+        @include desktop {
+            padding: 0.7rem 1rem;
+        }
+        .icon {
+            $dimentions: 1rem;
+            height: $dimentions;
+            width: $dimentions;
+        }
+    }
+    a[data-cheatall] {
+        display: none;
+    }
+    .cheatTable {
+        display: block;
+        @include desktop {
+            display: table;
+            margin-bottom: 0.5rem;
+        }
+    }
+}
+
 //---
 //### Load
 //+++
@@ -186,5 +165,16 @@
     @include gameTables-shell;
 }
 
+#gameContainer {
+    .cheatGroupSubHolder {
+        &.hide,
+        &[status="inapt"] {
+            display: none;
+        }
+        &.expand {
+            @include gameTables-expand-shell;
+        }
+    }
+}
 
 //---

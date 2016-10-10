@@ -85,48 +85,16 @@
             padding-left: 0;
             padding-right: 0;
         }
-        @include desktop {
-            max-width: px(790);
-            height: px(80);
-            margin-left: auto;
-            margin-right: auto;
-        }
         @include print {
             padding: 1rem 0;
         }
         >div {
-            display: none;
-            @include desktop {
-                display: block;
-            }
             @include print {
-                display: block;
                 font-size: 1.2rem;
-            }
-            &.show {
-                display: block;
-                width: 100%;
-            }
-            .gamesInfoCloseHolder {
-                display: block;
-                text-align: center;
-                padding: 1rem;
-                @include desktop {
-                    padding: 0;
-                }
-                @include print {
-                    padding: 0;
-                }
             }
             strong {
                 font-weight: 500;
             }
-        }
-        p {
-            transition: color 400ms;
-        }
-        a {
-            cursor: pointer;
         }
     }
     #gamesInfo {
@@ -146,24 +114,6 @@
             display: none;
         }
         &.close {
-            display: none;
-        }
-    }
-    #gamesInfoClose {
-        @include desktop {
-            display: none;
-        }
-        @include print {
-            display: none;
-        }
-    }
-    #gamesInfoAlt {
-        display: flex;
-        margin-left: auto;
-        @include desktopMixEx {
-            display: none;
-        }
-        @include print {
             display: none;
         }
     }

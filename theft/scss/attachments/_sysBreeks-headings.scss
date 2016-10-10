@@ -105,18 +105,19 @@ $sys-fontHighlight: $baseColor;
 //## Para
 @mixin para {
     p[para] {
-        font-size: 1.1rem;
-        line-height: 1.65rem;
+        font-size: 1.45rem;
         text-align: justify;
-        color: lighten($sys-fontColor,20%);
-        @include tablet {
-            font-size: 1.3rem;
-            letter-spacing: px(0.1);
-            line-height: 1.75rem;
+        color: lighten($sys-fontColor,35%);
+        @include desktopMix{
+            font-size: 1.5rem;
         }
-        @include desktop {
-            font-size: 1rem;
-            line-height: 1.45rem;
+    }
+    p[paraAlt]{
+        font-size: 1.2rem;
+        text-align: justify;
+        color: lighten($sys-fontColor,35%);
+        @include desktopMix{
+            font-size: 1.15rem;
         }
     }
 }

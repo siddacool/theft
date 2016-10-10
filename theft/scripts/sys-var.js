@@ -77,7 +77,7 @@ function insertGame(value) {
         gameData.header.img = extRes.img;
         gameData.header.imgAlt = extRes.imgAlt;
         gameData.header.title = tempData.querySelector('#game-title').textContent;
-        gameData.header.desc = tempData.querySelector('#game-desc').outerHTML;
+        gameData.header.desc = tempData.querySelector('#game-desc').innerHTML;
         gameData.cheats = {};
         
         // Cheat lookup
