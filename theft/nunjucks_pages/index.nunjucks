@@ -30,7 +30,8 @@
           {% include "partials/gameContainer.nunjucks" %}
         </main>
 
-        <!--  stop adding components at this line only ------------------------------------->
+        {# //## footer #}
+        {% include "partials/footer.nunjucks" %}
 </div>
 
 {% endblock %}

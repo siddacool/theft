@@ -17,6 +17,10 @@ body {
 #wrapper {
     width: 100%;
     flex: 1;
+    @include desktopMixEx{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 //---

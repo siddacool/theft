@@ -1,0 +1,64 @@
+/* Footer */
+
+//### Create
+//+++
+
+@mixin footer-part {
+    footer {
+        padding: 1rem 0;
+        @include print{
+            display: none;
+        }
+        section{
+            div{
+                &:last-child{
+                    a{
+                        @include desktopMixEx{
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+        a{
+            display: flex;
+            padding: 0.65rem 0;
+            align-items: center;
+            @include desktopMixEx{
+                display: inline-flex;
+                margin-right: 2rem;
+                padding: 0;
+            }
+            &:hover,
+            &:active{
+                color: $baseAltColor;
+                .icon{
+                    fill: $baseAltColor;
+                }
+            }
+            .icon{
+                transition: fill 600ms;
+                @include desktop{
+                    height: 1.2rem;
+                    width: 1.15rem;
+                }
+            }
+            h6{
+                margin-left: 0.4rem;
+                transition: color 400ms;
+                @include desktopMixEx{
+                    margin-left: 0.2rem;
+                }
+            }
+        }
+    }
+}
+
+//---
+//### Attach
+//+++
+
+@include footer-part;
+
+//---
+
