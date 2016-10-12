@@ -1,0 +1,20 @@
+{# /* Footer */ #}
+
+{# //--- #}
+{# //### Create #}
+{# //+++ #}
+
+<footer>
+    <div box="large">
+        <section gd-y="middle" gd-x="center">
+            <div itm-s>
+                <a href="#top">{{ macro.icon('arrow-top') }} <h6>Top</h6></a>
+            </div>
+            <div itm-s>
+                <a href="https://github.com/siddacool/theft">{{ macro.icon('github') }} <h6>Github</h6></a>
+            </div>
+        </section>
+    </div>
+</footer>
+
+{# //--- #}

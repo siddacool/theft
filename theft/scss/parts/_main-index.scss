@@ -6,14 +6,15 @@
 @mixin main-index-part {
     main {
         padding-top: $barHeightMob;
-        padding-bottom: $barHeightMob;
+        padding-bottom: 2rem;
+        flex: 1;
         @include tablet {
             padding-top: $barHeightTab;
-            padding-bottom: $barHeightTab;
+            padding-bottom: 4rem;
         }
         @include desktop {
             padding-top: $barHeight;
-            padding-bottom: $barHeight;
+            padding-bottom: 1rem;
         }
         @include print {
             padding-top: 0;
