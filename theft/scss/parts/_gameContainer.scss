@@ -8,7 +8,7 @@
         display: none;
         margin-top: 1rem;
         padding: 0;
-        @include desktopMix {
+        @include desktopMixEx {
             margin-top: 2rem;
         }
         @include tabletLandscape {

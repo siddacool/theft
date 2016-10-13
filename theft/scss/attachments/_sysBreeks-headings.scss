@@ -98,10 +98,8 @@ $sys-fontHighlight: $baseColor;
 @mixin h6 {
     h6 {
         font-weight: 500;
-        font-size: 1.1rem;
-        @include desktop{
-            font-size: 0.95rem;
-        }
+        font-size: 1.9rem;
+        line-height: 2.6rem;
     }
 }
 //## Para
@@ -118,7 +116,10 @@ $sys-fontHighlight: $baseColor;
         font-size: 1.2rem;
         text-align: justify;
         color: lighten($sys-fontColor,35%);
-        @include desktopMix{
+        @include tablet{
+            font-size: 1.45rem;
+        }
+        @include desktop{
             font-size: 1.15rem;
         }
     }

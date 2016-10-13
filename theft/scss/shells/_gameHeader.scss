@@ -10,7 +10,7 @@
         padding-bottom: 1rem;
         padding-left: 1rem;
         padding-right: 1rem;
-        @include desktopMix {
+        @include desktopMixEx {
             justify-content: center;
             padding-left: 0;
             padding-right: 0;
@@ -60,13 +60,7 @@
     }
     .gameTitle {
         margin-left: 1rem;
-        font-size: 1.25rem;
         transition: color 400ms;
-        @include desktopMixEx {
-            font-weight: 500;
-            font-size: 1.9rem;
-            line-height: 2.6rem;
-        }
         @include print {
             color: #fff;
             text-transform: uppercase;

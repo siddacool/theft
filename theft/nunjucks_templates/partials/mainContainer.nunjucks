@@ -9,9 +9,6 @@
         <div itm-s="100" itm-y="middle" itm-x="center" class="aboutContainer">
             <p para>Theft is an online cheatbook for GTA (Grand Theft Auto) titles.</p>
         </div>
-        <div itm-s="100">
-            <h3>pick a game:</h3>
-        </div>
     </section>
     {% include "components/gameList.nunjucks" %}
 </div>
