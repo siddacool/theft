@@ -24,6 +24,12 @@
             display: flex;
             padding: 0.65rem 0;
             align-items: center;
+            transition: color 400ms;
+            font-weight: 500;
+            font-size: 1.1rem;
+            @include desktop{
+                font-size: 0.95rem;
+            }
             @include desktopMixEx{
                 display: inline-flex;
                 margin-right: 2rem;
@@ -38,16 +44,13 @@
             }
             .icon{
                 transition: fill 600ms;
+                margin-right: 1rem;
+                @include desktopMixEx{
+                    margin-right: 0.4rem;
+                }
                 @include desktop{
                     height: 1.2rem;
                     width: 1.15rem;
-                }
-            }
-            h6{
-                margin-left: 0.4rem;
-                transition: color 400ms;
-                @include desktopMixEx{
-                    margin-left: 0.2rem;
                 }
             }
         }

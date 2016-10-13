@@ -33,3 +33,11 @@
     });
 })();
 
+// close cheat group
+(function closeCheatGroup() {
+    var tableClose = document.querySelector('#tableClose');
+
+    tableClose.addEventListener('click', function () {
+        closeCheatBook();
+    })
+})();

@@ -5,11 +5,12 @@
 {# //+++ #}
 
 <section class="cheatGroupHolder" gd-baseUnit="3">
+    <a id="tableClose">{{ macro.icon('close-strip') }}</a>
     <div class="cheatGroupSubHolder">
         <a data-cheatgroup="essentials">
             <span class="cheatGroupImage">
                     {{ macro.icon('essentials-solid') }}
-                </span>
+            </span>
             <h5 class="cheatGroupTitle">Essentials</h5>
         </a>
         <div class="cheatTable" id="page-cheat-essentials">
@@ -20,7 +21,7 @@
         <a data-cheatgroup="health">
             <span class="cheatGroupImage">
                     {{ macro.icon('health-solid') }}
-                </span>
+            </span>
             <h5 class="cheatGroupTitle">Health &amp; Wealth</h5>
         </a>
         <div class="cheatTable" id="page-cheat-health">
@@ -31,7 +32,7 @@
         <a data-cheatgroup="wanted">
             <span class="cheatGroupImage">
                     {{ macro.icon('wanted-solid') }}
-                </span>
+            </span>
             <h5 class="cheatGroupTitle">Wanted Level</h5>
         </a>
         <div class="cheatTable" id="page-cheat-wanted">
@@ -42,7 +43,7 @@
         <a data-cheatgroup="weapons">
             <span class="cheatGroupImage">
                     {{ macro.icon('weapons-solid') }}
-                </span>
+            </span>
             <h5 class="cheatGroupTitle">Weapons</h5>
         </a>
         <div class="cheatTable" id="page-cheat-weapons">
@@ -53,7 +54,7 @@
         <a data-cheatgroup="vehicles">
             <span class="cheatGroupImage">
                     {{ macro.icon('vehicles-solid') }}
-                </span>
+            </span>
             <h5 class="cheatGroupTitle">Spwan &amp; Vehicles</h5>
         </a>
         <div class="cheatTable" id="page-cheat-vehicles">
@@ -64,7 +65,7 @@
         <a data-cheatgroup="gameplay">
             <span class="cheatGroupImage">
                     {{ macro.icon('gameplay-solid') }}
-                </span>
+            </span>
             <h5 class="cheatGroupTitle">Appeal &amp; Gameplay</h5>
         </a>
         <div class="cheatTable" id="page-cheat-gameplay">
@@ -75,7 +76,7 @@
         <a data-cheatgroup="weather">
             <span class="cheatGroupImage">
                     {{ macro.icon('weather-solid') }}
-                </span>
+            </span>
             <h5 class="cheatGroupTitle">Weather &amp; time</h5>
         </a>
         <div class="cheatTable" id="page-cheat-weather">
@@ -86,7 +87,7 @@
         <a data-cheatgroup="misccheats">
             <span class="cheatGroupImage">
                     {{ macro.icon('misccheats-solid') }}
-                </span>
+            </span>
             <h5 class="cheatGroupTitle">Miscellaneous</h5>
         </a>
         <div class="cheatTable" id="page-cheat-misc">
@@ -97,7 +98,7 @@
         <a data-cheatall>
             <span class="cheatGroupImage">
                     {{ macro.icon('allcheats-solid') }}
-                </span>
+            </span>
             <h5 class="cheatGroupTitle">All Cheats</h5>
         </a>
     </div>

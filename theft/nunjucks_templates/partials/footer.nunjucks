@@ -8,10 +8,10 @@
     <div box="large">
         <section gd-y="middle" gd-x="center">
             <div itm-s>
-                <a href="#top">{{ macro.icon('arrow-top') }} <h6>Top</h6></a>
+                <a href="#top">{{ macro.icon('arrow-top') }} Top</a>
             </div>
             <div itm-s>
-                <a href="https://github.com/siddacool/theft">{{ macro.icon('github') }} <h6>Github</h6></a>
+                <a href="https://github.com/siddacool/theft">{{ macro.icon('github') }} Github</a>
             </div>
         </section>
     </div>

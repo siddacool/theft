@@ -6,15 +6,13 @@
 @mixin main-index-part {
     main {
         padding-top: $barHeightMob;
-        padding-bottom: 2rem;
         flex: 1;
         @include tablet {
             padding-top: $barHeightTab;
-            padding-bottom: 4rem;
+            padding-bottom: 2rem;
         }
         @include desktop {
             padding-top: $barHeight;
-            padding-bottom: 1rem;
         }
         @include print {
             padding-top: 0;
@@ -27,6 +25,9 @@
         }
         section.gameList {
             padding-top: 1rem;
+            @include desktopMixEx{
+                padding-top: 1.5rem;
+            }
             >div {
                 padding: 0 1.5rem;
             }

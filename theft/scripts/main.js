@@ -108,13 +108,7 @@
         else{
            if(window.location.href.indexOf('#') > -1 ){
                if(gameContainer.classList.contains('cheats')){
-                   var cheatGroupSubHolder = document.querySelectorAll('.cheatGroupSubHolder');
-                       
-                       for(i=0;i<cheatGroupSubHolder.length;i++){
-                           cheatGroupSubHolder[i].classList.remove('hide');
-                           cheatGroupSubHolder[i].classList.remove('expand');
-                       }
-                       gameContainer.classList.remove('cheats');
+                    closeCheatBook();
                }
                else{
                     mainContainer.classList.remove('hide');

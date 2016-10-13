@@ -1,5 +1,12 @@
 /* game tables */
 
+//### Casings
+//+++
+
+//## table close button
+@import "./shells/tableClose";
+
+//---
 //### Create
 //+++
 
@@ -157,6 +164,7 @@
     }
 }
 
+
 //---
 //### Load
 //+++
@@ -166,6 +174,12 @@
 }
 
 #gameContainer {
+    .cheatGroupHolder{
+        @include tabletPortrait{
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+    }
     .cheatGroupSubHolder {
         &.hide,
         &[status="inapt"] {
@@ -174,7 +188,10 @@
         &.expand {
             @include gameTables-expand-shell;
         }
+        
     }
 }
+
+@include tableClose-casing;
 
 //---

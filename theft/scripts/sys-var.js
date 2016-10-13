@@ -186,3 +186,14 @@ function clearGames(){
     
     gameContainer.setAttribute('state','disable');
 }
+
+// Close expanded cheats
+function closeCheatBook() {
+    var cheatGroupSubHolder = document.querySelectorAll('.cheatGroupSubHolder');
+
+    for (i = 0; i < cheatGroupSubHolder.length; i++) {
+        cheatGroupSubHolder[i].classList.remove('hide');
+        cheatGroupSubHolder[i].classList.remove('expand');
+    }
+    gameContainer.classList.remove('cheats');
+}

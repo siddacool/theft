@@ -1,0 +1,68 @@
+/* table close */
+
+//### Create
+//+++
+
+@mixin tableClose-shell {
+    #tableClose{
+        display: none;
+        margin-left: auto;
+        cursor: pointer;
+        position: absolute;
+        right: 0;
+        z-index: 200;
+        height: 51.78px;
+        width: px(60);
+        top: 0;
+        justify-content: center;
+        align-items: center;
+        transition: background-color 400ms;
+        @include tablet{
+            height: 41.03px;
+        }
+        @include tabletPortrait{
+            margin-right: 1.5rem;
+        }
+        @include desktop{
+            height: 46.38px;
+        }
+        &:hover,
+        &:active{
+            background-color: rgba(0, 0, 0, 0.11);
+        }
+        .icon{
+            fill: #fff;
+            width: 0.9rem;
+            height: 0.9rem;
+        }
+    }
+}
+
+@mixin tableClose-cheats-shell{
+    .cheatGroupHolder{
+        position: relative;
+    }
+    #tableClose{
+        display: inline-flex;
+        &.hide{
+            display: none;
+        }
+    }
+}
+
+//---
+//### Load
+//+++
+
+@mixin tableClose-casing {
+    #gameContainer {
+        @include tableClose-shell;
+    }
+    #gameContainer {
+        &.cheats {
+            @include tableClose-cheats-shell;
+        }
+    }
+}
+
+//---
