@@ -1,5 +1,12 @@
 /* game tables */
 
+//### Casings
+//+++
+
+//## table close button
+@import "./shells/tableClose";
+
+//---
 //### Create
 //+++
 
@@ -157,6 +164,7 @@
     }
 }
 
+
 //---
 //### Load
 //+++
@@ -183,5 +191,7 @@
         
     }
 }
+
+@include tableClose-casing;
 
 //---
