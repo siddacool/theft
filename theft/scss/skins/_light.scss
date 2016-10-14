@@ -1,0 +1,92 @@
+/* light skin */
+
+/* >>> */
+
+/* Create */
+/* +++ */
+
+//### variables
+//+++
+
+//## Parts var
+$highlightColor: $baseAltColor;
+//## Theme Button
+$themeButton-grad1: rgba(253, 253, 253, 1);
+$themeButton-grad2: rgba(199, 199, 199, 1);
+$themeButton-fallback: #fdfdfd;
+
+//---
+//### Mixins
+//+++
+
+//# Theme button color
+@mixin themeButtonColor {
+    background: linear-gradient(45deg, #{$themeButton-grad1} 0%, #{$themeButton-grad2} 100%);
+    background-color: $themeButton-fallback;
+}
+
+//---
+//### Components
+//+++
+
+@mixin butons-light-skin {
+    //## Set Theme button color
+    .pickTheme {
+        .themeButton {
+            &[skin="light"] {
+                span {
+                    @include themeButtonColor;
+                }
+            }
+        }
+    }
+    #launchPickTheme {
+        &[active-skin="light"] {
+            .themeIcon {
+                @include themeButtonColor;
+            }
+        }
+    }
+}
+
+@mixin light-skin {
+        footer {
+         a {
+            &:hover,
+            &:active {
+                color: $highlightColor;
+                .icon{
+                    fill: $highlightColor;
+                }
+                .themeIcon{
+                    background: $highlightColor;
+                }
+            }
+            &.themeButton{
+                &:hover,
+                &:active{
+                    span{
+                        background: $highlightColor;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+/* --- */
+/* Apply */
+/* +++ */
+
+@include butons-light-skin;
+
+#wrapper{
+    &[theme="light"]{
+        @include light-skin;
+    }
+}
+
+/* --- */
+
+/* <<< */

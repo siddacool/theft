@@ -6,49 +6,48 @@
 @mixin footer-part {
     footer {
         padding: 1rem 0;
-        @include print{
+        @include print {
             display: none;
         }
         section{
             div{
-                &:last-child{
-                    a{
-                        @include desktopMixEx{
-                            margin-right: 0;
-                        }
-                    }
+                display: flex;
+                @include desktopMixEx{
+                    display: inline-flex;
                 }
             }
         }
-        a{
+        a {
             display: flex;
             padding: 0.65rem 0;
             align-items: center;
             transition: color 400ms;
             font-weight: 500;
             font-size: 1.1rem;
-            @include desktop{
+            cursor: pointer;
+            flex: 1;
+            @include desktop {
                 font-size: 0.95rem;
             }
-            @include desktopMixEx{
+            @include desktopMixEx {
                 display: inline-flex;
                 margin-right: 2rem;
                 padding: 0;
             }
             &:hover,
-            &:active{
+            &:active {
                 color: $baseAltColor;
-                .icon{
+                .icon {
                     fill: $baseAltColor;
                 }
             }
-            .icon{
+            .icon {
                 transition: fill 600ms;
                 margin-right: 1rem;
-                @include desktopMixEx{
+                @include desktopMixEx {
                     margin-right: 0.4rem;
                 }
-                @include desktop{
+                @include desktop {
                     height: 1.2rem;
                     width: 1.15rem;
                 }
@@ -56,7 +55,6 @@
         }
     }
 }
-
 //---
 //### Attach
 //+++

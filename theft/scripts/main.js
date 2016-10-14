@@ -161,6 +161,35 @@ document.onkeydown = function(e) {
     }
 };
 
+// launch pick theme
+(function launchPickTheme() {
+    var launchPickTheme = document.querySelector('#launchPickTheme'),
+        themeButtonHolder = document.querySelector('.themeButtonHolder'),
+        themeButtons = themeButtonHolder.querySelectorAll('a');
+
+    // launch theme picker
+    launchPickTheme.addEventListener('click',function(){
+        themeButtonHolder.classList.toggle('active');
+    });
+
+    /*Theme Set*/
+    // Set Theme function
+    function setTheme(themeName){
+        var wrapper = document.querySelector('#wrapper');
+        wrapper.setAttribute('theme',themeName);
+        launchPickTheme.setAttribute('active-skin',themeName);
+        themeButtonHolder.classList.remove('active');
+    }
+    // loop and apply skins
+    for (var i = 0; i < themeButtons.length; i++){
+        themeButtons[i].addEventListener('click',function(){
+            var skinName = this.getAttribute('skin');
+            setTheme(skinName);
+        })
+    };
+
+})();
+
 // insert after loading page
 document.addEventListener('DOMContentLoaded', function () {
     var gameList = document.querySelector(".gameList"),

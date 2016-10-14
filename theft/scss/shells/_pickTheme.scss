@@ -1,0 +1,91 @@
+/* Pick Theme */
+
+//### Local Mixins
+//---
+
+//## Theme Icon
+%themeIcon {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100%;
+    display: inline-block;
+    margin-right: 1rem;
+    transition: all 600ms;
+    @include desktopMixEx {
+        width: 1.2rem;
+        height: 1.2rem;
+        margin-right: 0.4rem;
+    }
+}
+//## Active Skin Light
+%activeSkin-light {
+    background: linear-gradient(45deg, rgba(253, 253, 253, 1) 0%, rgba(199, 199, 199, 1) 100%);
+    background-color: #fdfdfd;
+}
+
+//---
+//### Create
+//+++
+
+@mixin pickTheme-shell {
+    .pickTheme{
+        width: 100%;
+        position: relative;
+        .themeButtonHolder{
+            @include cardLayout;
+            display: none;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 0;
+            @include tablet{
+                width: 200px;
+                bottom: 3rem;
+            }
+            @include desktop{
+                width: 250px;
+                bottom: 2.5rem;
+            }
+            &.active{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        .themeButton{
+            padding: 1.2rem 1.5rem;
+            @include desktopMixEx{
+                margin: 0;
+            }
+            &:hover,
+            &:active{
+                span{
+                    background: $baseAltColor;
+                }
+            }
+            span{
+                @extend %themeIcon;
+            }
+        }
+    }
+    #launchPickTheme{
+        &:hover,
+        &:active{
+            .themeIcon{
+                background: $baseAltColor;
+            }
+        }
+        .themeIcon{
+            @extend %themeIcon;
+            @extend %activeSkin-light;
+        }
+    }
+}
+
+//---
+//### Load
+//+++
+
+@include pickTheme-shell;
+
+//---

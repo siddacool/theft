@@ -8,7 +8,7 @@
     <div box="large">
         <section gd-y="middle" gd-x="center">
             <div itm-s>
-                <a href="#top">{{ macro.icon('arrow-top') }} Top</a>
+                {% include "components/pickTheme.nunjucks" %}
             </div>
             <div itm-s>
                 <a href="https://github.com/siddacool/theft">{{ macro.icon('github') }} Github</a>

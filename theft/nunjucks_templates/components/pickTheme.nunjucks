@@ -1,0 +1,17 @@
+{# /* Pick Theme */ #}
+
+{# //--- #}
+{# //### Create #}
+{# //+++ #}
+<div class="pickTheme">
+    <a id="launchPickTheme"><span class="themeIcon"></span> Theme</a>
+    <div class="themeButtonHolder">
+        <a class="themeButton" skin="light">
+            <span></span> Light
+        </a>
+        <a class="themeButton" skin="dark">
+            <span></span> Dark
+        </a>
+    </div>
+</div>
+{# //--- #}
