@@ -145,6 +145,21 @@
     });
 })();
 
+function themeToggle(){
+    var wrapper = document.querySelector('#wrapper'),
+        curruntTheme = wrapper.getAttribute('theme'),
+        launchPickTheme = document.querySelector('#launchPickTheme');
+
+    if(curruntTheme === 'light'){
+        wrapper.setAttribute('theme','dark');
+        launchPickTheme.setAttribute('active-skin','dark');
+    }
+    else{
+        wrapper.setAttribute('theme','light');
+        launchPickTheme.setAttribute('active-skin','light');
+    }
+};
+
 // keyboard Navigation 
 document.onkeydown = function(e) {
     switch (e.keyCode || e.which) {
@@ -152,6 +167,8 @@ document.onkeydown = function(e) {
             back.click();
             break;
         case key.char.t:
+            themeToggle();
+            break;
         case key.tab:
             toggle.click();
             break;
