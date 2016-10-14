@@ -57,7 +57,7 @@ var key ;
     //## Shift
     //k.shift = 16;
     //## Ctrl (Control)
-    //k.ctrl = 17;
+    k.ctrl = 17;
     //## Alt
     //k.alt = 18;
     //## Capslock

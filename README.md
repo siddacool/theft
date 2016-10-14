@@ -14,7 +14,7 @@ Theft is an online cheatbook for GTA(Grand Theft Auto) titles. Serving PC cheats
 
 ### Keyboard navigation
 * **Backspace** - Go back
-* **Tab** or **T** - Toggle Nav Bar
+* **Tab** Toggle Nav Bar
 * **Home** - Go to Home page
 * **I** - Show About (Home Page)
 

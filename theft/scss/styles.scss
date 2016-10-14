@@ -53,5 +53,17 @@
 @import "./shells/gameHeader";
 //## cheat tables on game page
 @import "./shells/gameTables";
+//## pick theme
+@import "./shells/pickTheme";
+
+//---
+//### Skins : Global themes
+//+++
+
+//## Light
+@import "./skins/light";
+
+//## Dark
+@import "./skins/dark";
 
 //---

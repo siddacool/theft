@@ -16,7 +16,7 @@
 {# //## Svg Assets #}
 {% include "components/icons.nunjucks" %}
 
- <div id="wrapper">
+ <div id="wrapper" theme="light">
 
         {# //## header #}
         {% include "partials/header.nunjucks" %}
