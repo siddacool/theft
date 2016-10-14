@@ -16,6 +16,13 @@
                     display: inline-flex;
                 }
             }
+            > div{
+                 &:last-child{
+                     a{
+                         margin-right: 0;
+                     }
+                }
+            }
         }
         a {
             display: flex;
