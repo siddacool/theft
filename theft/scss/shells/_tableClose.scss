@@ -47,11 +47,14 @@
         &.hide{
             display: none;
         }
+        @include print{
+            display: none;
+        }
     }
 }
 
 //---
-//### Load
+//### Pack
 //+++
 
 @mixin tableClose-casing {

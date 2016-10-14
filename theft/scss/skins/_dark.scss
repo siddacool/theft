@@ -1,0 +1,186 @@
+/* dark skin */
+
+/* >>> */
+
+/* Create */
+/* +++ */
+
+//### variables
+//+++
+
+//## Parts var
+$mainColor: #1c1c1c;
+$highlightColor: #5fa6f8;
+$mainFontColor: #fff;
+$mainIconColor: #fff;
+$headerColor: #2d2d2d;
+$navColor: $headerColor;
+//## Introduction text color
+$introFontColor: #848484;
+//## game description text color
+$gameTitleColor: $mainFontColor;
+//## game description text color
+$gameDiscFontColor: $introFontColor;
+//## footer font color
+$footerFontColor: $mainFontColor;
+//## Card layout var
+$cardColor: #383838;
+$cardShadow: #0d0d0d;
+$cardFontColor: $mainFontColor;
+$cardRingColor: $mainColor;
+//## table highlight color
+$tableHighColor: #424242;
+//## Cheat title font color
+$cheatTitleFontColor: $mainFontColor;
+//## Theme Button
+$themeButton-grad1: rgba(115, 115, 115, 1);
+$themeButton-grad2: rgba(45, 45, 45, 1);
+$themeButton-fallback: $themeButton-grad1;
+
+//---
+//### Mixins
+//+++
+
+//# Theme button color
+@mixin themeButtonColor {
+    background: linear-gradient(45deg, #{$themeButton-grad1} 0%, #{$themeButton-grad2} 100%);
+    background-color: $themeButton-fallback;
+}
+
+//---
+//### Components
+//+++
+
+@mixin butons-dark-skin {
+    //## Set Theme button color
+    .pickTheme {
+        .themeButton {
+            &[skin="dark"] {
+                span {
+                    @include themeButtonColor;
+                }
+            }
+        }
+    }
+    #launchPickTheme {
+        &[active-skin="dark"] {
+            .themeIcon {
+                @include themeButtonColor;
+            }
+        }
+    }
+}
+
+@mixin dark-skin {
+    background-color: $mainColor;
+    color: $mainFontColor;
+    .icon {
+        fill: $mainIconColor;
+    }
+    header {
+        background-color: $headerColor;
+    }
+    nav {
+        background-color: $navColor;
+        ul {
+            a {
+                &.active {
+                    span {
+                        border-color: $highlightColor;
+                    }
+                }
+            }
+        }
+    }
+    p[para] {
+        color: $introFontColor;
+    }
+    p[paraAlt] {
+        color: $gameDiscFontColor;
+    }
+    main {
+        .game {
+            background-color: $cardColor;
+            box-shadow: px(1) px(1) px(6) $cardShadow;
+            h5 {
+                color: $cardFontColor;
+            }
+            .gameImage {
+                border-color: $cardRingColor;
+            }
+        }
+    }
+    h6 {
+        color: $gameTitleColor;
+    }
+    .cheatGroupSubHolder {
+        &.expand {
+            background-color: $cardColor;
+            box-shadow: px(1) px(1) px(6) $cardShadow;
+        }
+    }
+    .cheatTable {
+        ul {
+            &:hover {
+                @include desktop {
+                    background-color: $tableHighColor !important;
+                }
+            }
+            &:nth-of-type(odd) {
+                background-color: $tableHighColor;
+                @include desktop {
+                    background-color: transparent;
+                }
+            }
+            li {
+                &:first-child {
+                    color: $cheatTitleFontColor;
+                }
+            }
+        }
+    }
+    footer {
+        a {
+            color: $footerFontColor;
+            &:hover,
+            &:active {
+                color: $highlightColor;
+                .icon{
+                    fill: $highlightColor;
+                }
+                .themeIcon{
+                    background: $highlightColor;
+                }
+            }
+            &.themeButton{
+                &:hover,
+                &:active{
+                    span{
+                        background: $highlightColor;
+                    }
+                }
+                
+            }
+        }
+    }
+    .themeButtonHolder {
+        background-color: $cardColor;
+        box-shadow: px(1) px(1) px(6) $cardShadow;
+    }
+}
+
+/* --- */
+/* Apply */
+/* +++ */
+
+@include butons-dark-skin;
+
+#wrapper{
+    &[theme="dark"]{
+        @include dark-skin;
+    }
+}
+
+/* --- */
+
+/* <<< */
