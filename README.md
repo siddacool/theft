@@ -13,10 +13,10 @@ Theft is an online cheatbook for GTA(Grand Theft Auto) titles. Serving PC cheats
 * [GTA II](https://siddacool.github.io/theft/#gta2)
 
 ### Keyboard navigation
-* **Backspace** - Go back
-* **Tab** Toggle Nav Bar
-* **Home** - Go to Home page
-* **I** - Show About (Home Page)
+* **`Backspace`** - Go back
+* **`Tab`** Toggle Nav Bar
+* **`Home`** - Go to Home page
+* **`T`** - Toggle Dark Theme
 
 ## FAQs
 
