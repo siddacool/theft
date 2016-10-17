@@ -17,32 +17,19 @@
             padding: 0 1.5rem;
         }
         svg {
-            width: px(90);
-            fill: #ffffff;
+            width: px(45);
             @include desktop {
-                width: px(80);
+                width: px(40);
             }
         }
-        .logoMain {
-            @include desktopMixEx {
-                display: inline-block;
-                transform: translateX(-109px);
-            }
-            @include print {
-                display: inline-block;
-                transform: translateX(-109px);
-            }
+        circle{
+            fill: #515151;
         }
-        .logoSecondary {
+        path{
+            fill: $baseAltColor;
+        }
+        h1{
             display: none;
-            @include desktopMixEx {
-                display: inline-block;
-                transform: translateX(-109px);
-            }
-            @include print {
-                display: inline-block;
-                transform: translateX(-109px);
-            }
         }
     }
 }

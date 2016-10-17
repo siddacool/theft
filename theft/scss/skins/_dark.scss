@@ -10,7 +10,7 @@
 
 //## Parts var
 $mainColor: #1c1c1c;
-$highlightColor: #5fa6f8;
+$highlightColor: $baseAltColor;
 $mainFontColor: #fff;
 $mainIconColor: #fff;
 $headerColor: #2d2d2d;
@@ -74,9 +74,6 @@ $themeButton-fallback: $themeButton-grad1;
 @mixin dark-skin {
     background-color: $mainColor;
     color: $mainFontColor;
-    .icon {
-        fill: $mainIconColor;
-    }
     header {
         background-color: $headerColor;
     }
