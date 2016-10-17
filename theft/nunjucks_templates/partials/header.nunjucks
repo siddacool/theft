@@ -11,7 +11,7 @@
                 <a>{{ macro.icon('arrow-back-condensed') }}</a>
             </div>
             <div id="logo" itm-s>
-                <a>{% include "components/logo.nunjucks" %}</a>
+                <a>{% include "components/logo.nunjucks" %} <h1>Theft<h1></a>
             </div>
             <div id="toggle" itm-s>
                 <a>{{ macro.icon('toggle') }}</a>

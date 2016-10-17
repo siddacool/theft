@@ -9,7 +9,7 @@
 //+++
 
 //## Parts var
-$highlightColor: $baseAltColor;
+$highlightColor: darken($baseAltColor,7%);
 //## Theme Button
 $themeButton-grad1: rgba(253, 253, 253, 1);
 $themeButton-grad2: rgba(199, 199, 199, 1);
@@ -50,26 +50,25 @@ $themeButton-fallback: #fdfdfd;
 }
 
 @mixin light-skin {
-        footer {
-         a {
+    footer {
+        a {
             &:hover,
             &:active {
                 color: $highlightColor;
-                .icon{
+                .icon {
                     fill: $highlightColor;
                 }
-                .themeIcon{
+                .themeIcon {
                     background: $highlightColor;
                 }
             }
-            &.themeButton{
+            &.themeButton {
                 &:hover,
-                &:active{
-                    span{
+                &:active {
+                    span {
                         background: $highlightColor;
                     }
                 }
-                
             }
         }
     }

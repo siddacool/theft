@@ -1,6 +1,10 @@
 # Changelog for Theft
 Theft is online cheatbook for GTA(Grand Theft Auto) titles.Changelog contains major fixes,improvement and new games(when added) under version and date [**yyyy-mm-dd**] of modification.
 
+## Version 1.0 (2016-10-17)
+
+- New looks
+
 ## Version 0.2.1 (2016-10-14)
 
 - Dark Theme
