@@ -6,7 +6,7 @@
 
 <footer>
     <div box="large">
-        <section gd-y="middle" gd-x="center">
+        <section gd-y="middle" gd-x="right">
             <div itm-s>
                 {% include "components/pickTheme.nunjucks" %}
             </div>

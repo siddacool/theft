@@ -52,6 +52,9 @@
         @include print {
             display: none;
         }
+        .icon{
+            fill: lighten($baseAltColor,15%);
+        }
     }
     #back {
         @include desktop {

@@ -40,11 +40,11 @@
             width: 100%;
             padding: 0;
             @include tablet{
-                width: 200px;
+                width: 140px;
                 bottom: 3rem;
             }
             @include desktop{
-                width: 250px;
+                width: 190px;
                 bottom: 2.5rem;
             }
             &.active{

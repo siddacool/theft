@@ -35,3 +35,4 @@ Theft is an online cheatbook for GTA(Grand Theft Auto) titles. Serving PC cheats
 * http://iconmonstr.com/
 * https://github.com/siddacool/sys-breeks
 * https://github.com/siddacool/keycodex
+* https://fonts.google.com/specimen/Russo+One
