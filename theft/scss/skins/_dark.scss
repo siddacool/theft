@@ -158,6 +158,9 @@ $themeButton-fallback: $themeButton-grad1;
                 }
                 
             }
+            .icon{
+                fill: $mainIconColor;
+            }
         }
     }
     .themeButtonHolder {
