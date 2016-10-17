@@ -1,4 +1,4 @@
-<img src="https://siddacool.github.io/theft/logo-theft.svg" alt="Theft logo">
+![Theft logo](https://siddacool.github.io/theft/logo-theft.png)
 # Theft: GTA Cheats
 
 Theft is an online cheatbook for GTA(Grand Theft Auto) titles. Serving PC cheats for games including but not limited to GTA:**San andreas** & GTA:**Vice City** in a modern and easy to use single-page web interface.
